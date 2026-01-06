@@ -85,7 +85,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
-"""
+
 blog_name: al-folio # blog_name will be displayed in your blog page
 blog_description: a simple whitespace theme for academics
 permalink: /blog/:year/:title/
@@ -129,27 +129,27 @@ external_sources:
     posts:
       - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
         published_date: 2024-05-14
-"""
+
 # -----------------------------------------------------------------------------
 # Newsletter
 # -----------------------------------------------------------------------------
-"""
+
 newsletter:
   enabled: false
   endpoint: # your loops endpoint (e.g., https://app.loops.so/api/newsletter-form/YOUR-ENDPOINT)
   # https://loops.so/docs/forms/custom-form
-"""
+
 # -----------------------------------------------------------------------------
 # Collections
 # -----------------------------------------------------------------------------
 
 collections:
-  """books:
-    output: true
-  news:
-    defaults:
-      layout: post
-    output: true"""
+  #books:
+  #  output: true
+  #news:
+  #  defaults:
+  #    layout: post
+  #  output: true
   projects:
     output: true
 
@@ -270,7 +270,7 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
 # -----------------------------------------------------------------------------
-"""
+
 scholar:
   last_name: [Einstein]
   first_name: [Albert, A.]
@@ -337,7 +337,7 @@ more_authors_animation_delay: 10 # more authors are revealed on click using anim
 
 # Enables publication thumbnails. If disabled, none of the publications will display thumbnails, even if specified in the bib entry.
 enable_publication_thumbnails: true
-"""
+
 # -----------------------------------------------------------------------------
 # Jekyll Link Attributes
 # -----------------------------------------------------------------------------

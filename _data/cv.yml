@@ -4,7 +4,7 @@
     - name: Name
       value: Deanna DiMonte
     - name: E-mail
-      value: "[ded@u.northwestern.edu](mailto:ded@u.northwestern.edu)"
+      value: '<a href="mailto:ded@u.northwestern.edu">ded@u.northwestern.edu</a>'
     - name: LinkedIn
       value: "[LinkedIn](https://www.linkedin.com/in/deanna-dimonte/)"
     - name: Summary
@@ -13,17 +13,10 @@
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
+    - title: PhD in Electrical Engineering
+      institution: Northwestern University, Evanston, IL, USA
+      year: Current
+    - title: MS in Electrical Engineering
       institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
       year: 1900
       description:

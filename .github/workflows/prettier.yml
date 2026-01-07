@@ -12,30 +12,49 @@ on:
 
 jobs:
   check:
-    # available images: https://github.com/actions/runner-images#available-images
     runs-on: ubuntu-latest
 
+    # allow this job to push commits
     permissions:
       contents: write
-      
+
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
+        with:
+          # needed so we can push back to the same branch
+          token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Setup Node.js ⚙️
         uses: actions/setup-node@v4
+
       - name: Install Prettier 💾
         run: npm install --save-dev --save-exact prettier @shopify/prettier-plugin-liquid
+
       - name: Prettier Check 🔎
         id: prettier
         run: npx prettier . --check
-      - name: Create diff 📝
-        # https://docs.github.com/en/actions/learn-github-actions/expressions#failure
+
+      - name: Auto-fix with Prettier ✍️
         if: ${{ failure() }}
         run: |
           npx prettier . --write
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git status
+          if ! git diff --quiet; then
+            git add -A
+            git commit -m "chore: format with Prettier"
+            git push
+          fi
+
+      - name: Create diff 📝
+        if: ${{ failure() }}
+        run: |
           git diff -- . ':(exclude)package-lock.json' ':(exclude)package.json' > diff.txt
           npm install -g diff2html-cli
           diff2html -i file -s side -F diff.html -- diff.txt
+
       - name: Upload html diff ⬆️
         id: artifact-upload
         if: ${{ failure() && steps.prettier.conclusion == 'failure' }}
@@ -44,6 +63,7 @@ jobs:
           name: HTML Diff
           path: diff.html
           retention-days: 7
+
       - name: Dispatch information to repository 🗣️
         if: ${{ failure() && steps.prettier.conclusion == 'failure' && github.event_name == 'pull_request' }}
         uses: peter-evans/repository-dispatch@v2

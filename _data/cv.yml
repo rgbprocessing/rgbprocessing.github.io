@@ -24,25 +24,22 @@
       year: 2017
 
 
-- title: Experience
+- title: Leadership Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: SICSS-IAS Participant
+      institution: Institute for Analytical Sociology, Norrköping, Sweden
+      year: Summer 2025
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Gained expertise in computational social science methods through the Summer Institute in Computational Social Science (SICSS IAS), applying technical skills in image processing to multidisciplinary research on meme detection.
+        -	Collaborated on a cross-functional team analyzing memes across multiple subreddits, focusing on meme detection while supporting network analysis and sociological research into the role of memes in society.
+    - title: Engineering Teaching Assistant
+      institution: Northwestern University, Evanston, IL, USA
+      year: 2025
       description:
-        - Description 1.
-        - Description 2.
+        - Led lab sessions, explaining fundamental engineering and math concepts in hands-on approachable format.
+        -	Mentored undergraduate students through personalized meetings and constructive assignment feedback.
+
 
     - title: Director
       institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.

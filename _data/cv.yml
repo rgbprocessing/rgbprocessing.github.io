@@ -44,18 +44,24 @@
       description:
         - Facilitated weekly research presentations and collaborative discussions in the Image and Video Processing Lab, fostering a culture of knowledge sharing and enhancing presentation, communication, and organizational skills.
         - Attended a diverse range of multidisciplinary AI conferences, seminars, and workshops across fields such as medicine, fashion, and law, gaining a broad perspective on AI applications and ethical considerations. Reported key findings and insights back to the lab, contributing to a more informed and interdisciplinary approach to AI research.
-    - title: Machine Learning Teaching Assistant
-      institution: Northwestern University, Evanston, IL, USA
-      year: 2022-2024
-    - title: U7+ Worldwide Student Forum: AI in Higher Education Participant
-      year: 2024
+    - title: SICSS-IAS Participant
+      institution: Institute for Analytical Sociology, Norrköping, Sweden
+      year: Summer 2025
       description:
-        - Represented Northwestern University in global forum discussing the benefits and risks of AI in higher education.
-        - Engaged in cross-cultural discussions and presentations, culminating in actionable summaries and recommendations presented to university leaders, informing strategic decisions on AI integration in higher education.
-    - title: Women in Science and Engineering Research Publicity Chair
-       year: 2020-2022
-       description:
-        - Conceptualized and hosted STEM events to increase graduate student engagement and cross-disciplinary networking.
+        - Gained expertise in computational social science methods through the Summer Institute in Computational Social Science (SICSS IAS), applying technical skills in image processing to multidisciplinary research on meme detection.
+        - Collaborated on a cross-functional team analyzing memes across multiple subreddits, focusing on meme detection while supporting network analysis and sociological research into the role of memes in society.
+    - title: Engineering Teaching Assistant
+      institution: Northwestern University, Evanston, IL, USA
+      year: 2025
+      description:
+        - Led lab sessions, explaining fundamental engineering and math concepts in hands-on approachable format.
+        - Mentored undergraduate students through personalized meetings and constructive assignment feedback.
+    - title: Research Presentation Coordinator
+      institution: Northwestern University, Evanston, IL, USA
+      year: 2020-2024
+      description:
+        - Facilitated weekly research presentations and collaborative discussions in the Image and Video Processing Lab, fostering a culture of knowledge sharing and enhancing presentation, communication, and organizational skills.
+        - Attended a diverse rang
         
 - title: Research Experience
   type: time_table

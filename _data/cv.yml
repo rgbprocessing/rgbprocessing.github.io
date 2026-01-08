@@ -125,6 +125,16 @@
       items:
         - Created a view factor simulation in MATLAB to maximize emission efficiency of angle-restricted emitter technology.
 
+- title: Coding Challenges
+  type: time_table
+  contents:
+    - title: Kaggle Ariel Satellite Image Analysis Challenge
+      year: 2025
+      description:
+        - Developed image processing and machine learning models to recover exoplanet atmospheric spectra from noisy simulated data for ESA’s upcoming Ariel mission.
+    - title: "1M-Deepfakes Detection Challenge"
+      year: 2024-2025
+
 - title: Honors and Awards
   type: time_table
   contents:

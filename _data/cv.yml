@@ -90,7 +90,7 @@
       year: 2015
       description:
         - Developed file reconciliation program for upcoming external audits using C++ and SQL with feedback from users and code reviews.
-    - title: Physics Teacher’s Assistant 
+    - title: Physics Teacher’s Assistant
       institution: Purdue University, West Lafayette, Indiana
       year: 2014-2015
       description:
@@ -100,7 +100,7 @@
       year: 2013-2014
       description:
         - Teacher or Teacher’s Assistant for multiple summer programs including Robotics, Photography, and App Development.
-      
+
 - title: Research Experience
   type: time_table
   contents:
@@ -194,7 +194,7 @@
 - title: Awards
   type: time_table
   contents:
-    - title: NICO Data Science Fellowship 
+    - title: NICO Data Science Fellowship
       year: 2019-2020
-    - title: IDEAS NSF Fellowship 
+    - title: IDEAS NSF Fellowship
       year: 2020-2021

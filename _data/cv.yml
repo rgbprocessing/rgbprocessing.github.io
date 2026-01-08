@@ -6,7 +6,7 @@
     - name: E-mail
       value: '<a href="mailto:ded@u.northwestern.edu">ded@u.northwestern.edu</a>'
     - name: Websites
-      value: '<a href="https://www.linkedin.com/in/deanna-dimonte/">LinkedIn</a> | <a href="https://github.com/rgbprocessing">Github</a>'
+      value: '<a href="https://www.linkedin.com/in/deanna-dimonte/">LinkedIn</a> | <a href="https://github.com/rgbprocessing">Github</a> | <a href="https://www.kaggle.com/ddimonte">Kaggle</a>'
     - name: Summary
       value: PhD candidate in Electrical Engineering specializing in image processing, machine learning, and AI ethics. Motivated to improve the world by enhancing human interactivity with digital media and passionate about contributing to interdisciplinary projects that address societal challenges and create meaningful, lasting impact.
 

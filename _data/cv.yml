@@ -132,15 +132,15 @@
       year: 2025
       description:
         - Developed image processing and machine learning models to recover exoplanet atmospheric spectra from noisy simulated data for ESA’s upcoming Ariel mission.
-    - title: 1M-Deepfakes Detection Challenge
+    - title: "1M-Deepfakes Detection Challenge"
       year: 2024-2025
       description:
-        -	Developed robust deep learning model for temporal forgery localization, leveraging misalignment between visual and auditory information, and minimizing reliance on visual features susceptible to degradation from compression.
-    - title: Women in AI Challenge: Detect AI vs. Human-Generated Images
+        -	"Developed robust deep learning model for temporal forgery localization, leveraging misalignment between visual and auditory information, and minimizing reliance on visual features susceptible to degradation from compression."
+    - title: "Women in AI Challenge: Detect AI vs. Human-Generated Images"
       year: 2025
       description:
-        -	Utilized convolutional neural networks and rich imaging features to classify images as AI-generated or human-created.
-    - title: CZII - CryoET Object Identification
+        -	"Utilized convolutional neural networks and rich imaging features to classify images as AI-generated or human-created."
+    - title: "CZII - CryoET Object Identification"
       year: 2024-2025
       description:
         - Designed a multistage object detection model for cryo-electron tomography images, utilizing rough segmentation, inverse distance labels for center prediction, and additional loss functions for refinement and classification.

@@ -168,14 +168,27 @@
         - Designed a variety of combination loss functions and model averaging to improve score.
 
 - title: Skills and Interests
-  type: list
+  type: time_table
   contents:
-    - <u>Deep Learning Frameworks:</u> TensorFlow, PyTorch, Keras
-    - <u>Data Processing:</u> Scikit-learn, NumPy, Pandas, NiBabel
-    - <u>Visualization Tools:</u> Matplotlib, Seaborn, Plotly, Tableau
-    - <u>Science Communication:</u> Trained in science writing and communication through graduate-level courses, with skills in de-jargonizing complex concepts, interviewing, social media engagement, editorial techniques, and data visualization.
-    - <u>Language Skills:</u> Basic knowledge of French, Italian, Mandarin, and Japanese; TEFL Certification
-    - <u>Art Skills:</u> Digital Art, Digital Photography, Video Editing, Digital Image Editing
+    - title: Deep Learning Frameworks
+      description:
+        - TensorFlow, PyTorch, Keras
+    - title: Data Processing
+      description:
+        - Scikit-learn, NumPy, Pandas, NiBabel
+    - title: Visualization Tools:
+      description:
+        - Matplotlib, Seaborn, Plotly, Tableau
+    - title: Science Communication:
+      description:
+        - Trained in science writing and communication through graduate-level courses, with skills in de-jargonizing complex concepts, interviewing, social media engagement, editorial techniques, and data visualization.
+    - title: Language Skills
+      description:
+        - Basic knowledge of French, Italian, Mandarin, and Japanese
+        - TEFL Certification
+    - title: Art Skills:
+      description:
+        - Digital Art, Digital Photography, Video Editing, Digital Image Editing
 
 - title: Extracurricular Experience
   type: time_table

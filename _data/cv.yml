@@ -91,6 +91,11 @@
     - title: Doctoral Researcher
       institution: Northwestern University, Evanston, IL, USA
       year: 2019-present
+      items:
+        - Deepfake Detection Projects
+        - Multi-Modal MRI Segmentation Projects
+        - Solitaire Solver and Unwinnable State Detection
+        - 3d Ant Bivouac Growth Modeler	
     - title: Coding Challenges
     - title: Data Science Intern
       company: FAME Computer Vision Systems

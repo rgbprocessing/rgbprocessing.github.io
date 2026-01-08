@@ -138,6 +138,17 @@
         - "Developed robust deep learning model for temporal forgery localization, leveraging misalignment between visual and auditory information, and minimizing reliance on visual features susceptible to degradation from compression."
     - title: "Women in AI Challenge: Detect AI vs. Human-Generated Images"
       year: 2025
+      description:
+        - "Utilized convolutional neural networks and rich imaging features to classify images as AI-generated or human-created."
+    - title: "CZII - CryoET Object Identification"
+      year: 2024-2025
+      description:
+        - Designed a multistage object detection model for cryo-electron tomography images, utilizing rough segmentation, inverse distance labels for center prediction, and additional loss functions for refinement and classification.
+    - title: NeurIPS Machine Unlearning
+      year: 2023
+      description:
+        - Investigated methods for efficiently removing data from trained models, contributing to research on data privacy and model interpretability.
+        - Designed a variety of combination loss functions and model averaging to improve score.
 
 - title: Honors and Awards
   type: time_table

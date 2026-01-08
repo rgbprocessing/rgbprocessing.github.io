@@ -178,7 +178,7 @@
       items:
         - Description 1.
         - Description 2.
-        
+
 - title: Skills and Interests
   type: nested_list
   contents:

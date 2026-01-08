@@ -28,7 +28,7 @@
   contents:
     - title: SICSS-IAS Participant
       institution: Institute for Analytical Sociology, Norrköping, Sweden
-      year: Summer 2025
+      year: 2025
       description:
         - Gained expertise in computational social science methods through the Summer Institute in Computational Social Science (SICSS IAS), applying technical skills in image processing to multidisciplinary research on meme detection.
         - Collaborated on a cross-functional team analyzing memes across multiple subreddits, focusing on meme detection while supporting network analysis and sociological research into the role of memes in society.
@@ -132,7 +132,24 @@
       year: 2025
       description:
         - Developed image processing and machine learning models to recover exoplanet atmospheric spectra from noisy simulated data for ESA’s upcoming Ariel mission.
-
+    - title: 1M-Deepfakes Detection Challenge
+      year: 2024-2025
+      description:
+        -	Developed robust deep learning model for temporal forgery localization, leveraging misalignment between visual and auditory information, and minimizing reliance on visual features susceptible to degradation from compression.
+    - title: Women in AI Challenge: Detect AI vs. Human-Generated Images
+      year: 2025
+      description:
+        -	Utilized convolutional neural networks and rich imaging features to classify images as AI-generated or human-created.
+    - title: CZII - CryoET Object Identification
+      year: 2024-2025
+      description:
+        - Designed a multistage object detection model for cryo-electron tomography images, utilizing rough segmentation, inverse distance labels for center prediction, and additional loss functions for refinement and classification.
+    - title: NeurIPS Machine Unlearning
+      year: 2023
+      description:
+        -	Investigated methods for efficiently removing data from trained models, contributing to research on data privacy and model interpretability. 
+        - Designed a variety of combination loss functions and model averaging to improve score.
+      
 - title: Honors and Awards
   type: time_table
   contents:

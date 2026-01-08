@@ -47,15 +47,16 @@
     - title: Machine Learning Teaching Assistant
       institution: Northwestern University, Evanston, IL, USA
       year: 2022-2024
-      description:
-        - Assisted 60-100 graduate students in machine learning, deep learning, and reinforcement learning courses.
-        - Conducted weekly meetings to mentor students on content, homework, and projects, fostering a deeper understanding of machine learning concepts and breadth of applications, and enhancing debugging and presentation skills.
     - title: U7+ Worldwide Student Forum: AI in Higher Education Participant
       year: 2024
       description:
         - Represented Northwestern University in global forum discussing the benefits and risks of AI in higher education.
         - Engaged in cross-cultural discussions and presentations, culminating in actionable summaries and recommendations presented to university leaders, informing strategic decisions on AI integration in higher education.
-
+    - title: Women in Science and Engineering Research Publicity Chair
+       year: 2020-2022
+       description:
+        - Conceptualized and hosted STEM events to increase graduate student engagement and cross-disciplinary networking.
+        
 - title: Research Experience
   type: time_table
   contents:

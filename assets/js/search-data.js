@@ -23,9 +23,9 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "projects-",
-          title: '',
-          description: "",
+        },{id: "projects-neurips-ariel-data-challenge-2025",
+          title: 'NeurIPS - Ariel Data Challenge 2025',
+          description: "33rd place solution: CNN ensemble with augmentation",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project.html";
             },},{id: "projects-project-2",

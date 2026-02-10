@@ -23,8 +23,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "projects-project-1",
-          title: 'project 1',
+        },{id: "projects-neurips-ariel-data-challenge-2025",
+          title: 'NeurIPS - Ariel Data Challenge 2025',
           description: "with background image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project.html";

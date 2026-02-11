@@ -10,9 +10,7 @@ related_publications: false
 
 **Competition Overview**
 
-The goal of this competition is to recover
-
-[kaggle competition overview](<[https://example.com](https://www.kaggle.com/competitions/ariel-data-challenge-2025/overview)>)
+The goal of this competition is to recover exoplant spectrum information from noisy obserations. See the [kaggle competition overview]([https://example.com](https://www.kaggle.com/competitions/ariel-data-challenge-2025/overview)) for details.
 
 **Solution Overview**
 

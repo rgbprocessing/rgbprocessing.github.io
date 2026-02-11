@@ -10,9 +10,9 @@ related_publications: false
 
 **Competition Overview**
 
-The goal of this competition is to recover 
+The goal of this competition is to recover
 
-[kaggle competition overview]([https://example.com](https://www.kaggle.com/competitions/ariel-data-challenge-2025/overview))
+[kaggle competition overview](<[https://example.com](https://www.kaggle.com/competitions/ariel-data-challenge-2025/overview)>)
 
 **Solution Overview**
 

@@ -23,20 +23,21 @@ Signal files:
 
 See Figures 1 and 2 for examples of the unprocessed and preprocessed FGS1 and AIRS-CH0 data.
 
+**PreProcessing**
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/FGS10.png" title="FGS1 data" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Figure 1: This plot displays the first time frame for a single planet observation, comparing three stages of the FGS1 detector data.
-
-Original (left column): Calibrated raw images after gain and offset correction, which may still contain hot/dead pixels and other detector artifacts.
-
-Processed (middle column): Images after masking bad pixels and applying cleaning steps such as dark and flat field corrections. Masked regions appear as missing or blank areas.
-
-Inpainted (right column): Images where missing or corrupted pixels have been filled using inpainting, resulting in fully continuous frames.
-
+  Figure 1: Single planet observation (FGS1 detector), first time frame.
+  <br>
+  <strong>Left:</strong> Calibrated raw (post-gain/offset, with artifacts).
+  <br>
+  <strong>Middle:</strong> Processed (bad pixels masked, dark/flat corrected).
+  <br>
+  <strong>Right:</strong> Inpainted (corrupted areas filled, fully continuous).
 </div>
 
 <div class="row">

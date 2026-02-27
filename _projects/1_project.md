@@ -21,26 +21,38 @@ Signal files:
 - FGS1 data comes from Ariel's Fine Guidance System (FGS) and provides high-precision photometry of the target star in the visible light spectrum with a sensitivity between 0.60 and 0.80 µm.
 - AIRS-CH0 data, from the Ariel InfraRed Spectrometer (AIRS), has sensitivity between 1.95 and 3.90 µm.
 
-See Figure 1 for examples of the unprocessed and preprocessed FGS1 and AIRS-CH0 data.
+See Figures 1 and 2 for examples of the unprocessed and preprocessed FGS1 and AIRS-CH0 data.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/FGS10.png" title="FGS1 data" class="img-fluid rounded z-depth-1" %}
     </div>
+</div>
+<div class="caption">
+    Figure 1: This plot displays the first time frame for a single planet observation, comparing three stages of the FGS1 detector data.
+
+Original (left column): Calibrated raw images after gain and offset correction, which may still contain hot/dead pixels and other detector artifacts.
+
+Processed (middle column): Images after masking bad pixels and applying cleaning steps such as dark and flat field corrections. Masked regions appear as missing or blank areas.
+
+Inpainted (right column): Images where missing or corrupted pixels have been filled using inpainting, resulting in fully continuous frames.
+</div>
+
+<div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/AIRS0.png" title="AIRS-CH0 data" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    The left plot displays the first time frame of FGS1 data for a single planet observation, comparing three stages of the FGS1 detector data:
+    Figure 2: This plot displays the first time frame for a single planet observation, comparing three stages of the AIRS-CH0 detector data.
 
-    Original (left column): Calibrated raw images after gain and offset correction, which may still contain hot/dead pixels and other detector artifacts.
+Original (left column): Calibrated raw images after gain and offset correction, which may still contain hot/dead pixels and other detector artifacts.
 
-    Processed (middle column): Images after masking bad pixels and applying cleaning steps such as dark and flat field corrections. Masked regions appear as missing or blank areas.
+Processed (middle column): Images after masking bad pixels and applying cleaning steps such as dark and flat field corrections. Masked regions appear as missing or blank areas.
 
-    Inpainted (right column): Images where missing or corrupted pixels have been filled using inpainting, resulting in fully continuous frames.
-
+Inpainted (right column): Images where missing or corrupted pixels have been filled using inpainting, resulting in fully continuous frames.
 </div>
+
 
 Additional data:
 

@@ -47,6 +47,11 @@ Signal files:
   At a single timepoint, the image represents 32 spatial x 356 wavelength pixels.
 </div>
 
+The dataset also contains:
+- Conversion parameters for restoring the original data range.
+- Axis information for both signal instruments.
+- Planetary information (planetary mass, orbital eccentricity, orbital period, semi-major axis, orbital inclination) and stellar information (stellar radius, stellar mass, stellar effective temperature).
+
 **PreProcessing**
 
 <div class="row">
@@ -55,13 +60,13 @@ Signal files:
     </div>
 </div>
 <div class="caption">
-  Figure 3: Single planet observation (FGS1 detector), first time frame.
+  Figure 3: Single planet observation FGS1 data, single time frame.
   <br>
   <strong>Left:</strong> Calibrated raw (post-gain/offset, with artifacts).
   <br>
   <strong>Middle:</strong> Processed (bad pixels masked, dark/flat corrected).
   <br>
-  <strong>Right:</strong> Inpainted (corrupted areas filled, fully continuous).
+  <strong>Right:</strong> Inpainted (masked areas filled).
 </div>
 
 <div class="row">
@@ -70,13 +75,13 @@ Signal files:
     </div>
 </div>
 <div class="caption">
-    Figure 2: This plot displays the first time frame for a single planet observation, comparing three stages of the AIRS-CH0 detector data.
-
-Original (left column): Calibrated raw images after gain and offset correction, which may still contain hot/dead pixels and other detector artifacts.
-
-Processed (middle column): Images after masking bad pixels and applying cleaning steps such as dark and flat field corrections. Masked regions appear as missing or blank areas.
-
-Inpainted (right column): Images where missing or corrupted pixels have been filled using inpainting, resulting in fully continuous frames.
+  Figure 4: Single planet observation AIRS-CH0 data, single time frame.
+  <br>
+  <strong>Left:</strong> Calibrated raw (post-gain/offset, with artifacts).
+  <br>
+  <strong>Middle:</strong> Processed (bad pixels masked, dark/flat corrected).
+  <br>
+  <strong>Right:</strong> Inpainted (masked areas filled).
 
 </div>
 

@@ -23,6 +23,24 @@ Signal files:
 
 See Figures 1 and 2 for examples of the unprocessed and preprocessed FGS1 and AIRS-CH0 data.
 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/FGS1.png" title="AIRS-CH0 Calibrated Image Single Time Frame" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Figure 1: Calibrated FGS1 image after ADC gain/offset correction for a single time frame and a single planet observation. At a single timepoint, the image represents 32x32 spatial pixels.
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/AIRS.png" title="FGS1 Calibrated Image Single Time Frame" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Figure 2: Calibrated AIRS-CH0 image after ADC gain/offset correction for a single time frame and a single planet observation. At a single timepoint, the image represents 32 spatial x 356 wavelength pixels.
+</div>
+
 **PreProcessing**
 
 <div class="row">
@@ -31,7 +49,7 @@ See Figures 1 and 2 for examples of the unprocessed and preprocessed FGS1 and AI
     </div>
 </div>
 <div class="caption">
-  Figure 1: Single planet observation (FGS1 detector), first time frame.
+  Figure 3: Single planet observation (FGS1 detector), first time frame.
   <br>
   <strong>Left:</strong> Calibrated raw (post-gain/offset, with artifacts).
   <br>

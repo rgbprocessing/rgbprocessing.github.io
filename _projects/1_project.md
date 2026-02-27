@@ -48,6 +48,7 @@ Signal files:
 </div>
 
 The dataset also contains:
+
 - Conversion parameters for restoring the original data range.
 - Axis information for both signal instruments.
 - Planetary information (planetary mass, orbital eccentricity, orbital period, semi-major axis, orbital inclination) and stellar information (stellar radius, stellar mass, stellar effective temperature).

@@ -21,8 +21,6 @@ Signal files:
 - FGS1 data comes from Ariel's Fine Guidance System (FGS) and provides high-precision photometry of the target star in the visible light spectrum with a sensitivity between 0.60 and 0.80 µm.
 - AIRS-CH0 data, from the Ariel InfraRed Spectrometer (AIRS), has sensitivity between 1.95 and 3.90 µm.
 
-See Figures 1 and 2 for examples of the unprocessed and preprocessed FGS1 and AIRS-CH0 data.
-
 <div class="row">
   <div class="col-sm mt-3 mt-md-0 d-flex justify-content-center">
     {% include figure.liquid loading="eager" path="assets/img/FGS1.png" 

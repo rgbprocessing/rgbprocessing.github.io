@@ -36,6 +36,7 @@ Original (left column): Calibrated raw images after gain and offset correction, 
 Processed (middle column): Images after masking bad pixels and applying cleaning steps such as dark and flat field corrections. Masked regions appear as missing or blank areas.
 
 Inpainted (right column): Images where missing or corrupted pixels have been filled using inpainting, resulting in fully continuous frames.
+
 </div>
 
 <div class="row">
@@ -51,8 +52,8 @@ Original (left column): Calibrated raw images after gain and offset correction, 
 Processed (middle column): Images after masking bad pixels and applying cleaning steps such as dark and flat field corrections. Masked regions appear as missing or blank areas.
 
 Inpainted (right column): Images where missing or corrupted pixels have been filled using inpainting, resulting in fully continuous frames.
-</div>
 
+</div>
 
 Additional data:
 

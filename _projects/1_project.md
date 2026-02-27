@@ -47,13 +47,15 @@ Signal files:
   At a single timepoint, the image represents 32 spatial x 356 wavelength pixels.
 </div>
 
-The dataset also contains:
-
-- Conversion parameters for restoring the original data range.
-- Axis information for both signal instruments.
-- Planetary information (planetary mass, orbital eccentricity, orbital period, semi-major axis, orbital inclination) and stellar information (stellar radius, stellar mass, stellar effective temperature).
+The dataset also contains conversion parameters for restoring the original data range, axis information for both signal instruments, and planetary information (planetary mass, orbital eccentricity, orbital period, semi-major axis, orbital inclination) and stellar information (stellar radius, stellar mass, stellar effective temperature).
 
 **PreProcessing**
+
+First we load and calibrate the signals. We mask hot and dead pixels, apply non-linearity correction, apply flat field correction, sutract the dark current background, and perform correlated double sampling.
+
+Then we use time binning to synchronize the FGS1 and AIRS-CH0 data as well as eliminate the alternating high/low flux levels due to the observing mode of instruments. We inpaint the masked regions using biharmonic interpolation across time channels, and then we sum across the spatial axes to produce wavelength x time light curves.
+
+The final steps to prepare the data for our model are median filtering to remove spikes and other noise and downsampling to further reduce noise and model size.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">

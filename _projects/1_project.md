@@ -10,9 +10,21 @@ related_publications: false
 
 **Competition Overview**
 
-When an exoplanet passes in front of its host star, a fraction of the starlight filters through the planet's atmosphere. We can use these transit observations to recover the exoplanet spectrum composition. The goal of this competition is to recover exoplanet spectra from simulated transit data that incorporates realistic effects such as stellar limb darkening and diverse atmospheric models, designed to reflect the conditions expected from the Ariel mission. See the [kaggle competition overview](https://www.kaggle.com/competitions/ariel-data-challenge-2025/overview) for details.
+When an exoplanet passes in front of its host star, a fraction of the starlight filters through the planet's atmosphere. We can use these transit observations to recover the exoplanet spectrum composition. The goal of this competition is to recover exoplanet spectra from simulated transit data that incorporates realistic effects such as stellar limb darkening and diverse atmospheric models designed to reflect the conditions expected from the Ariel mission. See the [kaggle competition overview](https://www.kaggle.com/competitions/ariel-data-challenge-2025/overview) for details.
 
 **Data**
+
+The dataset includes two different time series signal files per observation as well as some general information about the star and planet pair such as their mass and orbit characteristics. See the [kaggle dataset](https://www.kaggle.com/competitions/ariel-data-challenge-2025/data) for details.
+
+Signal files:
+- FGS1 data comes from Ariel's Fine Guidance System (FGS) and provides high-precision photometry of the target star in the visible light spectrum with a sensitivity between 0.60 and 0.80 µm.
+- AIRS-CH0 data, from the Ariel InfraRed Spectrometer (AIRS), has sensitivity between 1.95 and 3.90 µm.
+
+See Figure 1 for examples of the unprocessed and preprocessed FGS1 and AIRS-CH0 data.
+
+
+
+Additional data:
 
 **Solution Overview**
 

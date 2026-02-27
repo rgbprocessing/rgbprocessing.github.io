@@ -25,7 +25,7 @@ See Figures 1 and 2 for examples of the unprocessed and preprocessed FGS1 and AI
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/FGS1.png" title="AIRS-CH0 Calibrated Image Single Time Frame" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/FGS1.png" title="FGS1 Calibrated Image Single Time Frame" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -34,7 +34,7 @@ See Figures 1 and 2 for examples of the unprocessed and preprocessed FGS1 and AI
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/AIRS.png" title="FGS1 Calibrated Image Single Time Frame" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/AIRS.png" title="AIRS-CH0 Calibrated Image Single Time Frame" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">

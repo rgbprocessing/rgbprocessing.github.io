@@ -43,6 +43,8 @@ See Figures 1 and 2 for examples of the unprocessed and preprocessed FGS1 and AI
 
 **PreProcessing**
 
+
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/FGS10.png" title="FGS1 data" class="img-fluid rounded z-depth-1" %}

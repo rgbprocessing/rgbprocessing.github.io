@@ -27,7 +27,7 @@ See Figures 1 and 2 for examples of the unprocessed and preprocessed FGS1 and AI
   <div class="col-sm mt-3 mt-md-0 d-flex justify-content-center">
     {% include figure.liquid loading="eager" path="assets/img/FGS1.png" 
        title="FGS1 Calibrated Image Single Time Frame" 
-       class="img-fluid rounded z-depth-1" style="max-height: 375px; width: auto; object-fit: contain;" %}
+       class="img-fluid rounded z-depth-1" style="max-height: 475px; width: auto; object-fit: contain;" %}
   </div>
 </div>
 <div class="caption">

@@ -24,18 +24,22 @@ Signal files:
 See Figures 1 and 2 for examples of the unprocessed and preprocessed FGS1 and AIRS-CH0 data.
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/FGS1.png" title="FGS1 Calibrated Image Single Time Frame" class="img-fluid rounded z-depth-1" %}
-    </div>
+  <div class="col-sm mt-3 mt-md-0 d-flex justify-content-center">
+    {% include figure.liquid loading="eager" path="assets/img/FGS1.png" 
+       title="FGS1 Calibrated Image Single Time Frame" 
+       class="img-fluid rounded z-depth-1" style="max-height: 300px; width: auto; height: 100%; object-fit: contain;" %}
+  </div>
 </div>
 <div class="caption">
     Figure 1: Calibrated FGS1 image after ADC gain/offset correction for a single time frame and a single planet observation. At a single timepoint, the image represents 32x32 spatial pixels.
 </div>
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/AIRS.png" title="AIRS-CH0 Calibrated Image Single Time Frame" class="img-fluid rounded z-depth-1" %}
-    </div>
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/AIRS.png" 
+       title="AIRS-CH0 Calibrated Image Single Time Frame" 
+       class="img-fluid rounded z-depth-1" style="height: 300px; width: 100%; object-fit: cover;" %}
+  </div>
 </div>
 <div class="caption">
     Figure 2: Calibrated AIRS-CH0 image after ADC gain/offset correction for a single time frame and a single planet observation. At a single timepoint, the image represents 32 spatial x 356 wavelength pixels.

@@ -112,7 +112,7 @@ One of the challenges of this dataset is that it contains some incomplete transi
     </div>
 </div>
 <div class="caption">
-    <strong>Figure 6:</strong> Examples of incomplete transit edge cases *(b)* & *(d)* where onset and offset detection failed versus typical cases *(a)* and *(c)*.
+    <strong>Figure 6:</strong> Examples of incomplete transit edge cases <em>(b)</em> & <em>(d)</em> where onset and offset detection failed versus typical cases <em>(a)</em> and <em>(c)</em>.
 </div>
 
 Solutions for the previous iteration of this project found success using signal processing to find the spectras [[1]](https://www.kaggle.com/code/vitalykudelya/neurips-non-ml-transit-curve-fitting). Building off this work we investigated the effectiveness of similar techniques on the 2025 dataset which used more realistic and complex simulations. <strong>Figure 7</strong> shows the approximate transit depth calculated from the ground truth spectra and the observed light curve. We found that the ground truth value is not at the minimum or any fixed percentage of the light curve transit depth and depends on additional characteristics of the transit. From this we determined that our model should incorporate time signal processing to pick up on additional features of the light curve as well as the transit, planet, and star data.

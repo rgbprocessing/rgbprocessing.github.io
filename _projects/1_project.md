@@ -29,7 +29,7 @@ Signal files:
   </div>
 </div>
 <div class="caption">
-    Figure 1: Calibrated FGS1 image after ADC gain/offset correction for a single time frame and a single planet observation. 
+    <strong>Figure 1:</strong> Calibrated FGS1 image after ADC gain/offset correction for a single time frame and a single planet observation. 
   <br>
   At a single timepoint, the image represents 32x32 spatial pixels.
 </div>
@@ -42,7 +42,7 @@ Signal files:
   </div>
 </div>
 <div class="caption">
-    Figure 2: Calibrated AIRS-CH0 image after ADC gain/offset correction for a single time frame and a single planet observation. 
+    <strong>Figure 2:</strong> Calibrated AIRS-CH0 image after ADC gain/offset correction for a single time frame and a single planet observation. 
   <br>
   At a single timepoint, the image represents 32 spatial x 356 wavelength pixels.
 </div>
@@ -78,13 +78,13 @@ The final steps to prepare the data for our model are median filtering to remove
     </div>
 </div>
 <div class="caption">
-  Figure 4: Single planet observation AIRS-CH0 data, single time frame.
+  <strong>Figure 4:</strong> Single planet observation AIRS-CH0 data, single time frame.
   <br>
-  <strong>Left:</strong> Calibrated raw (post-gain/offset, with artifacts).
+  <em>Left:</em> Calibrated raw (post-gain/offset, with artifacts).
   <br>
-  <strong>Middle:</strong> Processed (bad pixels masked, dark/flat corrected).
+  <em>Middle:</em> Processed (bad pixels masked, dark/flat corrected).
   <br>
-  <strong>Right:</strong> Inpainted (masked areas filled).
+  <em>Right:</em> Inpainted (masked areas filled).
 
 </div>
 
@@ -102,7 +102,7 @@ Solution Summary
     </div>
 </div>
 <div class="caption">
-    Figure X: Model flowchart. The input is the pre-processed data array x, and the outputs are the predictions for the requested wavelengths and the associated sigma values.
+    <strong>Figure X:</strong> Model flowchart. The input is the pre-processed data array x, and the outputs are the predictions for the requested wavelengths and the associated sigma values.
 </div>
 
 <div class="row">
@@ -111,5 +111,5 @@ Solution Summary
     </div>
 </div>
 <div class="caption">
-    Figure X: Detailed view of the Time Reducing Residual Block N for N as 1 through 6.
+    <strong>Figure X:</strong> Detailed view of the Time Reducing Residual Block N for N as 1 through 6.
 </div>

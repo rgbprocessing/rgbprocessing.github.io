@@ -53,9 +53,9 @@ The dataset also contains conversion parameters for restoring the original data 
 
 First we load and calibrate the signals. We mask hot and dead pixels, apply non-linearity correction, apply flat field correction, sutract the dark current background, and perform correlated double sampling.
 
-Then we use time binning to synchronize the FGS1 and AIRS-CH0 data as well as eliminate the alternating high/low flux levels due to the observing mode of instruments. We inpaint the masked regions using biharmonic interpolation across time channels, and then we sum across the spatial axes to produce wavelength x time light curves.
+Then we use time binning to synchronize the FGS1 and AIRS-CH0 data as well as eliminate the alternating high/low flux levels due to the observing mode of instruments. We inpaint the masked regions using biharmonic interpolation across time channels, and then we sum across the spatial axes to produce wavelength x time light curves. See <strong>Figure 3</strong> and <strong>Figure 4</strong> for data examples.
 
-The final steps to prepare the data for our model are median filtering to remove spikes and other noise and downsampling to further reduce noise and model size.
+The final steps to prepare the data for our model are median filtering to remove spikes and other noise and downsampling to further reduce noise and model size (<strong>Figure 5</strong>).
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -153,6 +153,6 @@ Solution Summary
 ## Citations
 
 **[1]** Kudelya, V. _NeurIPS non-ML transit curve fitting_ [Computer software]. Kaggle.
-[[**https://www.kaggle.com/code/vitalykudelya/neurips-non-ml-transit-curve-fitting**](https://www.kaggle.com/code/vitalykudelya/neurips-non-ml-transit-curve-fitting)](https://www.kaggle.com/code/vitalykudelya/neurips-non-ml-transit-curve-fitting)
+[https://www.kaggle.com/competitions/ariel-data-challenge-2025/data](https://www.kaggle.com/code/vitalykudelya/neurips-non-ml-transit-curve-fitting)
 
 **[2]** C. Truong, L. Oudre, N. Vayatis, "Selective review of offline change point detection methods," _Signal Processing_, vol. 167, p. 107299, 2020.

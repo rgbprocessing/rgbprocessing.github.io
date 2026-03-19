@@ -112,18 +112,18 @@ One of the challenges of this dataset is that it contains some incomplete transi
     </div>
 </div>
 <div class="caption">
-    <strong>Figure 6:</strong> Model flowchart. The input is the pre-processed data array x, and the outputs are the predictions for the requested wavelengths and the associated sigma values.
+    <strong>Figure 6:</strong> Example of incomplete transit edge case *(right)* where onset and offset detection failed versus typical case *(left)*.
 </div>
 
 Solutions for the previous iteration of this project found success using signal processing to find the spectras [[1](https://www.kaggle.com/competitions/ariel-data-challenge-2025/data)]. Building off this work we investigated the effectiveness of similar techniques on the 2025 dataset which used more realistic and complex simulations. <strong>Figure 7</strong> shows the approximate transit depth calculated from the ground truth spectra and the observed light curve. We found that the ground truth value is not at the minimum or any fixed percentage of the light curve transit depth and depends on additional characteristics of the transit. From this we determined that our model should incorporate time signal processing to pick up on additional features of the light curve as well as the transit, planet, and star data.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/arielmodel_lightdark.drawio.svg" title="Model Flowchart" class="img-fluid rounded z-depth-0" %}
+        {% include figure.liquid loading="eager" path="assets/img/transitcurves.png" title="Transit Curves" class="img-fluid rounded z-depth-0" %}
     </div>
 </div>
 <div class="caption">
-    <strong>Figure 7:</strong> Model flowchart. The input is the pre-processed data array x, and the outputs are the predictions for the requested wavelengths and the associated sigma values.
+    <strong>Figure 7:</strong> Transit light curves with depth calculated from ground truth spectra values for 3 different planets showcasing cases where the value is around the light curve minimum, above the minimum, and below the minimum.
 </div>
 
 **Solution Overview**

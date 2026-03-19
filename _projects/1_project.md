@@ -131,11 +131,12 @@ Solutions for the previous iteration of this project found success using signal 
 [kaggle solution writeup](https://www.kaggle.com/competitions/ariel-data-challenge-2025/writeups/33rd-place-solution) (including code)
 
 **Model**
-The overall model architecture is shown in Figure 2. The preprocessed data [wavelength x time] is normalized per wavelength and passed through a Time-Reducing Residual Stack. The resulting feature map is pooled and then concatenated with the wavelength means z-scores, the wavelength standard deviations z-scores, and the normalized planet features. These scores are calculated using summary statistics from the entire dataset in order to incorporate information about the sample's placement in the population distribution into the model after our earlier observations shown in Figure 1. The combined vector is passed through a fully connected layer, whose output feeds three separate fully connected output heads. The first two heads are used to compute the per-wavelength prediction, and the third head is used for the uncertainty (sigma) values. To calculate the prediction, we unnormalize the first two outputs using the sample per wavelength mean and standard deviation and then calculate the relative change between them expressed as a fraction. We train the model to output log(sigma) so we take the exponential of the third output head for our final sigma value.
 
-The Time-Reducing Residual Block details are shown in Figure 3. In the figure N represents the block number from 1 to 6 since 6 blocks are stacked in the final model. The wavelength dimension uses circular padding and increasing kernel dilation 3N-1 so that all of the wavelengths' features are convolved with each other within 6 stacked residual blocks. The time dimension uses 0 padding and a kernel dilation of 1 so the time field of view remains within the nearest times from small increments to large increments as the time dimension is pooled in successive blocks. In our model we used a time dimension pooling kernel of 4 for the first 4 blocks and then eased off down to 2 to maintain the desired data size for a 6 block stack and to prioritize faster compression of the time dimension earlier.
+The overall model architecture is shown in <strong>Figure 8</strong>. The preprocessed data is normalized per wavelength, downsampleed, and passed through a Time-Reducing Residual Stack. We concatenate this with normalized information for the wavelength means, standard deviation, and transit, planet, and star features. This is included to provide additional transit information as well as data about each observation's placement in the population distribution of the dataset after our observations in <strong>Figure 7</strong>. The combined feature vector is passed through a series of fully connected layers with 3 output heads. We use the relative change between the first two heads as our final prediction, and we calculate the uncertainty values from the third head.
 
-We trained the model with a combined loss utilizing both MSE as well as the GLL error used for scoring.
+The Time-Reducing Residual Block (shown in <strong>Figure 3</strong>) reduces the time dimension with convolutional layers and maxpooling while enhancing wavelength cross features using circular padding and dilation in the wavelength dimension. N represents the block number from 1 to 6 in the stack where the dilation increases over time so all wavelengths have features that are convolved somewhere in the stack. The time dimension starts with a small field of view capturing local features that increases due to max pooling in subsequent blocks. The max pooling rate is selected to quickly compress the large time dimension in early blocks and ease off in later blocks to maintain the desired data size for a 6 block stack necessary for all wavelength cross convolutions.
+
+We trained the model with a combined Mean Squared Error and Gaussian Log-likelihood loss function.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -143,7 +144,7 @@ We trained the model with a combined loss utilizing both MSE as well as the GLL 
     </div>
 </div>
 <div class="caption">
-    <strong>Figure X:</strong> Model flowchart. The input is the pre-processed data array x, and the outputs are the predictions for the requested wavelengths and the associated sigma values.
+    <strong>Figure 8:</strong> Model flowchart. The input is the pre-processed data array x, and the outputs are the predictions for the requested wavelengths and the associated sigma values.
 </div>
 
 <div class="row">
@@ -152,7 +153,7 @@ We trained the model with a combined loss utilizing both MSE as well as the GLL 
     </div>
 </div>
 <div class="caption">
-    <strong>Figure X:</strong> Detailed view of the Time Reducing Residual Block N for N as 1 through 6.
+    <strong>Figure 9:</strong> Detailed view of the Time Reducing Residual Block N for N as 1 through 6.
 </div>
 
 **Augmentation**

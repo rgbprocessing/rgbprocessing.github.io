@@ -49,9 +49,9 @@ Signal files:
 
 The dataset also contains conversion parameters for restoring the original data range, axis information for both signal instruments, and planetary information (planetary mass, orbital eccentricity, orbital period, semi-major axis, orbital inclination) and stellar information (stellar radius, stellar mass, stellar effective temperature).
 
-**PreProcessing**
+**Preprocessing**
 
-First we load and calibrate the signals. We mask hot and dead pixels, apply non-linearity correction, apply flat field correction, sutract the dark current background, and perform correlated double sampling.
+First we load and calibrate the signals. We mask hot and dead pixels, apply non-linearity correction, apply flat field correction, subtract the dark current background, and perform correlated double sampling.
 
 Then we use time binning to synchronize the FGS1 and AIRS-CH0 data as well as eliminate the alternating high/low flux levels due to the observing mode of instruments. We inpaint the masked regions using biharmonic interpolation across time channels, and then we sum across the spatial axes to produce wavelength x time light curves. See <strong>Figure 3</strong> and <strong>Figure 4</strong> for data examples.
 
@@ -115,7 +115,7 @@ One of the challenges of this dataset is that it contains some incomplete transi
     <strong>Figure 6:</strong> Examples of incomplete transit edge cases <em>(b)</em> & <em>(d)</em> where onset and offset detection failed versus typical cases <em>(a)</em> and <em>(c)</em>.
 </div>
 
-Solutions for the previous iteration of this project found success using signal processing to find the spectras [[1]](https://www.kaggle.com/code/vitalykudelya/neurips-non-ml-transit-curve-fitting). Building off this work we investigated the effectiveness of similar techniques on the 2025 dataset which used more realistic and complex simulations. <strong>Figure 7</strong> shows the approximate transit depth calculated from the ground truth spectra and the observed light curve. We found that the ground truth value is not at the minimum or any fixed percentage of the light curve transit depth and depends on additional characteristics of the transit. From this we determined that our model should incorporate time signal processing to pick up on additional features of the light curve as well as the transit, planet, and star data.
+Solutions for the previous iteration of this project found success using signal processing to find the spectra [[1]](https://www.kaggle.com/code/vitalykudelya/neurips-non-ml-transit-curve-fitting). Building off this work we investigated the effectiveness of similar techniques on the 2025 dataset which used more realistic and complex simulations. <strong>Figure 7</strong> shows the approximate transit depth calculated from the ground truth spectra and the observed light curve. We found that the ground truth value is not at the minimum or any fixed percentage of the light curve transit depth and depends on additional characteristics of the transit. From this we determined that our model should incorporate time signal processing to pick up on additional features of the light curve as well as the transit, planet, and star data.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -132,7 +132,7 @@ Solutions for the previous iteration of this project found success using signal 
 
 **Model**
 
-The overall model architecture is shown in <strong>Figure 8</strong>. The preprocessed data is normalized per wavelength, downsampleed, and passed through a Time-Reducing Residual Stack. We concatenate this with normalized information for the wavelength means, standard deviation, and transit, planet, and star features. This is included to provide additional transit information as well as data about each observation's placement in the population distribution of the dataset after our observations in <strong>Figure 7</strong>. The combined feature vector is passed through a series of fully connected layers with 3 output heads. We use the relative change between the first two heads as our final prediction, and we calculate the uncertainty values from the third head.
+The overall model architecture is shown in <strong>Figure 8</strong>. The preprocessed data is normalized per wavelength, downsampled, and passed through a Time-Reducing Residual Stack. We concatenate this with normalized information for the wavelength means, standard deviation, and transit, planet, and star features. This is included to provide additional transit information as well as data about each observation's placement in the population distribution of the dataset after our observations in <strong>Figure 7</strong>. The combined feature vector is passed through a series of fully connected layers with 3 output heads. We use the relative change between the first two heads as our final prediction, and we calculate the uncertainty values from the third head.
 
 The Time-Reducing Residual Block (shown in <strong>Figure 9</strong>) reduces the time dimension with convolutional layers and maxpooling while enhancing wavelength cross features using circular padding and dilation in the wavelength dimension. N represents the block number from 1 to 6 in the stack where the dilation increases over time so all wavelengths have features that are convolved somewhere in the stack. The time dimension starts with a small field of view capturing local features that increases due to max pooling in subsequent blocks. The max pooling rate is selected to quickly compress the large time dimension in early blocks and ease off in later blocks to maintain the desired data size for a 6 block stack necessary for all wavelength cross convolutions.
 
@@ -175,3 +175,5 @@ Our model achieved a silver medal (33rd place), demonstrating competitive perfor
 **[2]** C. Truong, L. Oudre, N. Vayatis, "Selective review of offline change point detection methods," _Signal Processing_, vol. 167, p. 107299, 2020.
 
 **[3]** B. Boudiba, "ruptures," _PyPI_, Available: [https://pypi.org/project/ruptures/](https://pypi.org/project/ruptures/).
+
+**[4]** K. H. Yip et al., "NeurIPS - Ariel Data Challenge 2025," _Kaggle_, Available: [https://kaggle.com/competitions/ariel-data-challenge-2025](https://kaggle.com/competitions/ariel-data-challenge-2025).

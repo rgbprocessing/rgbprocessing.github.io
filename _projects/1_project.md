@@ -85,7 +85,21 @@ The final steps to prepare the data for our model are median filtering to remove
   <em>Middle:</em> Processed (bad pixels masked, dark/flat corrected).
   <br>
   <em>Right:</em> Inpainted (masked areas filled).
+</div>
 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/demo143065778_0.png" title="Median Filtered Data" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+  <strong>Figure 5:</strong> Median filtering pipeline preserves transit signal features while removing noise and outliers. 
+  <br>
+  <em>Top:</em> Preprocessed signal before median filtering. 
+  <br>
+  <em>Middle:</em> Median filtered signal. 
+  <br>
+  <em>Bottom:</em> Model training uses an additional stride, reducing the time dimension by a factor of around 10.
 </div>
 
 Additional data:

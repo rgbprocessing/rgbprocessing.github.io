@@ -63,13 +63,13 @@ The final steps to prepare the data for our model are median filtering to remove
     </div>
 </div>
 <div class="caption">
-  Figure 3: Single planet observation FGS1 data, single time frame.
+  <strong>Figure 3:</strong> Single planet observation FGS1 data, single time frame.
   <br>
-  <strong>Left:</strong> Calibrated raw (post-gain/offset, with artifacts).
+  <em>Left:</em> Calibrated raw (post-gain/offset, with artifacts).
   <br>
-  <strong>Middle:</strong> Processed (bad pixels masked, dark/flat corrected).
+  <em>Middle:</em> Processed (bad pixels masked, dark/flat corrected).
   <br>
-  <strong>Right:</strong> Inpainted (masked areas filled).
+  <em>Right:</em> Inpainted (masked areas filled).
 </div>
 
 <div class="row">

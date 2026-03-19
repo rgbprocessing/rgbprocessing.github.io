@@ -25,7 +25,7 @@ Signal files:
   <div class="col-sm mt-3 mt-md-0 d-flex justify-content-center">
     {% include figure.liquid loading="eager" path="assets/img/FGS1.png" 
        title="FGS1 Calibrated Image Single Time Frame" 
-       class="img-fluid rounded z-depth-1" style="max-height: 475px; width: auto; object-fit: contain;" %}
+       class="img-fluid rounded z-depth-0" style="max-height: 475px; width: auto; object-fit: contain;" %}
   </div>
 </div>
 <div class="caption">
@@ -38,7 +38,7 @@ Signal files:
   <div class="col-sm mt-3 mt-md-0">
     {% include figure.liquid loading="eager" path="assets/img/AIRS.png" 
        title="AIRS-CH0 Calibrated Image Single Time Frame" 
-       class="img-fluid rounded z-depth-1" style="height: 100%; width: 100%; object-fit: cover;" %}
+       class="img-fluid rounded z-depth-0" style="height: 100%; width: 100%; object-fit: cover;" %}
   </div>
 </div>
 <div class="caption">

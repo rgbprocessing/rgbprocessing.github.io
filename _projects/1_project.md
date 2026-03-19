@@ -97,7 +97,7 @@ The final steps to prepare the data for our model are median filtering to remove
   <br>
   <em>Top:</em> Preprocessed signal transit signal (summation across spatial dimension) before median filtering. 
   <br>
-  <em>Middle:</em> Median filtered signal. 
+  <em>Middle:</em> Median filtered signal using large kernel size.
   <br>
   <em>Bottom:</em> Model training uses an additional stride, downsampling the time dimension by a factor of around 10 with varying offsets. As seen in the figure, features are preserved in the downsample.
 </div>

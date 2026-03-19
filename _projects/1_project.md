@@ -152,7 +152,7 @@ Solution Summary
 
 ## Citations
 
-**[1]** Kudelya, V. *NeurIPS non-ML transit curve fitting* [Computer software]. Kaggle. 
+**[1]** Kudelya, V. _NeurIPS non-ML transit curve fitting_ [Computer software]. Kaggle.
 [[**https://www.kaggle.com/code/vitalykudelya/neurips-non-ml-transit-curve-fitting**](https://www.kaggle.com/code/vitalykudelya/neurips-non-ml-transit-curve-fitting)](https://www.kaggle.com/code/vitalykudelya/neurips-non-ml-transit-curve-fitting)
 
-**[2]** C. Truong, L. Oudre, N. Vayatis, "Selective review of offline change point detection methods," *Signal Processing*, vol. 167, p. 107299, 2020.
+**[2]** C. Truong, L. Oudre, N. Vayatis, "Selective review of offline change point detection methods," _Signal Processing_, vol. 167, p. 107299, 2020.

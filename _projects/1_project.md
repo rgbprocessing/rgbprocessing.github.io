@@ -55,8 +55,6 @@ First we load and calibrate the signals. We mask hot and dead pixels, apply non-
 
 Then we use time binning to synchronize the FGS1 and AIRS-CH0 data as well as eliminate the alternating high/low flux levels due to the observing mode of instruments. We inpaint the masked regions using biharmonic interpolation across time channels, and then we sum across the spatial axes to produce wavelength x time light curves. See <strong>Figure 3</strong> and <strong>Figure 4</strong> for data examples.
 
-The final steps to prepare the data for our model are median filtering to remove spikes and other noise and downsampling to further reduce noise and model size (<strong>Figure 5</strong>).
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/FGS10.png" title="FGS1 data" class="img-fluid rounded z-depth-0" %}
@@ -86,6 +84,8 @@ The final steps to prepare the data for our model are median filtering to remove
   <br>
   <em>Right:</em> Inpainted (masked areas filled).
 </div>
+
+The final steps to prepare the data for our model are median filtering to remove spikes and other noise and downsampling to further reduce noise and model size (<strong>Figure 5</strong>).
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">

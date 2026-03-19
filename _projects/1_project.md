@@ -152,8 +152,8 @@ Solution Summary
 
 ## Citations
 
-**[1]** V. Kudelya, "NeurIPS non-ML transit curve fitting," *Kaggle*, Available: [https://www.kaggle.com/competitions/ariel-data-challenge-2025/data](https://www.kaggle.com/code/vitalykudelya/neurips-non-ml-transit-curve-fitting)
+**[1]** V. Kudelya, "NeurIPS non-ML transit curve fitting," _Kaggle_, Available: [https://www.kaggle.com/competitions/ariel-data-challenge-2025/data](https://www.kaggle.com/code/vitalykudelya/neurips-non-ml-transit-curve-fitting)
 
-**[2]** C. Truong, L. Oudre, N. Vayatis, "Selective review of offline change point detection methods," _Signal Processing_, vol. 167, p. 107299, 2020. 
+**[2]** C. Truong, L. Oudre, N. Vayatis, "Selective review of offline change point detection methods," _Signal Processing_, vol. 167, p. 107299, 2020.
 
-**[3]** B. Boudiba, "ruptures," *PyPI*, Available: [https://pypi.org/project/ruptures/](https://pypi.org/project/ruptures/).
+**[3]** B. Boudiba, "ruptures," _PyPI_, Available: [https://pypi.org/project/ruptures/](https://pypi.org/project/ruptures/).

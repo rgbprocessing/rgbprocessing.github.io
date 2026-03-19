@@ -158,26 +158,13 @@ We trained the model with a combined Mean Squared Error and Gaussian Log-likelih
 
 **Augmentation**
 
-To improve model generalization and robustness and decrease overfitting, we implemented several data augmentation techniques during training:
-
-Time Flipping: Each light curve was flipped along the time axis to expose the model to both forward and reversed transit scenarios.
-
-Variable Downsampling and Offsets: We used strides of 8, 9, or 10 and multiple random offsets, simulating the effect of time running at different speeds and producing light curves with varying sampling densities. This approach also increased the representation of incomplete transits, helping the model learn to handle edge cases and irregular data spans. Because the signals were median-filtered (kernel size 101), the incremental effect of offset variation is modest, but still introduces some diversity.
-
-Additive Linear Trend: For each wavelength channel, we injected a random linear signal with a maximum slope set equal to the channel’s own range. The maximum was set per wavelength, but the randomization was done per planet observation.
-
-Additive Sinusoidal Trend: For each wavelength channel we injected a random sinusoidal signal with low frequency.
-
-Planet Parameter Noise: Small, zero-mean Gaussian noise (σ = 0.1) was added to each set of normalized planet parameters fed into the model. This reduces overfitting and allows the network to be more robust to small errors or uncertainty in planet/star parameters.
+To improve model generalization and reduce overfitting, we implemented several data augmentation techniques including time flipping (reversing light curves), variable downsampling (strides of 8, 9, or 10 with random offsets to simulate different transit characteristics and incomplete transits), and additive linear and sinusoidal background signals. Additionally, we added Gaussian noise to the normalized transit parameters during training to reduce overfitting and build robustness to small errors or uncertainty in transit parameters.
 
 **Ensembling methods**
 
-To aggregate the model predictions for each planet, we explored several ensembling approaches seen in our submission notebook. We found that the basic average provided the best results due to how we were predicting our values and sigmas. Each planet had predictions from (potentially) multiple observations, 5 different offsets of stride 10, and multiple model predictions. Methods we tried:
+To aggregate predictions from multiple models and planet observations, we found that simple averaging of all predictions (both values and sigmas) per wavelength outperformed more complex ensembling strategies like best-sigma selection, top-N averaging, or uncertainty-weighted averaging.
 
-Basic Average: A simple average of all predictions for each wavelength channel for each planet, both for the value and the sigma.
-Best Sigma Selection: Selecting only the single set of predictions (per planet) with the lowest mean predicted uncertainty across all wavelengths.
-Best N Average: A simple average of the N rows of data per planet that had the lowest mean sigma values.
-Weighted Averaging: Weighted each prediction by the inverse of its predicted uncertainty, computing weighted means and associated uncertainties for each wavelength.
+**Conclusion**
 
 ## Citations
 

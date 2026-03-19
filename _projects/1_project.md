@@ -102,7 +102,29 @@ The final steps to prepare the data for our model are median filtering to remove
   <em>Bottom:</em> Model training uses an additional stride, downsampling the time dimension by a factor of around 10 with varying offsets. As seen in the figure, features are preserved in the downsample.
 </div>
 
-Additional data:
+**Dataset Analysis**
+
+One of the challenges of this dataset is that it contains some incomplete transit edge cases (examples in <strong>Figure 6</strong>). We considered using a BATMAN transit model to fit the data but ran into time constraints due to the complexity of doing so robustly. In our final solution we use varying downsampling and offsets of our input data to manufacture additional partial transit training cases.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/arielmodel_lightdark.drawio.svg" title="Model Flowchart" class="img-fluid rounded z-depth-0" %}
+    </div>
+</div>
+<div class="caption">
+    <strong>Figure 6:</strong> Model flowchart. The input is the pre-processed data array x, and the outputs are the predictions for the requested wavelengths and the associated sigma values.
+</div>
+
+Solutions for the previous iteration of this project found success using signal processing to find the spectras [1, 2, 3, 4]. Building off this work we investigated the effectiveness of similar techniques on the 2025 dataset which used more realistic and complex simulations. <strong>Figure 7</strong> shows the approximate transit depth calculated from the ground truth spectra and the observed light curve. We found that the ground truth value is not at the minimum or any fixed percentage of the light curve transit depth and depends on additional characteristics of the transit. From this we determined that our model should incorporate time signal processing to pick up on additional features of the light curve as well as the transit, planet, and star data.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/arielmodel_lightdark.drawio.svg" title="Model Flowchart" class="img-fluid rounded z-depth-0" %}
+    </div>
+</div>
+<div class="caption">
+    <strong>Figure 7:</strong> Model flowchart. The input is the pre-processed data array x, and the outputs are the predictions for the requested wavelengths and the associated sigma values.
+</div>
 
 **Solution Overview**
 
@@ -127,3 +149,10 @@ Solution Summary
 <div class="caption">
     <strong>Figure X:</strong> Detailed view of the Time Reducing Residual Block N for N as 1 through 6.
 </div>
+
+## Citations
+
+**[1]** Kudelya, V. *NeurIPS non-ML transit curve fitting* [Computer software]. Kaggle. 
+[[**https://www.kaggle.com/code/vitalykudelya/neurips-non-ml-transit-curve-fitting**](https://www.kaggle.com/code/vitalykudelya/neurips-non-ml-transit-curve-fitting)](https://www.kaggle.com/code/vitalykudelya/neurips-non-ml-transit-curve-fitting)
+
+**[2]** C. Truong, L. Oudre, N. Vayatis, "Selective review of offline change point detection methods," *Signal Processing*, vol. 167, p. 107299, 2020.

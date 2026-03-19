@@ -126,11 +126,16 @@ Solutions for the previous iteration of this project found success using signal 
     <strong>Figure 7:</strong> Transit light curves with depth calculated from ground truth spectra values for 3 different planets showcasing cases where the value is around the light curve minimum, above the minimum, and below the minimum.
 </div>
 
-**Solution Overview**
+## Solution
 
 [kaggle solution writeup](https://www.kaggle.com/competitions/ariel-data-challenge-2025/writeups/33rd-place-solution) (including code)
 
-Solution Summary
+**Model**
+The overall model architecture is shown in Figure 2. The preprocessed data [wavelength x time] is normalized per wavelength and passed through a Time-Reducing Residual Stack. The resulting feature map is pooled and then concatenated with the wavelength means z-scores, the wavelength standard deviations z-scores, and the normalized planet features. These scores are calculated using summary statistics from the entire dataset in order to incorporate information about the sample's placement in the population distribution into the model after our earlier observations shown in Figure 1. The combined vector is passed through a fully connected layer, whose output feeds three separate fully connected output heads. The first two heads are used to compute the per-wavelength prediction, and the third head is used for the uncertainty (sigma) values. To calculate the prediction, we unnormalize the first two outputs using the sample per wavelength mean and standard deviation and then calculate the relative change between them expressed as a fraction. We train the model to output log(sigma) so we take the exponential of the third output head for our final sigma value.
+
+The Time-Reducing Residual Block details are shown in Figure 3. In the figure N represents the block number from 1 to 6 since 6 blocks are stacked in the final model. The wavelength dimension uses circular padding and increasing kernel dilation 3N-1 so that all of the wavelengths' features are convolved with each other within 6 stacked residual blocks. The time dimension uses 0 padding and a kernel dilation of 1 so the time field of view remains within the nearest times from small increments to large increments as the time dimension is pooled in successive blocks. In our model we used a time dimension pooling kernel of 4 for the first 4 blocks and then eased off down to 2 to maintain the desired data size for a 6 block stack and to prioritize faster compression of the time dimension earlier.
+
+We trained the model with a combined loss utilizing both MSE as well as the GLL error used for scoring.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -149,6 +154,29 @@ Solution Summary
 <div class="caption">
     <strong>Figure X:</strong> Detailed view of the Time Reducing Residual Block N for N as 1 through 6.
 </div>
+
+**Augmentation**
+
+To improve model generalization and robustness and decrease overfitting, we implemented several data augmentation techniques during training:
+
+Time Flipping: Each light curve was flipped along the time axis to expose the model to both forward and reversed transit scenarios.
+
+Variable Downsampling and Offsets: We used strides of 8, 9, or 10 and multiple random offsets, simulating the effect of time running at different speeds and producing light curves with varying sampling densities. This approach also increased the representation of incomplete transits, helping the model learn to handle edge cases and irregular data spans. Because the signals were median-filtered (kernel size 101), the incremental effect of offset variation is modest, but still introduces some diversity.
+
+Additive Linear Trend: For each wavelength channel, we injected a random linear signal with a maximum slope set equal to the channel’s own range. The maximum was set per wavelength, but the randomization was done per planet observation.
+
+Additive Sinusoidal Trend: For each wavelength channel we injected a random sinusoidal signal with low frequency.
+
+Planet Parameter Noise: Small, zero-mean Gaussian noise (σ = 0.1) was added to each set of normalized planet parameters fed into the model. This reduces overfitting and allows the network to be more robust to small errors or uncertainty in planet/star parameters.
+
+**Ensembling methods**
+
+To aggregate the model predictions for each planet, we explored several ensembling approaches seen in our submission notebook. We found that the basic average provided the best results due to how we were predicting our values and sigmas. Each planet had predictions from (potentially) multiple observations, 5 different offsets of stride 10, and multiple model predictions. Methods we tried:
+
+Basic Average: A simple average of all predictions for each wavelength channel for each planet, both for the value and the sigma.
+Best Sigma Selection: Selecting only the single set of predictions (per planet) with the lowest mean predicted uncertainty across all wavelengths.
+Best N Average: A simple average of the N rows of data per planet that had the lowest mean sigma values.
+Weighted Averaging: Weighted each prediction by the inverse of its predicted uncertainty, computing weighted means and associated uncertainties for each wavelength.
 
 ## Citations
 

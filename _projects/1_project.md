@@ -164,7 +164,9 @@ To improve model generalization and reduce overfitting, we implemented several d
 
 To aggregate predictions from multiple models and planet observations, we found that simple averaging of all predictions (both values and sigmas) per wavelength outperformed more complex ensembling strategies like best-sigma selection, top-N averaging, or uncertainty-weighted averaging.
 
-**Conclusion**
+## Conclusion
+
+Our model achieved a silver medal (33rd place), demonstrating competitive performance despite time and compute constraints. While additional augmentation strategies showed promising early gains, resource limitations prevented full exploration. Future iterations would prioritize a lighterweight architecture for faster experimentation cycles. Explore the complete pipeline, from data analysis to results generation, [on kaggle](https://www.kaggle.com/competitions/ariel-data-challenge-2025/writeups/33rd-place-solution).
 
 ## Citations
 

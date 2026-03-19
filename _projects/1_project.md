@@ -115,7 +115,7 @@ One of the challenges of this dataset is that it contains some incomplete transi
     <strong>Figure 6:</strong> Model flowchart. The input is the pre-processed data array x, and the outputs are the predictions for the requested wavelengths and the associated sigma values.
 </div>
 
-Solutions for the previous iteration of this project found success using signal processing to find the spectras [1, 2, 3, 4]. Building off this work we investigated the effectiveness of similar techniques on the 2025 dataset which used more realistic and complex simulations. <strong>Figure 7</strong> shows the approximate transit depth calculated from the ground truth spectra and the observed light curve. We found that the ground truth value is not at the minimum or any fixed percentage of the light curve transit depth and depends on additional characteristics of the transit. From this we determined that our model should incorporate time signal processing to pick up on additional features of the light curve as well as the transit, planet, and star data.
+Solutions for the previous iteration of this project found success using signal processing to find the spectras [[1](https://www.kaggle.com/competitions/ariel-data-challenge-2025/data)]. Building off this work we investigated the effectiveness of similar techniques on the 2025 dataset which used more realistic and complex simulations. <strong>Figure 7</strong> shows the approximate transit depth calculated from the ground truth spectra and the observed light curve. We found that the ground truth value is not at the minimum or any fixed percentage of the light curve transit depth and depends on additional characteristics of the transit. From this we determined that our model should incorporate time signal processing to pick up on additional features of the light curve as well as the transit, planet, and star data.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -152,7 +152,8 @@ Solution Summary
 
 ## Citations
 
-**[1]** Kudelya, V. _NeurIPS non-ML transit curve fitting_ [Computer software]. Kaggle.
-[https://www.kaggle.com/competitions/ariel-data-challenge-2025/data](https://www.kaggle.com/code/vitalykudelya/neurips-non-ml-transit-curve-fitting)
+**[1]** V. Kudelya, "NeurIPS non-ML transit curve fitting," *Kaggle*, Available: [https://www.kaggle.com/competitions/ariel-data-challenge-2025/data](https://www.kaggle.com/code/vitalykudelya/neurips-non-ml-transit-curve-fitting)
 
-**[2]** C. Truong, L. Oudre, N. Vayatis, "Selective review of offline change point detection methods," _Signal Processing_, vol. 167, p. 107299, 2020.
+**[2]** C. Truong, L. Oudre, N. Vayatis, "Selective review of offline change point detection methods," _Signal Processing_, vol. 167, p. 107299, 2020. 
+
+**[3]** B. Boudiba, "ruptures," *PyPI*, Available: [https://pypi.org/project/ruptures/](https://pypi.org/project/ruptures/).

@@ -59,7 +59,7 @@ The final steps to prepare the data for our model are median filtering to remove
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/FGS10.png" title="FGS1 data" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/FGS10.png" title="FGS1 data" class="img-fluid rounded z-depth-0" %}
     </div>
 </div>
 <div class="caption">
@@ -74,7 +74,7 @@ The final steps to prepare the data for our model are median filtering to remove
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/AIRS0.png" title="AIRS-CH0 data" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/AIRS0.png" title="AIRS-CH0 data" class="img-fluid rounded z-depth-0" %}
     </div>
 </div>
 <div class="caption">
@@ -89,7 +89,7 @@ The final steps to prepare the data for our model are median filtering to remove
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/demo143065778_0.png" title="Median Filtered Data" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/demo143065778_0.png" title="Median Filtered Data" class="img-fluid rounded z-depth-0" %}
     </div>
 </div>
 <div class="caption">
@@ -112,7 +112,7 @@ Solution Summary
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/arielmodel_lightdark.drawio.svg" title="Model Flowchart" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/arielmodel_lightdark.drawio.svg" title="Model Flowchart" class="img-fluid rounded z-depth-0" %}
     </div>
 </div>
 <div class="caption">
@@ -121,7 +121,7 @@ Solution Summary
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/TRRB.drawio.svg" title="Time Reducing Residual Block" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/TRRB.drawio.svg" title="Time Reducing Residual Block" class="img-fluid rounded z-depth-0" %}
     </div>
 </div>
 <div class="caption">

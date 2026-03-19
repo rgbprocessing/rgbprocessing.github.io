@@ -93,13 +93,13 @@ The final steps to prepare the data for our model are median filtering to remove
     </div>
 </div>
 <div class="caption">
-  <strong>Figure 5:</strong> Median filtering pipeline preserves transit signal features while removing noise and outliers. 
+  <strong>Figure 5:</strong> Median filtering preserves transit signal features while removing noise and outliers. 
   <br>
-  <em>Top:</em> Preprocessed signal before median filtering. 
+  <em>Top:</em> Preprocessed signal transit signal (summation across spatial dimension) before median filtering. 
   <br>
   <em>Middle:</em> Median filtered signal. 
   <br>
-  <em>Bottom:</em> Model training uses an additional stride, reducing the time dimension by a factor of around 10.
+  <em>Bottom:</em> Model training uses an additional stride, downsampling the time dimension by a factor of around 10 with varying offsets. As seen in the figure, features are preserved in the downsample.
 </div>
 
 Additional data:

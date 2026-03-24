@@ -10,6 +10,8 @@ giscus_comments: true
 
 **Competition Overview**
 
+[kaggle competition](https://www.kaggle.com/competitions/czii-cryo-et-object-identification/overview)
+
 **Data**
 
 **Dataset Analysis**

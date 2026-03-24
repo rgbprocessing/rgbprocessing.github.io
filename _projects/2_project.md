@@ -49,4 +49,3 @@ The model consists of a multi-head 3D U-Net trained on two different tasks. The 
 <div class="caption">
     <strong>Figure 3:</strong> Particle detection flowchart. Non-maximum suppression is used to identify the most likely particles from the per-class heatmap and eliminate the already predicted regions.
 </div>
-

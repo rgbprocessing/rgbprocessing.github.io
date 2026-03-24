@@ -2,10 +2,10 @@
 layout: page
 title: project 3 with very long name
 description: a project that redirects to another website
-img: assets/img/7.jpg
+img: assets/img/cryomodel.drawio.svg
 redirect: https://unsplash.com
 importance: 3
-category: work
+category: competitions
 ---
 
 Every project has a beautiful feature showcase page.

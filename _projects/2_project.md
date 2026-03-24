@@ -15,7 +15,7 @@ category: competitions
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0 d-flex justify-content-center">
-    {% include figure.liquid loading="eager" path="assets/img/__results___14_0.png" 
+    {% include figure.liquid loading="eager" path="assets/img/results140.png" 
        title="Sample tomogram" 
        class="img-fluid rounded z-depth-0" style="height: 100%; width: 100%; object-fit: cover;" %}
   </div>

@@ -2,7 +2,7 @@
 layout: page
 title: project 2
 description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+img: assets/img/detectparticles.drawio.svg
 importance: 2
 category: competitions
 giscus_comments: true

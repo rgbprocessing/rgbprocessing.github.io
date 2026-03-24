@@ -1,6 +1,6 @@
 ---
 layout: page
-title: project 3 with very long name
+title: CZII - CryoET Object Identification
 description: a project that redirects to another website
 img: assets/img/cryomodel.drawio.svg
 importance: 3

@@ -5,7 +5,6 @@ description: Multi-head 3D U-Net with per-class center heatmaps and NMS
 img: assets/img/detectparticles.drawio.svg
 importance: 2
 category: competitions
-giscus_comments: true
 ---
 
 **Competition Overview**
@@ -14,7 +13,16 @@ giscus_comments: true
 
 **Data**
 
-**Dataset Analysis**
+<div class="row">
+  <div class="col-sm mt-3 mt-md-0 d-flex justify-content-center">
+    {% include figure.liquid loading="eager" path="assets/img/__results___14_0.png" 
+       title="Sample tomogram" 
+       class="img-fluid rounded z-depth-0" style="height: 100%; width: 100%; object-fit: cover;" %}
+  </div>
+</div>
+<div class="caption">
+    <strong>Figure 1:</strong> Sample tomogram with rough segmentations.
+</div>
 
 ## Solution
 

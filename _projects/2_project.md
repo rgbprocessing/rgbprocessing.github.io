@@ -11,6 +11,8 @@ category: competitions
 
 [kaggle competition](https://www.kaggle.com/competitions/czii-cryo-et-object-identification/overview)
 
+The goal of this competition is to identify particle centers of 5 differnt classes in 3D tomograms. The data contains 6 different particle types and their approximate radius: apo-ferritin, beta-amylase (not scored), beta-galactosidase, ribosome, thyroglobulin, virus-like-particle.
+
 **Data**
 
 <div class="row">

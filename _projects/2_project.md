@@ -12,8 +12,6 @@ giscus_comments: true
 
 **Data**
 
-
-
 **Dataset Analysis**
 
 ## Solution

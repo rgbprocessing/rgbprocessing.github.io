@@ -10,11 +10,7 @@ giscus_comments: true
 
 **Competition Overview**
 
-
-
 **Data**
-
-
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0 d-flex justify-content-center">
@@ -42,19 +38,11 @@ giscus_comments: true
   At a single timepoint, the image represents 32 spatial x 356 wavelength pixels.
 </div>
 
-
-
-
-
 **Dataset Analysis**
-
-
 
 ## Solution
 
-
 **Model**
-
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -76,16 +64,8 @@ giscus_comments: true
 
 **Augmentation**
 
-
-
 **Ensembling methods**
-
-
 
 ## Conclusion
 
-
-
 ## Citations
-
-

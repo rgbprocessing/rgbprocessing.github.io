@@ -30,7 +30,7 @@ ninja.data = [{
               window.location.href = "/projects/1_project.html";
             },},{id: "projects-czii-cryoet-object-identification",
           title: 'CZII - CryoET Object Identification',
-          description: "a project with a background image and giscus comments",
+          description: "Multi-head 3D U-Net with per-class center heatmaps and NMS",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project.html";
             },},{id: "projects-czii-cryoet-object-identification",

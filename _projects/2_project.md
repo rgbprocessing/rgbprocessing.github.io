@@ -1,6 +1,6 @@
 ---
 layout: page
-title: project 2
+title: CZII - CryoET Object Identification
 description: a project with a background image and giscus comments
 img: assets/img/detectparticles.drawio.svg
 importance: 2

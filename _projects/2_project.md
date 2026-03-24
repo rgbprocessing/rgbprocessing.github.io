@@ -23,12 +23,12 @@ giscus_comments: true
 <div class="row">
   <div class="col-sm mt-3 mt-md-0 d-flex justify-content-center">
     {% include figure.liquid loading="eager" path="assets/img/cryomodel.drawio.svg" 
-       title="Heatmap model" 
+       title="Heatmap prediction model" 
        class="img-fluid rounded z-depth-0" style="height: 100%; width: 100%; object-fit: cover;" %}
   </div>
 </div>
 <div class="caption">
-    <strong>Figure 1:</strong> Model
+    <strong>Figure 1:</strong> Heatmap prediction model using multi-head 3D U-Net trained on rough segmentation labels and particle center inverse distance data. The model uses overlapping input patches and a 3D gaussian filter to predict per-class center heatmaps.
 </div>
 
 <div class="row">
@@ -39,7 +39,7 @@ giscus_comments: true
   </div>
 </div>
 <div class="caption">
-    <strong>Figure 2:</strong> Particle Detection
+    <strong>Figure 2:</strong> Particle detection flowchart. Non-maximum suppression is used to identify the most likely particles from the per-class heatmap and eliminate the already predicted regions.
 </div>
 
 **Augmentation**

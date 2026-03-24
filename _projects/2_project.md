@@ -22,7 +22,7 @@ giscus_comments: true
   <div class="col-sm mt-3 mt-md-0 d-flex justify-content-center">
     {% include figure.liquid loading="eager" path="assets/img/cryomodel.drawio.svg" 
        title="Heatmap model" 
-       class="img-fluid rounded z-depth-0" style="max-height: 475px; width: auto; object-fit: contain;" %}
+       class="img-fluid rounded z-depth-0" style="height: 100%; width: 100%; object-fit: cover;" %}
   </div>
 </div>
 <div class="caption">

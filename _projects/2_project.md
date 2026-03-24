@@ -11,9 +11,7 @@ category: competitions
 
 [kaggle competition](https://www.kaggle.com/competitions/czii-cryo-et-object-identification/overview)
 
-The goal of this competition is to identify particle centers of 5 differnt classes in 3D tomograms. The data contains 6 different particle types and their approximate radius: apo-ferritin, beta-amylase (not scored), beta-galactosidase, ribosome, thyroglobulin, virus-like-particle.
-
-**Data**
+The goal of this competition is to identify particle centers of 5 different classes in 3D tomograms. The data contains 6 different particle types and their approximate radius: apo-ferritin, beta-amylase (not scored), beta-galactosidase, ribosome, thyroglobulin, virus-like-particle.
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0 d-flex justify-content-center">
@@ -29,6 +27,8 @@ The goal of this competition is to identify particle centers of 5 differnt class
 ## Solution
 
 **Model**
+
+The modelasjdifajsldfjal;sjdflia;sjdfal;sjdf;asljdfiasl;djfa;ldjsf
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0 d-flex justify-content-center">
@@ -52,10 +52,4 @@ The goal of this competition is to identify particle centers of 5 differnt class
     <strong>Figure 3:</strong> Particle detection flowchart. Non-maximum suppression is used to identify the most likely particles from the per-class heatmap and eliminate the already predicted regions.
 </div>
 
-**Augmentation**
-
-**Ensembling methods**
-
 ## Conclusion
-
-## Citations

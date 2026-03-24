@@ -21,7 +21,7 @@ category: competitions
   </div>
 </div>
 <div class="caption">
-    <strong>Figure 1:</strong> Sample tomogram with rough segmentations.
+    <strong>Figure 1:</strong> Sample 3D tomogram with rough segmentations.
 </div>
 
 ## Solution
@@ -36,7 +36,7 @@ category: competitions
   </div>
 </div>
 <div class="caption">
-    <strong>Figure 1:</strong> Heatmap prediction model using multi-head 3D U-Net trained on rough segmentation labels and particle center inverse distance data. The model uses overlapping input patches and a 3D gaussian filter to predict per-class center heatmaps.
+    <strong>Figure 2:</strong> Heatmap prediction model using multi-head 3D U-Net trained on rough segmentation labels and particle center inverse distance data. The model uses overlapping input patches and a 3D gaussian filter to predict per-class center heatmaps.
 </div>
 
 <div class="row">
@@ -47,7 +47,7 @@ category: competitions
   </div>
 </div>
 <div class="caption">
-    <strong>Figure 2:</strong> Particle detection flowchart. Non-maximum suppression is used to identify the most likely particles from the per-class heatmap and eliminate the already predicted regions.
+    <strong>Figure 3:</strong> Particle detection flowchart. Non-maximum suppression is used to identify the most likely particles from the per-class heatmap and eliminate the already predicted regions.
 </div>
 
 **Augmentation**

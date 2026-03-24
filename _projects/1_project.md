@@ -4,7 +4,7 @@ title: NeurIPS - Ariel Data Challenge 2025
 description: "33rd place solution: CNN ensemble with augmentation"
 img: assets/img/arielmodel_lightdark.drawio.svg
 importance: 1
-category: work
+category: competitions
 related_publications: false
 ---
 

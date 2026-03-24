@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CZII - CryoET Object Identification
-description: a project that redirects to another website
+description: 3D U-Net with class-specific center heatmaps and per-class NMS
 img: assets/img/cryomodel.drawio.svg
 importance: 3
 category: competitions

@@ -26,7 +26,7 @@ The goal of this competition is to identify particle centers of 5 different clas
 
 **Model**
 
-The model consists of a multi-head 3D U-Net trained on two different tasks. The first head predicts the multi-class rough segmentation mask using the radii and center positions from the training data. The model is trained on overlapping 3D patches using a 3D Gaussian for smooth inferencing prioritising predictions made more central in the patch. The second head predicts the inverse distance of the center positions resulting in a per-class heatmap. This is illustrated in <b>Figure 2</b>. The center positions are iteratively extracted using the maxima of the heatmap and non-maximum suppression based off of the radii of the most strongly predicted centers (see <b>Figure 3</b>.
+The model consists of a multi-head 3D U-Net trained on two different tasks. The first head predicts the multi-class rough segmentation mask using the radii and center positions from the training data. The model is trained on overlapping 3D patches using a 3D Gaussian for smooth inferencing prioritising predictions made more central in the patch. The second head predicts the inverse distance of the center positions resulting in a per-class heatmap. This is illustrated in <b>Figure 2</b>. The center positions are iteratively extracted using the maxima of the heatmap and non-maximum suppression based off of the radii of the most strongly predicted centers (see <b>Figure 3</b>).
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0 d-flex justify-content-center">
@@ -49,3 +49,7 @@ The model consists of a multi-head 3D U-Net trained on two different tasks. The 
 <div class="caption">
     <strong>Figure 3:</strong> Particle detection flowchart. Non-maximum suppression is used to identify the most likely particles from the per-class heatmap and eliminate the already predicted regions.
 </div>
+
+**Future Work**
+
+Future iterations would streamline the iterative peak extraction and NMS via vectorized operations. Additionally various augmentations would be investigated for improving performance and robustness.

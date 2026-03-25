@@ -28,8 +28,8 @@ ninja.data = [{
           description: "33rd place solution: CNN ensemble with augmentation",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project.html";
-            },},{id: "projects-czii-cryoet-object-identification",
-          title: 'CZII - CryoET Object Identification',
+            },},{id: "projects-cryoet-object-identification",
+          title: 'CryoET Object Identification',
           description: "Multi-head 3D U-Net with per-class center heatmaps and NMS",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project.html";

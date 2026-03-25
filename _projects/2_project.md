@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CZII - CryoET Object Identification
+title: CryoET Object Identification
 description: Multi-head 3D U-Net with per-class center heatmaps and NMS
 img: assets/img/cryomodelvert.drawio.svg
 importance: 2
@@ -9,7 +9,7 @@ category: competitions
 
 **Competition Overview**
 
-[kaggle competition](https://www.kaggle.com/competitions/czii-cryo-et-object-identification/overview)
+[CZII - CryoET Object Identification Kaggle Competition](https://www.kaggle.com/competitions/czii-cryo-et-object-identification/overview)
 
 The goal of this competition is to identify particle centers of 5 different classes in 3D tomograms. The data contains 6 different particle types and their approximate radius: apo-ferritin, beta-amylase (not scored), beta-galactosidase, ribosome, thyroglobulin, virus-like-particle.
 

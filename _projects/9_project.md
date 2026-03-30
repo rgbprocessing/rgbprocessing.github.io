@@ -3,8 +3,8 @@ layout: page
 title: Unwinnable game detection
 description: another project with an image 🎉
 img: assets/img/6.jpg
-importance: 2
-category: fun
+importance: 9
+category: research
 ---
 
 Every project has a beautiful feature showcase page.

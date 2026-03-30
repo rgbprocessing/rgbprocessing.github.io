@@ -3,7 +3,7 @@ layout: page
 title: blend mode compendium
 description: another project with an image 🎉
 img: assets/img/6.jpg
-importance: 9
+importance: 1
 category: tools
 ---
 

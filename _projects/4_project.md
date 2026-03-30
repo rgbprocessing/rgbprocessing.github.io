@@ -1,9 +1,9 @@
 ---
 layout: page
-title: project 4
+title: NeurIPS 2023 - Machine Unlearning
 description: another without an image
 img:
-importance: 3
+importance: 4
 category: fun
 ---
 

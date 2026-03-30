@@ -1,9 +1,9 @@
 ---
 layout: page
-title: project 9
+title: Unwinnable game detection
 description: another project with an image 🎉
 img: assets/img/6.jpg
-importance: 4
+importance: 2
 category: fun
 ---
 

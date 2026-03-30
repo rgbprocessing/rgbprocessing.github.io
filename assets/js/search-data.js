@@ -80,7 +80,7 @@ ninja.data = [{
               window.location.href = "/projects/7_project.html";
             },},{id: "projects-first-move-first-tree-traversal",
           title: 'First Move First Tree Traversal',
-          description: "an other project with a background image and giscus comments",
+          description: "A deterministic game tree search algorithm that prioritizes early decisions without heuristics",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project.html";
             },},{id: "projects-unwinnable-game-detection",

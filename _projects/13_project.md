@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Unwinnable game detection
+title: noise extraction from video
 description: another project with an image 🎉
 img: assets/img/6.jpg
-importance: 9
-category: research
+importance: 2
+category: tools
 ---
 
 Every project has a beautiful feature showcase page.

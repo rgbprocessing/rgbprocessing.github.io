@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 8
+title: First Move First Tree Traversal
 description: an other project with a background image and giscus comments
 img: assets/img/9.jpg
-importance: 2
-category: work
+importance: 3
+category: research
 giscus_comments: true
 ---
 

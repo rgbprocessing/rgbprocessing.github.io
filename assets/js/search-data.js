@@ -38,8 +38,8 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/12_project.html";
-            },},{id: "projects-unwinnable-game-detection",
-          title: 'Unwinnable game detection',
+            },},{id: "projects-noise-extraction-from-video",
+          title: 'noise extraction from video',
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/13_project.html";

@@ -34,7 +34,7 @@ ninja.data = [{
           section: "Projects",handler: () => {
               window.location.href = "/projects/11_project.html";
             },},{id: "projects-blend-mode-compendium",
-          title: 'blend mode compendium',
+          title: 'Blend Mode Compendium',
           description: "Python implementation of Adobe Photoshop blend modes",
           section: "Projects",handler: () => {
               window.location.href = "/projects/12_project.html";

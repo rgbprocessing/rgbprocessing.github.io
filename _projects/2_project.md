@@ -3,7 +3,7 @@ layout: page
 title: CryoET Object Identification
 description: Multi-head 3D U-Net with per-class center heatmaps and NMS
 img: assets/img/cryomodelvert.drawio.svg
-importance: 2
+importance: 3
 category: competitions
 ---
 

@@ -58,8 +58,8 @@ ninja.data = [{
           description: "with background image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/7_project.html";
-            },},{id: "projects-project-8",
-          title: 'project 8',
+            },},{id: "projects-first-move-first-tree-traversal",
+          title: 'First Move First Tree Traversal',
           description: "an other project with a background image and giscus comments",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project.html";

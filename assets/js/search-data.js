@@ -28,6 +28,11 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/10_project.html";
+            },},{id: "projects-unwinnable-game-detection",
+          title: 'Unwinnable game detection',
+          description: "another project with an image 🎉",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/11_project.html";
             },},{id: "projects-neurips-ariel-data-challenge-2025",
           title: 'NeurIPS - Ariel Data Challenge 2025',
           description: "33rd place solution: CNN ensemble with augmentation",

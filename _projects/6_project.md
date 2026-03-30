@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 6
+title: Highly Imbalanced Brain Lesion Segmentation
 description: a project with no image
 img:
-importance: 4
-category: fun
+importance: 1
+category: research
 ---
 
 Every project has a beautiful feature showcase page.

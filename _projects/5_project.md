@@ -4,7 +4,7 @@ title: 2025 1M-Deepfakes Detection Challenge
 description: a project with a background image
 img: assets/img/1.jpg
 importance: 4
-category: fun
+category: competitions
 ---
 
 Every project has a beautiful feature showcase page.

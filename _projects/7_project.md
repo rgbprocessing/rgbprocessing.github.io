@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 7
+title: Identity Detection from Facial Movement Keypoint Vectors
 description: with background image
 img: assets/img/4.jpg
-importance: 1
-category: work
+importance: 2
+category: research
 related_publications: true
 ---
 

@@ -23,8 +23,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "projects-unwinnable-game-detection",
-          title: 'Unwinnable game detection',
+        },{id: "projects-meme-detection-and-analysis",
+          title: 'Meme Detection and Analysis',
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/10_project.html";

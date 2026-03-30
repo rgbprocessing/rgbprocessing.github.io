@@ -48,8 +48,8 @@ ninja.data = [{
           description: "a project with a background image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project.html";
-            },},{id: "projects-project-6",
-          title: 'project 6',
+            },},{id: "projects-highly-imbalanced-brain-lesion-segmentation",
+          title: 'Highly Imbalanced Brain Lesion Segmentation',
           description: "a project with no image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project.html";

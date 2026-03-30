@@ -35,7 +35,7 @@ ninja.data = [{
               window.location.href = "/projects/11_project.html";
             },},{id: "projects-blend-mode-compendium",
           title: 'Blend Mode Compendium',
-          description: "Python implementation of Adobe Photoshop blend modes",
+          description: "Python implementation of 2 layer blend modes",
           section: "Projects",handler: () => {
               window.location.href = "/projects/12_project.html";
             },},{id: "projects-noise-extraction-from-video",

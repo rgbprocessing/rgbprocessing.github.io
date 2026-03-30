@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 2025 1M-Deepfakes Detection Challenge
+title: 2024 1M-Deepfakes Detection Challenge
 description: a project with a background image
 img: assets/img/1.jpg
 importance: 4

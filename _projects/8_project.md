@@ -25,5 +25,3 @@ We introduce 'first-move-first' (FMF), a deterministic search strategy for high-
   <br>
   <em>Right:</em> First-move first
 </div>
-
-

@@ -38,8 +38,8 @@ ninja.data = [{
           description: "3D U-Net with class-specific center heatmaps and per-class NMS",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project.html";
-            },},{id: "projects-project-4",
-          title: 'project 4',
+            },},{id: "projects-neurips-2023-machine-unlearning",
+          title: 'NeurIPS 2023 - Machine Unlearning',
           description: "another without an image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project.html";

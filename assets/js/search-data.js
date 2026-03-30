@@ -33,8 +33,8 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/11_project.html";
-            },},{id: "projects-unwinnable-game-detection",
-          title: 'Unwinnable game detection',
+            },},{id: "projects-blend-mode-compendium",
+          title: 'blend mode compendium',
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/12_project.html";

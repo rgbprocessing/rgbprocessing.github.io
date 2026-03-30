@@ -2,7 +2,7 @@
 layout: page
 title: Detect AI vs. Human-Generated Images
 description: 3D U-Net with class-specific center heatmaps and per-class NMS
-img: assets/img/cryomodel.drawio.svg
+img: assets/img/1.jpg
 importance: 2
 category: competitions
 ---

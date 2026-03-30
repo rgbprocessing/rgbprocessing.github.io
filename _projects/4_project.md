@@ -4,7 +4,7 @@ title: NeurIPS 2023 - Machine Unlearning
 description: another without an image
 img:
 importance: 5
-category: fun
+category: competitions
 ---
 
 Every project has a beautiful feature showcase page.

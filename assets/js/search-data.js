@@ -43,8 +43,8 @@ ninja.data = [{
           description: "another without an image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project.html";
-            },},{id: "projects-project-5",
-          title: 'project 5',
+            },},{id: "projects-2025-1m-deepfakes-detection-challenge",
+          title: '2025 1M-Deepfakes Detection Challenge',
           description: "a project with a background image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project.html";

@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: a selection of past work on competitions, research, and tools
 nav: true
 nav_order: 3
 display_categories: [competitions, research, tools]

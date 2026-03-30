@@ -33,8 +33,8 @@ ninja.data = [{
           description: "Multi-head 3D U-Net with per-class center heatmaps and NMS",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project.html";
-            },},{id: "projects-not-cryo",
-          title: 'not cryo',
+            },},{id: "projects-detect-ai-vs-human-generated-images",
+          title: 'Detect AI vs. Human-Generated Images',
           description: "3D U-Net with class-specific center heatmaps and per-class NMS",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project.html";

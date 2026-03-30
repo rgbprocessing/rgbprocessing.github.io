@@ -3,7 +3,7 @@ layout: page
 title: Unwinnable game detection
 description: another project with an image 🎉
 img: assets/img/6.jpg
-importance: 9
+importance: 5
 category: research
 ---
 

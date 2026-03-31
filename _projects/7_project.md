@@ -40,3 +40,43 @@ This work was inspired by [Protecting President Zelenskyy Against Deepfakes](htt
 </div>
 
 <b>Figure 2</b> shows the model for 1 second inputs. Input frames are smoothed and re-interpolated to 26 fps. The initial convolution layer processes 100 spatial features exhaustively (each convolved with all others), retaining the three spatial dimensions while collapsing time without padding. The output yields a single identity classification per second. Longer clips are handled via overlapping per-second predictions.
+
+<table>
+  <thead>
+    <tr>
+      <th>Clip Length</th>
+      <th>Target Identity (Class 0)</th>
+      <th>Non-Target (Class 1)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>5 seconds</td>
+      <td>0.893</td>
+      <td>0.940</td>
+    </tr>
+    <tr>
+      <td>3 seconds</td>
+      <td>0.936</td>
+      <td>0.824</td>
+    </tr>
+    <tr>
+      <td>1 second</td>
+      <td>0.897</td>
+      <td>0.793</td>
+    </tr>
+  </tbody>
+</table>
+<div class="caption">
+  <strong>Table 1:</strong> Testing Results
+</div>
+
+
+Confidence Percentiles
+High-confidence predictions (98th percentile) spanned 0.91–0.99 for target identity and 0.99 consistently for non-target across durations, indicating stronger discrimination against the 'other' class.
+
+Conclusions
+Accuracy improves with clip length, though target identity classification shows variability. Results confirm the model's ability to discern identity-specific motion cues from facial vectors alone.
+
+Future Work
+Extend to full-body vectors and refine preprocessing for motion isolation (e.g., head turns). Balance datasets to address pose biases (target: seated/frontal; non-target: varied). Enable multi-identity adaptation with reduced per-identity data needs.

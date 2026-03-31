@@ -49,20 +49,14 @@ Table 1
   <tbody>
     <tr>
       <td>Solve rate</td>
-      <td>63.6% (6,363)</td>
-      <td>63.2% (6,320)</td>
-      <td>6,168</td>
+      <td>63.5% (6,347)</td>
+      <td>63.2% (6,316)</td>
+      <td>61.7% (6,168)</td>
     </tr>
     <tr>
       <td>Exclusive solves</td>
-      <td>195</td>
-      <td>152</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Timeouts</td>
-      <td>33.6%</td>
-      <td>33.8%</td>
+      <td>1.8% (179)</td>
+      <td>1.5% (148)</td>
       <td>-</td>
     </tr>
   </tbody>

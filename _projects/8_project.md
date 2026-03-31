@@ -88,19 +88,15 @@ We evaluated both algorithms on 10,000 randomly generated game deals, applying i
   <em>Right:</em> Difference in unique states searched versus population deciles of FMF unique states searched.
 </div>
 
-Figure 4 shows - Among paired solvable deals, FMF showed a tentative advantage on hardest cases. When binned by mean unique states searched ((DFS+FMF)/2), FMF's state advantage grew with difficulty across equally spaced bins. However this is limited by limited data in the high unique states searched due to timeouts where some solveable deals were excluded and also limited by the mean unique states searched not being the best objective measure of how difficult a deal is - a better measure would be the shortest optimal path or maybe percentage of paths leading to a win but that would require an infeasible amount of processing to exhaustively search all of the game trees.
-
-FMF complements DFS - while DFS has slight overall edge (55K states), FMF dominates DFS's worst failure cases. algorithms could be used in combination or maybe a different hybrid/refactoring other than FMF would provide even better results without heuristics.
-
-Figure 3 shows FMF's advantage growing with difficulty—binned by mean unique states searched ((DFS+FMF)/2) across 6 equally-spaced bins (n≥20/bin), FMF gained up to +150K states in the most difficult bin (95% CI shown). While promising, this trend is tentative due to timeout-excluded high-difficulty deals and mean states searched serving as a proxy rather than true optimal path difficulty. These complementary failure modes suggest parallel execution with early termination of the slower algorithm would maximize solve rate and performance.
+<b>Figure 4</b> shows FMF's advantage growing with difficulty—binned by mean unique states searched ((DFS+FMF)/2) across equally-spaced bins. These findings should be interpreted cautiously due to timeout-excluded high-difficulty deals and the limitations of mean unique states searched as a measure of true deal difficulty. A more objective metric, such as shortest optimal path length or win probability, would require infeasible exhaustive search of all game trees or another derived metric.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/dfsfmf (4).png" title="FGS1 data" class="img-fluid rounded z-depth-0" %}
+        {% include figure.liquid loading="eager" path="assets/img/dfsfmf (4).png" title="Difference in unique states versus mean number of unique states" class="img-fluid rounded z-depth-0" %}
     </div>
 </div>
 <div class="caption">
-  <strong>Figure 4:</strong> Comparison of unique states searched in DFS versus FMF
+  <strong>Figure 4:</strong> Difference in unique states versus mean number of unique states
 </div>
 
 Figure X shows equal-width binning of mean states searched ((DFS+FMF)/2), dividing the full value range into 10 equal intervals regardless of data density. This reveals local performance trends across the state-space magnitude spectrum.

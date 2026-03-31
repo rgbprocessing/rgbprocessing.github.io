@@ -2,7 +2,7 @@
 layout: page
 title: Detect AI vs. Human-Generated Images
 description: Multi-Feature Ensemble Classifier
-img: assets/img/1.jpg
+img: assets/img/features.png
 importance: 2
 category: competitions
 ---
@@ -20,3 +20,16 @@ This project develops an ensemble classifier for distinguishing generated from a
 **Feature Engineering**
 
 Raw image features train a CNN directly on patches to capture spatial and color patterns. Noise features isolate patch-wise residuals via median filtering as sole model input. Fourier features use magnitude and phase spectra from patch FFTs as 6-channel inputs. Exploratory features (HSV, hue, color channels, rotations, perspective warps) were tested but excluded due to lack of performance gains. Individual models, optimized per feature type, proved resilient to domain shifts when ensembled.
+rgb
+noise
+hsv
+fourier mag
+fourier phase
+color channels
+
+Augmentation
+resize	gaussian blur	color jitter	vertical flip	rotate	noise	perspective
+
+Results
+final result achieved
+comparative table

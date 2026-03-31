@@ -36,3 +36,32 @@ We introduce 'first move first' (FMF), a deterministic search strategy for high-
   <br>
   <em>Right:</em> First-move first - similar to DFS we start by seeing ABD but then instead of seeing E next we see the second path from A which is C then F so the first two leaf nodes we see are in the paths ABD and ACF
 </div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/First Move First Tree Traversal.png" class="img-fluid rounded z-depth-0" alt="Tree traversal" %}
+        <figcaption class="mt-2 small">
+            <strong>Figure 1:</strong> FMF prioritizes root alternatives (ABD→ACF) unlike DFS (ABD→ABE) and BFS (layer-wise).
+        </figcaption>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/First Move First Tree Traversal.png" class="img-fluid rounded z-depth-0" alt="Tree traversal" %}
+        <figcaption class="mt-2 small">
+            <strong>Figure 1:</strong> <em>L:</em> DFS (ABD→ABE), <em>M:</em> BFS (layer-wise), <em>R:</em> FMF (ABD→ACF).
+        </figcaption>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/First Move First Tree Traversal.png" class="img-fluid rounded z-depth-0" alt="Tree traversal" %}
+        <figcaption class="mt-2 small">
+            <strong>Figure 1:</strong> FMF cycles root successors before sibling branches.
+        </figcaption>
+    </div>
+</div>
+
+

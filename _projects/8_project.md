@@ -68,7 +68,6 @@ Table 1
   </tbody>
 </table>
 
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/dfsfmf.png" title="Comparison of unique states searched in DFS versus FMF" class="img-fluid rounded z-depth-0" %}
@@ -84,7 +83,7 @@ Table 1
     </div>
 </div>
 
-<b>Figure 3</b> shows the complementarity in hardest cases. FMF solved DFS's 10% most challenging deals (upper decile by unique states searched) 3.44M states faster, while DFS solved FMF's 10% hardest deals 2.18M states faster. 
+<b>Figure 3</b> shows the complementarity in hardest cases. FMF solved DFS's 10% most challenging deals (upper decile by unique states searched) 3.44M states faster, while DFS solved FMF's 10% hardest deals 2.18M states faster.
 
 <div class="caption">
   <strong>Figure 3:</strong> Difference in unique states over population decile binning of DFS and FMF. 
@@ -95,8 +94,6 @@ Table 1
 </div>
 
 Figure 4 shows - Among paired solvable deals, FMF showed a tentative advantage on hardest cases. When binned by mean unique states searched ((DFS+FMF)/2), FMF's state advantage grew with difficulty across equally spaced bins. However this is limited by limited data in the high unique states searched due to timeouts where some solveable deals were excluded and also limited by the mean unique states searched not being the best objective measure of how difficult a deal is - a better measure would be the shortest optimal path or maybe percentage of paths leading to a win but that would require an infeasible amount of processing to exhaustively search all of the game trees.
-
-
 
 FMF complements DFS - while DFS has slight overall edge (55K states), FMF dominates DFS's worst failure cases. algorithms could be used in combination or maybe a different hybrid/refactoring other than FMF would provide even better results without heuristics.
 
@@ -112,8 +109,6 @@ Figure 3 shows FMF's advantage growing with difficulty—binned by mean unique s
 </div>
 
 Figure X shows equal-width binning of mean states searched ((DFS+FMF)/2), dividing the full value range into 10 equal intervals regardless of data density. This reveals local performance trends across the state-space magnitude spectrum.
-
-
 
 **Conclusions**
 

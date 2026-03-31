@@ -4,7 +4,7 @@ title: Unwinnable game detection
 description: another project with an image 🎉
 img: assets/img/6.jpg
 importance: 5
-category: research
+category: researchincomplete
 ---
 
 Every project has a beautiful feature showcase page.

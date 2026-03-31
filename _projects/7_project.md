@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Identity Detection from Facial Movement Vectors
-description: with background image
+title: Identity Detection from Facial Movements
+description: Customized CNN for motion vector classification
 img: assets/img/idd_nospace.png
 importance: 2
 category: research

@@ -73,8 +73,8 @@ ninja.data = [{
           description: "a project with no image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project.html";
-            },},{id: "projects-identity-detection-from-facial-movement-keypoint-vectors",
-          title: 'Identity Detection from Facial Movement Keypoint Vectors',
+            },},{id: "projects-identity-detection-from-facial-movement-vectors",
+          title: 'Identity Detection from Facial Movement Vectors',
           description: "with background image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/7_project.html";

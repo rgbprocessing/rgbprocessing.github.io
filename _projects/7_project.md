@@ -2,7 +2,7 @@
 layout: page
 title: Identity Detection from Facial Movement Vectors
 description: with background image
-img: assets/img/idd.png
+img: assets/img/idd_nospace.png
 importance: 2
 category: research
 ---
@@ -30,7 +30,7 @@ Facial keypoints were extracted using [MediaPipe](https://developers.google.com/
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/idd.png" title="Tree traversal comparison" class="img-fluid rounded z-depth-0" %}
+        {% include figure.liquid loading="eager" path="assets/img/idd_space.png" title="Tree traversal comparison" class="img-fluid rounded z-depth-0" %}
     </div>
 </div>
 <div class="caption">

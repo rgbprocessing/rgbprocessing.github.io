@@ -65,6 +65,38 @@ The algorithm was developed for Beleaguered Castle, a solitaire game where early
   <em>Right:</em> First-move first prioritizes first-level siblings (ABD→ACF).
 </div>
 
+<table style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif;">
+  <thead>
+    <tr style="background-color: #f2f2f2;">
+      <th style="border: 1px solid #ddd; padding: 12px; text-align: left;">Metric</th>
+      <th style="border: 1px solid #ddd; padding: 12px; text-align: center;">DFS</th>
+      <th style="border: 1px solid #ddd; padding: 12px; text-align: center;">FMF</th>
+      <th style="border: 1px solid #ddd; padding: 12px; text-align: center;">Both</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 12px;">Solved (n=10k)</td>
+      <td style="border: 1px solid #ddd; padding: 12px; text-align: center;"><strong>6,347</strong></td>
+      <td style="border: 1px solid #ddd; padding: 12px; text-align: center;"><strong>6,316</strong></td>
+      <td style="border: 1px solid #ddd; padding: 12px; text-align: center;"><strong>6,168</strong></td>
+    </tr>
+    <tr style="background-color: #f9f9f9;">
+      <td style="border: 1px solid #ddd; padding: 12px;">Solve Rate</td>
+      <td style="border: 1px solid #ddd; padding: 12px; text-align: center;">63.5%</td>
+      <td style="border: 1px solid #ddd; padding: 12px; text-align: center;">63.2%</td>
+      <td style="border: 1px solid #ddd; padding: 12px; text-align: center;">61.7%</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 12px;">Algorithm-Only</td>
+      <td style="border: 1px solid #ddd; padding: 12px; text-align: center;">179</td>
+      <td style="border: 1px solid #ddd; padding: 12px; text-align: center;">148</td>
+      <td style="border: 1px solid #ddd; padding: 12px; text-align: center;">—</td>
+    </tr>
+  </tbody>
+</table>
+
+
 **Conclusions**
 
 FMF and DFS demonstrate complementary strengths without heuristics. While DFS shows slight overall advantage (+55,905 states, p=0.70), FMF dramatically outperforms on DFS-Hardest deals (-3.44M states, n=1,542), suggesting early-move prioritization targets precisely the cases where standard DFS gets trapped in suboptimal branches. Solve rates are equivalent (63.5% vs 63.2%). Future work could run both in parallel, selecting the minimum states explored across methods to guarantee optimal path discovery while avoiding individual algorithm failure modes.

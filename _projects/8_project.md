@@ -63,5 +63,3 @@ We introduce 'first move first' (FMF), a deterministic search strategy for high-
         </figcaption>
     </div>
 </div>
-
-

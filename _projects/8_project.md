@@ -2,7 +2,7 @@
 layout: page
 title: First Move First Tree Traversal
 description: A deterministic game tree search algorithm that prioritizes early decisions without heuristics
-img: assets/img/First Move First Tree Traversal.png
+img: assets/img/First Move First Tree Traversal.svg
 importance: 3
 category: research
 ---

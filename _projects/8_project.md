@@ -73,14 +73,13 @@ We evaluated both algorithms on 10,000 randomly generated game deals, applying i
   <strong>Figure 2:</strong> Comparison of unique states searched in DFS versus FMF
 </div>
 
+<b>Figure 3</b> shows the complementarity in hardest cases. FMF solved DFS's 10% most challenging deals (upper decile by unique states searched) on average with 11.09M fewer unique states (28.0M vs 17.0M, p<0.001), while DFS solved FMF's 10% hardest deals with 9.40M fewer unique states (27.9M vs 18.5M, p<0.001).
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/dfsfmf (2).png" title="Difference in unique states over population decile binning of DFS and FMF" class="img-fluid rounded z-depth-0" %}
     </div>
 </div>
-
-<b>Figure 3</b> shows the complementarity in hardest cases. FMF solved DFS's 10% most challenging deals (upper decile by unique states searched) 3.44M states faster, while DFS solved FMF's 10% hardest deals 2.18M states faster.
-
 <div class="caption">
   <strong>Figure 3:</strong> Difference in unique states over population decile binning of DFS and FMF. 
   <br>
@@ -88,6 +87,8 @@ We evaluated both algorithms on 10,000 randomly generated game deals, applying i
   <br>
   <em>Right:</em> Difference in unique states searched versus population deciles of FMF unique states searched.
 </div>
+
+
 
 Figure 4 shows - Among paired solvable deals, FMF showed a tentative advantage on hardest cases. When binned by mean unique states searched ((DFS+FMF)/2), FMF's state advantage grew with difficulty across equally spaced bins. However this is limited by limited data in the high unique states searched due to timeouts where some solveable deals were excluded and also limited by the mean unique states searched not being the best objective measure of how difficult a deal is - a better measure would be the shortest optimal path or maybe percentage of paths leading to a win but that would require an infeasible amount of processing to exhaustively search all of the game trees.
 

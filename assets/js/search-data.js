@@ -55,7 +55,7 @@ ninja.data = [{
               window.location.href = "/projects/2_project.html";
             },},{id: "projects-detect-ai-vs-human-generated-images",
           title: 'Detect AI vs. Human-Generated Images',
-          description: "3D U-Net with class-specific center heatmaps and per-class NMS",
+          description: "Multi-Feature Ensemble Classifier",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project.html";
             },},{id: "projects-neurips-2023-machine-unlearning",

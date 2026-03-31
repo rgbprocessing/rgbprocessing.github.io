@@ -41,6 +41,8 @@ This work was inspired by [Protecting President Zelenskyy Against Deepfakes](htt
 
 <b>Figure 2</b> shows the model for 1 second inputs. Input frames are smoothed and re-interpolated to 26 fps. The initial convolution layer processes 100 spatial features exhaustively (each convolved with all others), retaining the three spatial dimensions while collapsing time without padding. The output yields a single identity classification per second. Longer clips are handled via overlapping per-second predictions.
 
+**Testing Results**
+
 <div style="display: flex; justify-content: center; margin: 0 auto;">
 <table style="text-align: center;">
   <thead>
@@ -48,6 +50,7 @@ This work was inspired by [Protecting President Zelenskyy Against Deepfakes](htt
       <th>Clip Length</th>
       <th>Target Identity</th>
       <th>Non-Target</th>
+      <th>Average</th>
     </tr>
   </thead>
   <tbody>
@@ -55,16 +58,19 @@ This work was inspired by [Protecting President Zelenskyy Against Deepfakes](htt
       <td>5 seconds</td>
       <td>0.893</td>
       <td>0.940</td>
+      <td>0.917</td>
     </tr>
     <tr>
       <td>3 seconds</td>
       <td>0.936</td>
       <td>0.824</td>
+      <td>0.880</td>
     </tr>
     <tr>
       <td>1 second</td>
       <td>0.897</td>
       <td>0.793</td>
+      <td>0.845</td>
     </tr>
   </tbody>
 </table>

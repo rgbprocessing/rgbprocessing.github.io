@@ -74,7 +74,7 @@ This work was inspired by [Protecting President Zelenskyy Against Deepfakes](htt
 </div>
 
 <div style="display: flex; justify-content: center; margin: 0 auto;">
-<table>
+<table style="text-align: center;">
   <thead>
     <tr>
       <th>Clip Length</th>
@@ -102,67 +102,6 @@ This work was inspired by [Protecting President Zelenskyy Against Deepfakes](htt
 </table>
 </div>
 <div class="caption">
-  <strong>Table 1:</strong> Testing Accuracy for Target class and Non-Target class
-</div>
-
-<div class="table-container">
-<table>
-  <thead>
-    <tr>
-      <th>Clip Length</th>
-      <th>Target Identity</th>
-      <th>Non-Target</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>5 seconds</td>
-      <td>0.893</td>
-      <td>0.940</td>
-    </tr>
-    <tr>
-      <td>3 seconds</td>
-      <td>0.936</td>
-      <td>0.824</td>
-    </tr>
-    <tr>
-      <td>1 second</td>
-      <td>0.897</td>
-      <td>0.793</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-<div style="display: flex; justify-content: center; margin: 0 auto;">
-  <table style="margin: 0; border-collapse: collapse; border: 1px solid #ccc;">
-    <thead>
-      <tr>
-        <th style="border: 1px solid #ccc; padding: 8px;">Clip Length</th>
-        <th style="border: 1px solid #ccc; padding: 8px;">Target Identity</th>
-        <th style="border: 1px solid #ccc; padding: 8px;">Non-Target</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="border: 1px solid #ccc; padding: 8px;">5 seconds</td>
-        <td style="border: 1px solid #ccc; padding: 8px;">0.893</td>
-        <td style="border: 1px solid #ccc; padding: 8px;">0.940</td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid #ccc; padding: 8px;">3 seconds</td>
-        <td style="border: 1px solid #ccc; padding: 8px;">0.936</td>
-        <td style="border: 1px solid #ccc; padding: 8px;">0.824</td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid #ccc; padding: 8px;">1 second</td>
-        <td style="border: 1px solid #ccc; padding: 8px;">0.897</td>
-        <td style="border: 1px solid #ccc; padding: 8px;">0.793</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<div class="caption" style="text-align: center;">
   <strong>Table 1:</strong> Testing Accuracy for Target class and Non-Target class
 </div>
 

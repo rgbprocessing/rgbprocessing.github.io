@@ -88,7 +88,7 @@ We evaluated both algorithms on 10,000 randomly generated game deals, applying i
   <em>Right:</em> Difference in unique states searched versus population deciles of FMF unique states searched.
 </div>
 
-<b>Figure 4</b> shows FMF's advantage growing with difficulty—binned by mean unique states searched ((DFS+FMF)/2) across equally-spaced bins. These findings should be interpreted cautiously due to timeout-excluded high-difficulty deals and the limitations of mean unique states searched as a measure of true deal difficulty. A more objective metric, such as shortest optimal path length or win probability, would require infeasible exhaustive search of all game trees or another derived metric.
+<b>Figure 4</b> shows FMF's advantage growing with difficulty binned by mean unique states searched ((DFS+FMF)/2) across equally-spaced bins. These findings should be interpreted cautiously due to timeout-excluded high-difficulty deals and the limitations of mean unique states searched as a measure of true deal difficulty. A more objective metric, such as shortest optimal path length or win probability, would require infeasible exhaustive search of all game trees or another derived metric.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -96,13 +96,11 @@ We evaluated both algorithms on 10,000 randomly generated game deals, applying i
     </div>
 </div>
 <div class="caption">
-  <strong>Figure 4:</strong> Difference in unique states versus mean number of unique states
+  <strong>Figure 4:</strong> Difference in unique states versus mean number of unique states with equally-spaced binning
 </div>
-
-Figure X shows equal-width binning of mean states searched ((DFS+FMF)/2), dividing the full value range into 10 equal intervals regardless of data density. This reveals local performance trends across the state-space magnitude spectrum.
 
 **Conclusions**
 
-FMF and DFS demonstrate complementary strengths without heuristics. While DFS shows slight overall advantage (+55,905 states, p=0.70), FMF dramatically outperforms on DFS-Hardest deals (-3.44M states, n=1,542), suggesting early-move prioritization targets precisely the cases where standard DFS gets trapped in suboptimal branches. Solve rates are equivalent (63.5% vs 63.2%). Future work could run both in parallel, selecting the minimum states explored across methods to guarantee optimal path discovery while avoiding individual algorithm failure modes.
+FMF and DFS demonstrate complementary strengths that suggest hybrid strategies will outperform either method alone. Parallel execution terminating when the first algorithm solves would leverage their distinct failure modes to maximize solve rate and minimize states searched. Future work could derive heuristic-free hybrid methods combining early-move prioritization with depth-first exploration.
 
-FMF and DFS exhibit complementary performance profiles: FMF dominates DFS-Hardest deals (-3.44M states), while DFS outperforms on FMF-Hardest deals. Overall solve rates are equivalent (63.5% vs 63.2%)
+More robust evaluation is needed to distinguish computationally difficult solvable deals from unwinnable positions. Incorporating deal difficulty metrics independent of search performance such as structural solvability tests or lightweight win-probability estimators would enable more precise difficulty measurement and stronger algorithm comparisons.

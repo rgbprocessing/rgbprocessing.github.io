@@ -15,11 +15,9 @@ The goal of this project is to classify authentic images versus AI-generated ima
 
 **Solution Overview**
 
-This study systematically evaluates the performance of different imaging features used to train a RegNet architecture for generated image classification. 
+This study systematically evaluates the performance of different imaging features used to train a RegNet architecture for generated image classification.
 
 Raw image features use standard 3-channel RGB patches to learn spatial and color patterns directly. Noise features extract patch-wise residuals via 3×3 median filtering as exclusive model input. Fourier features convert patches to 6-channel magnitude/phase representations.
-
-
 
 specialized RegNet architectures for detecting generative imaging artifacts, benchmarking individual feature representations before ensembling top performers. A baseline 3-channel RGB RegNet establishes reference accuracy, augmented by parallel models trained exclusively on noise residuals (median-filter extracted via 3×3 patch unfolding), 6-channel Fourier magnitude/phase spectra, and other domain-specific representations such as HSV and a specialized boosted saturation color extraction eliminating gray values. The approach identifies which feature types best capture synthetic signatures under domain shift, with final predictions from weighted ensemble averaging of highest-performing streams.
 
@@ -36,7 +34,7 @@ fourier phase
 color channels
 
 Augmentation
-resize	gaussian blur	color jitter	vertical flip	rotate	noise	perspective
+resize gaussian blur color jitter vertical flip rotate noise perspective
 
 resize gaussian blur color jitter vertical flip rotate noise perspective
 

@@ -45,8 +45,8 @@ This work was inspired by [Protecting President Zelenskyy Against Deepfakes](htt
   <thead>
     <tr>
       <th>Clip Length</th>
-      <th>Target Identity (Class 0)</th>
-      <th>Non-Target (Class 1)</th>
+      <th>Target Identity</th>
+      <th>Non-Target</th>
     </tr>
   </thead>
   <tbody>
@@ -68,14 +68,13 @@ This work was inspired by [Protecting President Zelenskyy Against Deepfakes](htt
   </tbody>
 </table>
 <div class="caption">
-  <strong>Table 1:</strong> Testing Results
+  <strong>Table 1:</strong> Testing Accuracy for Target class and Non-Target class
 </div>
 
-Confidence Percentiles
-High-confidence predictions (98th percentile) spanned 0.91–0.99 for target identity and 0.99 consistently for non-target across durations, indicating stronger discrimination against the 'other' class.
+**Conclusions**
 
-Conclusions
-Accuracy improves with clip length, though target identity classification shows variability. Results confirm the model's ability to discern identity-specific motion cues from facial vectors alone.
+Predictions exhibit improved accuracy for longer clips, though isolated misclassification peaks persist. These results demonstrate the model's capacity to learn identity-specific patterns from facial movement vectors alone, albeit with further validation required to establish classification robustness.
 
-Future Work
-Extend to full-body vectors and refine preprocessing for motion isolation (e.g., head turns). Balance datasets to address pose biases (target: seated/frontal; non-target: varied). Enable multi-identity adaptation with reduced per-identity data needs.
+**Future Work**
+
+Future extensions will incorporate full-body movement vectors alongside enhanced preprocessing to isolate confounding factors such as head rotation and body motion, thereby strengthening feature correlations. Additional datasets will address observed pose biases, where target videos predominantly feature seated frontal views while non-target videos encompass diverse poses and positions. Model improvements will also target multi-identity learning from minimal per-identity data, mitigating the current requirement for extensive identity-specific training sets.

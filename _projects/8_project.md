@@ -88,11 +88,8 @@ We introduce 'first move first' (FMF), a deterministic search strategy for high-
   <em>Right:</em> First-move first - similar to DFS we start by seeing ABD but then instead of seeing E next we see the second path from A which is C then F so the first two leaf nodes we see are in the paths ABD and ACF
 </div>
 
-
 **Motivation**
 
 The algorithm was developed for Beleaguered Castle, a solitaire game where early moves critically shape the game state, while late-game foundation-building moves exert minimal influence on winning paths. For difficult deals, solvability is typically resolved early, motivating efficient path discovery over optimality.
 
 First-move-first traversal systematically explores these critical early decisions, avoiding the inefficiencies of depth-first search (DFS) and breadth-first search (BFS), which become trapped in suboptimal branches when seeking any viable winning path among potentially long solution trajectories.
-
-

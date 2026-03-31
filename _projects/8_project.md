@@ -13,7 +13,7 @@ We introduce 'first move first' (FMF), a deterministic search strategy for high-
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/First Move First Tree Traversal.svg" title="FGS1 data" class="img-fluid rounded z-depth-0" %}
+        {% include figure.liquid loading="eager" path="assets/img/First Move First Tree Traversal.svg" title="Tree traversal comparison" class="img-fluid rounded z-depth-0" %}
     </div>
 </div>
 <div class="caption">
@@ -29,3 +29,88 @@ We introduce 'first move first' (FMF), a deterministic search strategy for high-
 **Motivation**
 
 The algorithm was developed for Beleaguered Castle, a solitaire game where early moves critically shape the game state and late-game foundation-building moves have nominal influence on finding a winning path. Deals often have only one or few winning early move sequences but many possible late-game paths, mostly building up suit-specific foundations starting from the aces. DFS can get trapped exhaustively exploring non-winning branches from poor early moves. BFS explores every node for the optimal path, which is unfeasible for Beleaguered Castle's large game trees. We focus on finding the first viable winning path rather than the optimal one. FMF avoids both problems by changing the early moves first in its search and exploring later branches only if needed. Without relying on customized heuristics, we evaluate FMF's performance against baseline DFS for discovering winning paths in this domain.
+
+**Results**
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/dfsfmf.png" title="FGS1 data" class="img-fluid rounded z-depth-0" %}
+    </div>
+</div>
+<div class="caption">
+  <strong>Figure 2:</strong> Comparison of unique states searched in DFS versus FMF
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/dfsfmf (4).png" title="FGS1 data" class="img-fluid rounded z-depth-0" %}
+    </div>
+</div>
+<div class="caption">
+  <strong>Figure 3:</strong> Comparison of unique states searched in DFS versus FMF
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/dfsfmf (2).png" title="FGS1 data" class="img-fluid rounded z-depth-0" %}
+    </div>
+</div>
+<div class="caption">
+  <strong>Figure 4:</strong> Tree traversal order comparison across three algorithms. 
+  <br>
+  <em>Left:</em> Depth-first search visits leaf nodes ABD→ABE (B's siblings sequentially).
+  <br>
+  <em>Middle:</em> Breadth-first search explores layer-by-layer.
+  <br>
+  <em>Right:</em> First-move first prioritizes first-level siblings (ABD→ACF).
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/dfsfmf (3).png" title="FGS1 data" class="img-fluid rounded z-depth-0" %}
+    </div>
+</div>
+<div class="caption">
+  <strong>Figure 5:</strong> Tree traversal order comparison across three algorithms. 
+  <br>
+  <em>Left:</em> Depth-first search visits leaf nodes ABD→ABE (B's siblings sequentially).
+  <br>
+  <em>Middle:</em> Breadth-first search explores layer-by-layer.
+  <br>
+  <em>Right:</em> First-move first prioritizes first-level siblings (ABD→ACF).
+</div>
+
+<table style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif;">
+  <thead>
+    <tr style="background-color: #f2f2f2;">
+      <th style="border: 1px solid #ddd; padding: 12px; text-align: left;">Metric</th>
+      <th style="border: 1px solid #ddd; padding: 12px; text-align: center;">DFS</th>
+      <th style="border: 1px solid #ddd; padding: 12px; text-align: center;">FMF</th>
+      <th style="border: 1px solid #ddd; padding: 12px; text-align: center;">Both</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 12px;">Solved (n=10k)</td>
+      <td style="border: 1px solid #ddd; padding: 12px; text-align: center;"><strong>6,347</strong></td>
+      <td style="border: 1px solid #ddd; padding: 12px; text-align: center;"><strong>6,316</strong></td>
+      <td style="border: 1px solid #ddd; padding: 12px; text-align: center;"><strong>6,168</strong></td>
+    </tr>
+    <tr style="background-color: #f9f9f9;">
+      <td style="border: 1px solid #ddd; padding: 12px;">Solve Rate</td>
+      <td style="border: 1px solid #ddd; padding: 12px; text-align: center;">63.5%</td>
+      <td style="border: 1px solid #ddd; padding: 12px; text-align: center;">63.2%</td>
+      <td style="border: 1px solid #ddd; padding: 12px; text-align: center;">61.7%</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 12px;">Algorithm-Only</td>
+      <td style="border: 1px solid #ddd; padding: 12px; text-align: center;">179</td>
+      <td style="border: 1px solid #ddd; padding: 12px; text-align: center;">148</td>
+      <td style="border: 1px solid #ddd; padding: 12px; text-align: center;">—</td>
+    </tr>
+  </tbody>
+</table>
+
+**Conclusions**
+
+FMF and DFS demonstrate complementary strengths without heuristics. While DFS shows slight overall advantage (+55,905 states, p=0.70), FMF dramatically outperforms on DFS-Hardest deals (-3.44M states, n=1,542), suggesting early-move prioritization targets precisely the cases where standard DFS gets trapped in suboptimal branches. Solve rates are equivalent (63.5% vs 63.2%). Future work could run both in parallel, selecting the minimum states explored across methods to guarantee optimal path discovery while avoiding individual algorithm failure modes.

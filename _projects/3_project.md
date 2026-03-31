@@ -13,7 +13,6 @@ category: competitions
 
 The goal of this project is to classify authentic images versus AI-generated images. The dataset consists of 79,950 total training images consisting of authentic images sourced from Shuttershock paired with equivalent images produced by generative models and a test set of 19.986 images. See the [Kaggle competition page](https://www.kaggle.com/competitions/detect-ai-vs-human-generated-images/overview) for dataset access and more details.
 
-
 **Overview**
 
 This project develops an ensemble classifier for distinguishing generated from authentic images amid domain shift challenges. Separate models leverage raw pixel patches, noise patterns (median-filter extracted), and Fourier transform magnitude/phase (6 channels) to capture complementary image statistics, with final predictions aggregated for robustness.

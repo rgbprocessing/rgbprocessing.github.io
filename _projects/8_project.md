@@ -88,8 +88,6 @@ We evaluated both algorithms on 10,000 randomly generated game deals, applying i
   <em>Right:</em> Difference in unique states searched versus population deciles of FMF unique states searched.
 </div>
 
-
-
 Figure 4 shows - Among paired solvable deals, FMF showed a tentative advantage on hardest cases. When binned by mean unique states searched ((DFS+FMF)/2), FMF's state advantage grew with difficulty across equally spaced bins. However this is limited by limited data in the high unique states searched due to timeouts where some solveable deals were excluded and also limited by the mean unique states searched not being the best objective measure of how difficult a deal is - a better measure would be the shortest optimal path or maybe percentage of paths leading to a win but that would require an infeasible amount of processing to exhaustively search all of the game trees.
 
 FMF complements DFS - while DFS has slight overall edge (55K states), FMF dominates DFS's worst failure cases. algorithms could be used in combination or maybe a different hybrid/refactoring other than FMF would provide even better results without heuristics.

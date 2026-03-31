@@ -28,17 +28,15 @@ Facial keypoints were extracted using [MediaPipe](https://developers.google.com/
 
 **Model**
 
+This work was inspired by [Protecting President Zelenskyy Against Deepfakes](https://arxiv.org/pdf/2206.12043.pdf) which performed identity specific deepfake detection using features extracted from body keypoints of videos. In the reference work, correlations between the change in position of the body and facial keyoints are used as hand-crafted features in a model. This work instead uses a custom-built convolutional neural network to weight and learn these correlations during training. This work also uses movement vectors rather than position vectors. Circular padding ensures full convolution across all parameters, with dilation and stride rates designed to rapidly reduce the temporal dimension while preserving movement features.
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/idd_space.png" title="Tree traversal comparison" class="img-fluid rounded z-depth-0" %}
+        {% include figure.liquid loading="eager" path="assets/img/idd_space.png" title="Model for 1 second input" class="img-fluid rounded z-depth-0" %}
     </div>
 </div>
 <div class="caption">
-  <strong>Figure 1:</strong> Tree traversal order comparison across three algorithms. 
-  <br>
-  <em>Left:</em> Depth-first search visits leaf nodes ABD→ABE (B's siblings sequentially).
-  <br>
-  <em>Middle:</em> Breadth-first search explores layer-by-layer.
-  <br>
-  <em>Right:</em> First-move first prioritizes first-level siblings (ABD→ACF).
+  <strong>Figure 2:</strong> Model for 1 second input
 </div>
+
+<b>Figure 2</b> shows the model for 1 second inputs. Input frames are smoothed and re-interpolated to 26 fps. The initial convolution layer processes 100 spatial features exhaustively (each convolved with all others), retaining the three spatial dimensions while collapsing time without padding. The output yields a single identity classification per second. Longer clips are handled via overlapping per-second predictions.

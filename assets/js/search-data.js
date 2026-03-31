@@ -73,9 +73,9 @@ ninja.data = [{
           description: "a project with no image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project.html";
-            },},{id: "projects-identity-detection-from-facial-movement-vectors",
-          title: 'Identity Detection from Facial Movement Vectors',
-          description: "with background image",
+            },},{id: "projects-identity-detection-from-facial-movements",
+          title: 'Identity Detection from Facial Movements',
+          description: "Customized CNN for motion vector classification",
           section: "Projects",handler: () => {
               window.location.href = "/projects/7_project.html";
             },},{id: "projects-first-move-first-tree-traversal",

@@ -65,9 +65,6 @@ The algorithm was developed for Beleaguered Castle, a solitaire game where early
   <em>Right:</em> First-move first prioritizes first-level siblings (ABD→ACF).
 </div>
 
-
-
-
 **Conclusions**
 
 FMF and DFS demonstrate complementary strengths without heuristics. While DFS shows slight overall advantage (+55,905 states, p=0.70), FMF dramatically outperforms on DFS-Hardest deals (-3.44M states, n=1,542), suggesting early-move prioritization targets precisely the cases where standard DFS gets trapped in suboptimal branches. Solve rates are equivalent (63.5% vs 63.2%). Future work could run both in parallel, selecting the minimum states explored across methods to guarantee optimal path discovery while avoiding individual algorithm failure modes.

@@ -28,7 +28,7 @@ Facial keypoints were extracted using [MediaPipe](https://developers.google.com/
 
 **Model**
 
-This work was inspired by [Protecting President Zelenskyy Against Deepfakes](https://arxiv.org/pdf/2206.12043.pdf) which performed identity specific deepfake detection using features extracted from body keypoints of videos. In the reference work, correlations between the change in position of the body and facial keyoints are used as hand-crafted features in a model. This work instead uses a custom-built convolutional neural network to weight and learn these correlations during training. This work also uses movement vectors rather than position vectors. Circular padding ensures full convolution across all parameters, with dilation and stride rates designed to rapidly reduce the temporal dimension while preserving movement features.
+This work was inspired by [Protecting President Zelenskyy Against Deepfakes](https://arxiv.org/pdf/2206.12043.pdf) which performed identity specific deepfake detection using features extracted from body keypoints of videos. In the reference work, correlations between the change in position of the body and facial keypoints are used as hand-crafted features in a model. This work instead uses a custom-built convolutional neural network to weight and learn these correlations during training. This work also uses movement vectors rather than position vectors. Circular padding ensures full convolution across all parameters, with dilation and stride rates designed to rapidly reduce the temporal dimension while preserving movement features.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">

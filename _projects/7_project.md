@@ -71,7 +71,6 @@ This work was inspired by [Protecting President Zelenskyy Against Deepfakes](htt
   <strong>Table 1:</strong> Testing Results
 </div>
 
-
 Confidence Percentiles
 High-confidence predictions (98th percentile) spanned 0.91–0.99 for target identity and 0.99 consistently for non-target across durations, indicating stronger discrimination against the 'other' class.
 

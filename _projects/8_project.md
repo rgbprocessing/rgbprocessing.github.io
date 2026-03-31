@@ -52,49 +52,16 @@ The algorithm was developed for Beleaguered Castle, a solitaire game where early
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/dfsfmf (2).png" title="FGS1 data" class="img-fluid rounded z-depth-0" %}
+        {% include figure.liquid loading="eager" path="assets/img/dfsfmf (2).png" title="Difference in unique states over population decile binning of DFS and FMF" class="img-fluid rounded z-depth-0" %}
     </div>
 </div>
 <div class="caption">
-  <strong>Figure 4:</strong> Tree traversal order comparison across three algorithms. 
+  <strong>Figure 4:</strong> Difference in unique states over population decile binning of DFS and FMF. 
   <br>
-  <em>Left:</em> Depth-first search visits leaf nodes ABD→ABE (B's siblings sequentially).
+  <em>Left:</em> Difference in unique states searched versus population deciles of DFS unique states searched.
   <br>
-  <em>Middle:</em> Breadth-first search explores layer-by-layer.
-  <br>
-  <em>Right:</em> First-move first prioritizes first-level siblings (ABD→ACF).
+  <em>Right:</em> Difference in unique states searched versus population deciles of FMF unique states searched.
 </div>
-
-<table style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif;">
-  <thead>
-    <tr style="background-color: #f2f2f2;">
-      <th style="border: 1px solid #ddd; padding: 12px; text-align: left;">Metric</th>
-      <th style="border: 1px solid #ddd; padding: 12px; text-align: center;">DFS</th>
-      <th style="border: 1px solid #ddd; padding: 12px; text-align: center;">FMF</th>
-      <th style="border: 1px solid #ddd; padding: 12px; text-align: center;">Both</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="border: 1px solid #ddd; padding: 12px;">Solved (n=10k)</td>
-      <td style="border: 1px solid #ddd; padding: 12px; text-align: center;"><strong>6,347</strong></td>
-      <td style="border: 1px solid #ddd; padding: 12px; text-align: center;"><strong>6,316</strong></td>
-      <td style="border: 1px solid #ddd; padding: 12px; text-align: center;"><strong>6,168</strong></td>
-    </tr>
-    <tr style="background-color: #f9f9f9;">
-      <td style="border: 1px solid #ddd; padding: 12px;">Solve Rate</td>
-      <td style="border: 1px solid #ddd; padding: 12px; text-align: center;">63.5%</td>
-      <td style="border: 1px solid #ddd; padding: 12px; text-align: center;">63.2%</td>
-      <td style="border: 1px solid #ddd; padding: 12px; text-align: center;">61.7%</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #ddd; padding: 12px;">Algorithm-Only</td>
-      <td style="border: 1px solid #ddd; padding: 12px; text-align: center;">179</td>
-      <td style="border: 1px solid #ddd; padding: 12px; text-align: center;">148</td>
-      <td style="border: 1px solid #ddd; padding: 12px; text-align: center;">—</td>
-    </tr>
-  </tbody>
-</table>
 
 **Conclusions**
 

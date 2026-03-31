@@ -21,3 +21,18 @@ We introduce 'first move first' (FMF), a deterministic search strategy for high-
         %}
     </div>
 </div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/First Move First Tree Traversal.png" title="FGS1 data" class="img-fluid rounded z-depth-0" %}
+    </div>
+</div>
+<div class="caption">
+  <strong>Figure 1:</strong> Tree traversal example comparison.
+  <br>
+  <em>Left:</em> Depth first search - the travesal first sees ABD, then E the second path off of B so the first two leaf nodes we see are in paths ABD and ABE
+  <br>
+  <em>Middle:</em> Breadth first search - the traversal starts at the root A, then the next layer B and C and so on - we don't see any leaf nodes until each layer has been explored in full
+  <br>
+  <em>Right:</em> First-move first - similar to DFS we start by seeing ABD but then instead of seeing E next we see the second path from A which is C then F so the first two leaf nodes we see are in the paths ABD and ACF
+</div>

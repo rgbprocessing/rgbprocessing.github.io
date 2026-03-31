@@ -28,7 +28,7 @@ fourier phase
 color channels
 
 Augmentation
-resize	gaussian blur	color jitter	vertical flip	rotate	noise	perspective
+resize gaussian blur color jitter vertical flip rotate noise perspective
 
 Results
 final result achieved

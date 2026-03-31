@@ -32,12 +32,12 @@ The algorithm was developed for Beleaguered Castle, a solitaire game where early
 
 **Results**
 
-We evaluated both algorithms on 10,000 randomly generated game deals, applying identical time limits of 1000 seconds. Overall, DFS slightly outperformed FMF by 55,905 unique states searched across 6,168 paired solvable deals. <b>Table 1</b> summarizes solve performance, showing equivalent solve rates (63.6% DFS, 63.2% FMF) with 195 exclusive DFS solves and 152 exclusive FMF solves. Noteably the unsolveable games include both searches that timed out as well as searches that were verifiably unwinnable.
+We evaluated both algorithms on 10,000 randomly generated game deals, applying identical time limits of 1000 seconds. Overall, DFS slightly outperformed FMF by 55,905 unique states searched across 6,168 paired solvable deals. <b>Table 1</b> summarizes solve performance, showing comparable solve rates (63.5% DFS, 63.2% FMF) with 179 exclusive DFS solves and 148 exclusive FMF solves. Noteably the unsolveable games include both searches that timed out as well as searches that were verifiably unwinnable.
 
 <table class="results-table">
   <thead>
     <tr>
-      <th>Metric</th>
+      <th> </th>
       <th>DFS</th>
       <th>FMF</th>
       <th>Overlap</th>

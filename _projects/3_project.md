@@ -22,6 +22,7 @@ This study systematically evaluates the performance of different imaging feature
 Training employed resize, Gaussian blur, color jitter, vertical flip, rotation, synthetic noise injection, and perspective transforms to enhance generalization across diverse generation models and to extract more robust features to distinguish generated images.
 
 **Results**
+
 <div style="display: flex; justify-content: center; margin: 0 auto;">
   <table style="border-collapse: collapse; text-align: center;">
     <thead>
@@ -73,8 +74,6 @@ Training employed resize, Gaussian blur, color jitter, vertical flip, rotation, 
 <div class="caption" style="text-align: center;">
   <strong>Table 1:</strong> Comparative performance of feature-specific RegNet models and final ensemble
 </div>
-
-
 
 final result achieved
 comparative table

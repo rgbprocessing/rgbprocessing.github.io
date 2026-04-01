@@ -28,45 +28,55 @@ Training employed resize, Gaussian blur, color jitter, vertical flip, rotation, 
     <thead>
       <tr>
         <th style="padding: 8px;">Feature Type</th>
-        <th style="padding: 8px;">Validation Accuracy</th>
-        <th style="padding: 8px;">Test Score</th>
+        <th style="padding: 8px;">Private Score</th>
+        <th style="padding: 8px;">Public Score</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td style="padding: 8px;">RGB Baseline</td>
-        <td style="padding: 8px;">__._%</td>
-        <td style="padding: 8px;">__._%</td>
+        <td style="padding: 8px;">RGB</td>
+        <td style="padding: 8px;">0.613</td>
+        <td style="padding: 8px;">0.614</td>
       </tr>
       <tr>
-        <td style="padding: 8px;">Noise Features</td>
-        <td style="padding: 8px;">__._%</td>
-        <td style="padding: 8px;">__._%</td>
+        <td style="padding: 8px;">Noise</td>
+        <td style="padding: 8px;">0.641</td>
+        <td style="padding: 8px;">0.623</td>
       </tr>
       <tr>
         <td style="padding: 8px;">Fourier Magnitude</td>
-        <td style="padding: 8px;">__._%</td>
-        <td style="padding: 8px;">__._%</td>
+        <td style="padding: 8px;">0.604</td>
+        <td style="padding: 8px;">0.600</td>
       </tr>
       <tr>
-        <td style="padding: 8px;">Fourier Phase</td>
-        <td style="padding: 8px;">__._%</td>
-        <td style="padding: 8px;">__._%</td>
-      </tr>
-      <tr>
-        <td style="padding: 8px;">HSV Features</td>
-        <td style="padding: 8px;">__._%</td>
-        <td style="padding: 8px;">__._%</td>
+        <td style="padding: 8px;">HSV</td>
+        <td style="padding: 8px;">0.286</td>
+        <td style="padding: 8px;">0.290</td>
       </tr>
       <tr>
         <td style="padding: 8px;">Boosted Saturation</td>
-        <td style="padding: 8px;">__._%</td>
-        <td style="padding: 8px;">__._%</td>
+        <td style="padding: 8px;">0.595</td>
+        <td style="padding: 8px;">0.572</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px;">RGB + Noise</td>
+        <td style="padding: 8px;">0.645</td>
+        <td style="padding: 8px;">0.640</td>
       </tr>
       <tr style="font-weight: bold;">
-        <td style="padding: 8px;">Weighted Ensemble</td>
-        <td style="padding: 8px;">__._%</td>
-        <td style="padding: 8px;">__._%</td>
+        <td style="padding: 8px;">Fourier Magnitude + Phase</td>
+        <td style="padding: 8px;">0.696</td>
+        <td style="padding: 8px;">0.693</td>
+      </tr>
+      <tr style="font-weight: bold;">
+        <td style="padding: 8px;">Ensemble RGB + Noise</td>
+        <td style="padding: 8px;">0.701</td>
+        <td style="padding: 8px;">0.693</td>
+      </tr>
+      <tr style="font-weight: bold;">
+        <td style="padding: 8px;">Final Ensemble</td>
+        <td style="padding: 8px;">0.752</td>
+        <td style="padding: 8px;">0.746</td>
       </tr>
     </tbody>
   </table>
@@ -74,6 +84,8 @@ Training employed resize, Gaussian blur, color jitter, vertical flip, rotation, 
 <div class="caption" style="text-align: center;">
   <strong>Table 1:</strong> Comparative performance of feature-specific RegNet models and final ensemble
 </div>
+
+**Conclusion**
 
 final result achieved
 comparative table

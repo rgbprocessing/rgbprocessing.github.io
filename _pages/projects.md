@@ -5,7 +5,7 @@ permalink: /projects/
 description: a selection of past work on competitions, research, and tools
 nav: true
 nav_order: 3
-display_categories: [competitions, research, tools]
+display_categories: [research, competitions, tools]
 horizontal: false
 ---
 

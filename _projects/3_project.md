@@ -74,7 +74,7 @@ Training employed resize, Gaussian blur, color jitter, vertical flip, rotation, 
         <td style="padding: 8px;">0.693</td>
       </tr>
       <tr style="font-weight: bold;">
-        <td style="padding: 8px;">Final Ensemble</td>
+        <td style="padding: 8px;">Ensemble RGB + Noise + Fourier</td>
         <td style="padding: 8px;">0.752</td>
         <td style="padding: 8px;">0.746</td>
       </tr>
@@ -85,9 +85,7 @@ Training employed resize, Gaussian blur, color jitter, vertical flip, rotation, 
   <strong>Table 1:</strong> Comparative performance of feature-specific RegNet models and final ensemble
 </div>
 
+
 **Conclusion**
 
-final result achieved
-comparative table
-
-within top 20%
+The ensemble of RGB, noise residual, and Fourier feature models outperformed any single feature type including the RGB baseline. This demonstrates the value of diverse feature representations for capturing generative artifacts. This approach achieved a top 20% placement in the competition.

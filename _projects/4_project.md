@@ -2,7 +2,7 @@
 layout: page
 title: NeurIPS 2023 - Machine Unlearning
 description: Selective Model Forgetting via Composite Loss
-img:
+img: assets/img/unlearnall.png
 importance: 5
 category: competitions
 ---
@@ -14,6 +14,15 @@ This project participated in the [NeurIPS 2023 Machine Unlearning Challenge](htt
 **Methods**
 
 The approach employed a composite loss function combining retain set accuracy with a positive forget loss to induce randomized incorrect predictions on the target forget set. Several loss balancing configurations were tested, targeting convergence of the forget loss to validation loss levels while maintaining retain performance. Model ensembling averaged multiple unlearned models to reduce dependence on forget set samples and improve generalization.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/unlearnall.png" title="Unlearning Training" class="img-fluid rounded z-depth-0" %}
+    </div>
+</div>
+<div class="caption">
+    <strong>Figure 1:</strong> Loss convergence curves across three loss balancing configurations, illustrating attempts to align forget loss (orange) with validation loss (red) while preserving retain performance. Each panel demonstrates distinct failure modes in achieving balanced unlearning objectives.
+</div>
 
 **Results**
 

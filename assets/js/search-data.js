@@ -60,7 +60,7 @@ ninja.data = [{
               window.location.href = "/projects/3_project.html";
             },},{id: "projects-neurips-2023-machine-unlearning",
           title: 'NeurIPS 2023 - Machine Unlearning',
-          description: "another without an image",
+          description: "Selective Model Forgetting via Composite Loss",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project.html";
             },},{id: "projects-2024-1m-deepfakes-detection-challenge",

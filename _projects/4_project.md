@@ -2,7 +2,7 @@
 layout: page
 title: NeurIPS 2023 - Machine Unlearning
 description: Selective Model Forgetting via Composite Loss
-img: assets/img/unlearnall.png
+img:
 importance: 5
 category: competitions
 ---

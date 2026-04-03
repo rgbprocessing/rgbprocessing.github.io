@@ -63,9 +63,9 @@ ninja.data = [{
           description: "Selective Model Forgetting via Composite Loss",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project.html";
-            },},{id: "projects-2024-1m-deepfakes-detection-challenge",
-          title: '2024 1M-Deepfakes Detection Challenge',
-          description: "a project with a background image",
+            },},{id: "projects-1m-deepfakes-detection-challenge",
+          title: '1M-Deepfakes Detection Challenge',
+          description: "dual-branch video CNN",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project.html";
             },},{id: "projects-highly-imbalanced-brain-lesion-segmentation",

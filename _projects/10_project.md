@@ -7,7 +7,7 @@ importance: 2
 category: presentations
 ---
 
-This work was done in collaboration with George, Lu, Inga, and Milos 
+This work was done in collaboration with George, Lu, Inga, and Milos
 
 [Presentation Slides (PDF)]({{ site.url }}/assets/pdf/19-06-2025_Presentation_memes.pdf)
 

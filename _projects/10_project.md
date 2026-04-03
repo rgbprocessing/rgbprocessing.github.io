@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Meme Detection and Social Network Analysis
-description: another project with an image 🎉
+description: 
 img: assets/img/6.jpg
 importance: 2
 category: research

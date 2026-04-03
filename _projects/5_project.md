@@ -27,3 +27,7 @@ Each branch applies CNN blocks with batch normalization. The audio branch employ
 <div class="caption">
     <strong>Figure 1:</strong> Model overview for deepfake detection and localization
 </div>
+
+**Future Work**
+
+Future improvements would incorporate additional content-aware features such as lip-sync inconsistency detection and motion inconsistencies as well as a systematic comparison of audio-visual feature extraction to identify optimal features for manipulation artifact detection.

@@ -8,4 +8,3 @@ category: research
 ---
 
 [Slides (PDF)]({{ site.url }}/assets/pdf/19-06-2025_Presentation_memes.pdf)
-

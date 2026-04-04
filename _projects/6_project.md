@@ -95,3 +95,28 @@ We tested implementing several weighting maps on our loss function calculation t
 <div class="caption mt-2">
   <strong>Figure 3:</strong> Weighted loss mapping ablation results. Panels A-B show the Gaussian mask and corresponding test performance; C-D show the inverse distance mask and results. Neither outperformed the uniform baseline.
 </div>
+
+<em>Batch Normalization</em>
+
+Batch normalization eliminated training instabilities and class dropout observed in early hyperparameter-sensitive runs. While this established reliable convergence across all classes, it did not improve minority class DICE, confirming that dataset imbalance, not training dynamics, remained the primary segmentation bottleneck.
+
+<em>Dataset Augmentation</em>
+
+We incorporated several methods of data augmentation including rotating and flipping the patches during training and adding gaussian noise. While more gaussian noise improved segmentation for the largest classes, PV WMH and WMH showed worse performance. We also implemented completely random rotation but obtained bad results likely due to the segmentation and imaging interpolation.
+
+<em>L2 Regularization</em>
+
+L2 regularization improved DICE across most of the classes by mitigating overfitting, but yielded no gains for lacunar infarcts. 
+
+<em>Additional Models</em>
+
+We also trained a hierarchical model, a double U-Net model, and tested combination loss functions, but preliminary results did not show any improvement and testing has not been completed yet.
+
+<em>Additional analysis</em>
+lesions size - large amount of lesions of size one suggesting messy segmentation. segmentations were performed by different people but only one segmentation per scan - previous iterations where weighted sampling was done per subject got messed up when subjects only had a couple voxels of a class (likely error) but the final method of indexing every location of every voxel fixed this. we did previously look into eliminating some unsurrounded voxels but ultimately decided to leave the dataset as is as it would requires essentailly redoing the whole thing so instead we treat it as real world data with errors.
+
+**Conclusion**
+
+Overall we were able to achieve a significant improvement in segmentation DICE score in the minority class (.28) compared to previous work. We mitigated the class imbalance by using per class sampling and center voxel DICE score metric. However the implementations of this model are extremely limited since segmenting a voxel at a time is computationally expensive. For future work I would either pre-train on a larger dataset or investigate the boundary segmentation of small classes to try to improve the performance even further or better analyze where the models are failing.
+
+

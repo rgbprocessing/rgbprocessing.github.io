@@ -21,15 +21,34 @@ These compounded sources of imbalance - across voxels, classes, and subjects - m
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/First Move First Tree Traversal.svg" title="Tree traversal comparison" class="img-fluid rounded z-depth-0" %}
+        {% include figure.liquid loading="eager" path="assets/img/brainstats.png" title="Dataset statistics" class="img-fluid rounded z-depth-0" %}
     </div>
 </div>
 <div class="caption">
-  <strong>Figure 1:</strong> Tree traversal order comparison across three algorithms. 
+  <strong>Figure 1:</strong> Dataset class breakdown summary
   <br>
-  <em>Left:</em> Depth-first search visits leaf nodes ABD→ABE (B's siblings sequentially).
+  <em>Left:</em> The number of subjects which contain each class.
   <br>
-  <em>Middle:</em> Breadth-first search explores layer-by-layer.
-  <br>
-  <em>Right:</em> First-move first prioritizes first-level siblings (ABD→ACF).
+  <em>Right:</em> The number of annotated voxels per class.
 </div>
+
+**Previous Work**
+
+This project has evolved through a series of experiments exploring how to segment extremely imbalanced stroke lesions in MRI. Initial work evaluated established architectures, including nnU-Net and DeepMedic, used range of hierarchical class groupings, class sampling ratios, and loss functions, including sensitivity-weighted loss to prioritize finding lesions over perfect segmentation. These experiments established a baseline and revealed the limits of standard imbalance-mitigation strategies for this problem.
+
+One major limitation of the earlier pipeline was its subject-level sampling scheme. Because sampling was performed per brain, rare classes that were absent from many subjects remained underrepresented during training even when class balancing was applied. As a result, the most challenging lesion classes continued to be learned poorly, particularly those with very small volume and presence. However this adds an additional problem of balancing all of the classes equally during training to maximize learning without overfitting.
+
+This work builds upon these previous trials with a more careful analysis of imbalance, sampling, and evaluation in 3D medical segmentation. In particular, we introduce additional metrics such as center-voxel DICE to better gauge the improvement in each model segmenting the extremely imbalance classes, where boundary errors and voxel scarcity can obscure meaningful gains.
+
+**Model Architecture**
+
+We employed a 3D U-Net as the core segmentation model, processing 33×33×33 voxel patches extracted from the multi-modal MRI volumes. This patch-based approach effectively handles the memory constraints of 3D convolutions while capturing local lesion context critical for small structures like lacunar infarcts.
+
+**Sampling Strategy**
+
+To overcome the limitations of subject-level sampling identified in prior iterations, we implemented class-aware patch sampling across the entire dataset. An index of class representation was first constructed for each subject, enabling random selection of individual voxel-centered patches (33×33×33) directly from the global distribution of each class. Weighted sampling was applied to prioritize minority classes—oversampling rare structures like lacunar infarcts while undersampling dominant classes such as background tissue—ensuring balanced training representation despite extreme voxel-level imbalance.
+
+**Training Objective**
+
+The baseline loss function was weighted cross-entropy, with class weights inversely proportional to voxel frequencies. This formulation directly targets the imbalance challenge by penalizing errors on minority classes more heavily, providing a foundation for subsequent ablations on alternative objectives and architectural modifications.
+

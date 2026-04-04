@@ -106,7 +106,7 @@ We incorporated several methods of data augmentation including rotating and flip
 
 <em>L2 Regularization</em>
 
-L2 regularization improved DICE across most of the classes by mitigating overfitting, but yielded no gains for lacunar infarcts. 
+L2 regularization improved DICE across most of the classes by mitigating overfitting, but yielded no gains for lacunar infarcts.
 
 <em>Additional Models</em>
 
@@ -118,5 +118,3 @@ lesions size - large amount of lesions of size one suggesting messy segmentation
 **Conclusion**
 
 Overall we were able to achieve a significant improvement in segmentation DICE score in the minority class (.28) compared to previous work. We mitigated the class imbalance by using per class sampling and center voxel DICE score metric. However the implementations of this model are extremely limited since segmenting a voxel at a time is computationally expensive. For future work I would either pre-train on a larger dataset or investigate the boundary segmentation of small classes to try to improve the performance even further or better analyze where the models are failing.
-
-

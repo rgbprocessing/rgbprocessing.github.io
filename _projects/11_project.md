@@ -116,7 +116,7 @@ Photoshop's Face-Aware Liquify tool enables precise adjustments to facial featur
   <strong>Figure 2:</strong> Face-Aware Liquify noise signatures. Each pair shows manipulated face and corresponding noise residual.
 </div>
 
-**AI-Generated Media Analysis** 
+**AI-Generated Media Analysis**
 
 Deepfakes produce photorealistic results but may preserve detectable noise inconsistencies across frames. These artifacts are sometimes visible when analyzing frame-wise noise residuals from manipulated video sequences.
 

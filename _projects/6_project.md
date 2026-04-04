@@ -71,21 +71,21 @@ We tested implementing several weighting maps on our loss function calculation t
 
 <div class="container">
   <div class="row">
-    <div class="col-sm-5">
+    <div class="col-sm-4">
       {% include figure.liquid loading="eager" path="assets/img/gaussianmask.gif" class="img-fluid rounded z-depth-0" %}
       <div class="caption text-center mt-1"><strong>A.</strong> Gaussian Mask</div>
     </div>
-    <div class="col-sm-8">
+    <div class="col-sm-7">
       {% include figure.liquid loading="eager" path="assets/img/gaussiantest.png" class="img-fluid rounded z-depth-0" %}
       <div class="caption text-center mt-1"><strong>B.</strong> Gaussian Mask Results</div>
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-5">
+    <div class="col-sm-4">
       {% include figure.liquid loading="eager" path="assets/img/inversedist.png" class="img-fluid rounded z-depth-0" %}
       <div class="caption text-center mt-1"><strong>C.</strong> Inverse Distance Mask</div>
     </div>
-    <div class="col-sm-8">
+    <div class="col-sm-7">
       {% include figure.liquid loading="eager" path="assets/img/inversetest.png" class="img-fluid rounded z-depth-0" %}
       <div class="caption text-center mt-1"><strong>D.</strong> Inverse Distance Mask Results</div>
     </div>

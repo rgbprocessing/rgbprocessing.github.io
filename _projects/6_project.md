@@ -102,7 +102,42 @@ Batch normalization eliminated training instabilities and class dropout observed
 
 <em>Dataset Augmentation</em>
 
-We incorporated several methods of data augmentation including rotating and flipping the patches during training and adding gaussian noise. While more gaussian noise improved segmentation for the largest classes, PV WMH and WMH showed worse performance. We also implemented completely random rotation but obtained bad results likely due to the segmentation and imaging interpolation.
+We incorporated several methods of data augmentation including rotating and flipping the patches during training and adding gaussian noise. While increased noise improved performance on larger classes, periventricular white matter hyperintensities (PVWMH) and white matter hyperintensities (WMH) showed degraded performance. Fully random rotations produced poor results, likely due to interpolation artifacts in 3D segmentation labels and imaging.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/noiseaug.png" title="Dataset statistics" class="img-fluid rounded z-depth-0" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/rotationaug.png" title="Dataset statistics" class="img-fluid rounded z-depth-0" %}
+    </div>
+</div>
+<div class="caption">
+  <strong>Figure 1:</strong> Dataset class breakdown showing different kinds of class imbalance
+  <div class="row mt-1">
+    <div class="col-sm">
+      <em>Left:</em> Number of subjects containing each class
+    </div>
+    <div class="col-sm">
+      <em>Right:</em> Number of annotated voxels per class
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/noiseaug.png" class="img-fluid rounded z-depth-0" %}
+    <div class="caption text-center mt-1"><strong>A.</strong> Gaussian Noise Augmentation</div>
+  </div>
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/rotationaug.png" class="img-fluid rounded z-depth-0" %}
+    <div class="caption text-center mt-1"><strong>B.</strong> Random Rotation Augmentation</div>
+  </div>
+</div>
+
+<div class="caption mt-3">
+  <strong>Figure X:</strong> Data augmentation ablation results. Noise benefits larger classes but harms PVWMH/WMH; random rotations fail due to label interpolation issues.
+</div>
 
 <em>L2 Regularization</em>
 

@@ -20,29 +20,20 @@ A defining characteristic of this dataset is its extreme and multi-level class i
 These compounded sources of imbalance - across voxels, classes, and subjects - make the dataset a particularly demanding testbed for evaluating segmentation methods under clinically realistic conditions.
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/brainstats.png" title="Dataset statistics" class="img-fluid rounded z-depth-0" %}
-        <div class="caption text-center mt-1">
-            <div class="col-sm">
-              <b>A.</b> Number of subjects containing each class
-            </div>
-            <div class="col-sm">
-              <b>B.</b> Number of annotated voxels per class
-            </div>
-            <strong>A.</strong> Gaussian Noise Augmentation</div>
-        </div>
-    </div>
-</div>
-<div class="caption">
-  <strong>Figure 1:</strong> Dataset class breakdown showing different kinds of class imbalance
-  <div class="row mt-1">
-    <div class="col-sm">
-      <em>Left:</em> Number of subjects containing each class
-    </div>
-    <div class="col-sm">
-      <em>Right:</em> Number of annotated voxels per class
+  <div class="col-sm-12 mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/brainstats.png" title="Dataset statistics" class="img-fluid rounded z-depth-0" %}
+    <div class="row mt-1">
+      <div class="col-sm-6 text-center">
+        <strong>A.</strong> Number of subjects containing each class
+      </div>
+      <div class="col-sm-6 text-center">
+        <strong>B.</strong> Number of annotated voxels per class
+      </div>
     </div>
   </div>
+</div>
+<div class="caption mt-3">
+  <strong>Figure 1:</strong> Dataset class breakdown showing different kinds of class imbalance
 </div>
 
 **Previous Work**

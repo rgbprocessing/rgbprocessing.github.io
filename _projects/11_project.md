@@ -60,11 +60,11 @@ Photoshop's Face-Aware Liquify tool enables precise adjustments to facial featur
 
 <div class="row">
   <div class="col-sm-3 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/face_original.png" class="img-fluid rounded z-depth-0" %}
+    {% include figure.liquid loading="eager" path="assets/img/ddpng.png" class="img-fluid rounded z-depth-0" %}
     <div class="caption text-center mt-1"><strong>A.</strong> Original</div>
   </div>
   <div class="col-sm-3 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/face_original_noise.png" class="img-fluid rounded z-depth-0" %}
+    {% include figure.liquid loading="eager" path="assets/img/download - 2023-09-06T105213.641.png" class="img-fluid rounded z-depth-0" %}
     <div class="caption text-center mt-1"><strong>B.</strong> Original Noise</div>
   </div>
   <div class="col-sm-3 mt-3 mt-md-0">

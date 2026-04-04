@@ -9,7 +9,7 @@ category: research
 
 **Abstract**
 
-This project investigates strategies for addressing severe class imbalance in medical image segmentation, focusing on ischemic stroke lesions in MRI data. The task is challenging due to the extremely limited representation of small lesion regions relative to background tissue. We evaluate multiple architectural and training design choices aimed at improving minority class performance. The best-performing configuration achieves a center voxel DICE score of 0.28 on the smallest lesion class, using a reduced prediction field of view strategy. This is a modest score but represents meaningful gains under highly imbalanced conditions. We also performed an ablation study of  alternative design parameters, highlighting the complexity of this extremely imbalanced segmentation case.
+This project investigates strategies for addressing severe class imbalance in medical image segmentation, focusing on ischemic stroke lesions in MRI data. The task is challenging due to the extremely limited representation of small lesion regions relative to background tissue. We evaluate multiple architectural and training design choices aimed at improving minority class performance. The best-performing configuration achieves a center voxel DICE score of 0.28 on the smallest lesion class, using a reduced prediction field of view strategy. This is a modest score but represents meaningful gains under highly imbalanced conditions. We also performed an ablation study of alternative design parameters, highlighting the complexity of this extremely imbalanced segmentation case.
 
 **Dataset**
 
@@ -64,7 +64,3 @@ We implemented class-aware patch sampling across the entire dataset. An index of
 <em>Weighted Loss Mapping</em>
 
 We tested implementing several weighting maps on our loss function calculation to weight the center voxel loss higher than the rest of patch and improve the center voxel segmentation performance. However none of our weighted masks showed a significant improvement over our baseline mask of ones.
-
-
-
-

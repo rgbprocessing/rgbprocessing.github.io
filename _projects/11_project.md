@@ -56,7 +56,7 @@ This project visualizes noise residuals (original minus median-filtered) across 
 
 **Face-Aware Liquify Analysis**
 
-Photoshop's Face-Aware Liquify tool enables precise adjustments to facial features (forehead, jawline, face width, chin height) while preserving overall facial structure. However, these semantically-guided warps introduce characteristic noise distortions that differ markedly from camera-native patterns. Even subtle corrections create shearing and stretching artifacts visible in noise residuals.
+Photoshop's Face-Aware Liquify tool enables precise adjustments to facial features (forehead, jawline, face width, chin height) while preserving overall facial structure. These semantically-guided warps introduce characteristic noise distortions at full resolution.
 
 <div class="row">
   <div class="col-sm-3 mt-3 mt-md-0">
@@ -114,4 +114,31 @@ Photoshop's Face-Aware Liquify tool enables precise adjustments to facial featur
 </div>
 <div class="caption mt-3">
   <strong>Figure 2:</strong> Face-Aware Liquify noise signatures. Each pair shows manipulated face and corresponding noise residual.
+</div>
+
+**AI-Generated Media Analysis** 
+
+Deepfakes produce photorealistic results but may preserve detectable noise inconsistencies across frames. These artifacts are sometimes visible when analyzing frame-wise noise residuals from manipulated video sequences.
+
+<div class="row">
+  <div class="col-sm-6 mt-3 mt-md-0">
+    <div class="embed-responsive embed-responsive-16by9">
+      <video class="img-fluid rounded z-depth-0 embed-responsive-item" controls preload="metadata">
+        <source src="https://drive.google.com/file/d/1GG0LG_JsDLiXi5YwoCXfKIYtsvqBFoVB/view?usp=sharing" type="video/mp4">
+      </video>
+    </div>
+    <div class="caption text-center mt-1"><strong>A.</strong> Deepfake Face Replacement</div>
+  </div>
+  <div class="col-sm-6 mt-3 mt-md-0">
+    <div class="embed-responsive embed-responsive-16by9">
+      <video class="img-fluid rounded z-depth-0 embed-responsive-item" controls preload="metadata">
+        <source src="https://drive.google.com/file/d/1hRRY8n41dGDR7ltfL9UP-70d6VH5_RkC/view?usp=sharing" type="video/mp4">
+      </video>
+    </div>
+    <div class="caption text-center mt-1"><strong>B.</strong> FaceShifter Face Swap</div>
+  </div>
+</div>
+
+<div class="caption mt-3">
+  <strong>Figure 3:</strong> Deepfake video examples showing face replacement (A) and FaceShifter swap (B).
 </div>

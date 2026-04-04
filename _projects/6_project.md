@@ -25,13 +25,13 @@ These compounded sources of imbalance - across voxels, classes, and subjects - m
     </div>
 </div>
 <div class="caption">
-  <strong>Figure 1:</strong> Dataset class breakdown summary
+  <strong>Figure 1:</strong> Dataset class breakdown showing different kinds of class imbalance
   <div class="row mt-1">
     <div class="col-sm text-left">
-      <em>Left:</em> Number of subjects containing each class.
+      <em>Left:</em> Number of subjects containing each class
     </div>
     <div class="col-sm text-right">
-      <em>Right:</em> Number of annotated voxels per class.
+      <em>Right:</em> Number of annotated voxels per class
     </div>
   </div>
 </div>

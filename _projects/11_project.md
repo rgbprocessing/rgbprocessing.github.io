@@ -115,5 +115,3 @@ Photoshop's Face-Aware Liquify tool enables precise adjustments to facial featur
 <div class="caption mt-3">
   <strong>Figure 2:</strong> Face-Aware Liquify noise signatures. Each pair shows manipulated face and corresponding noise residual.
 </div>
-
-

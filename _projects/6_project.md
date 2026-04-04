@@ -31,6 +31,16 @@ These compounded sources of imbalance - across voxels, classes, and subjects - m
   <br>
   <em>Right:</em> The number of annotated voxels per class.
 </div>
+<div class="caption">
+    <div class="row">
+    <div class="col-sm">
+      <em>Left:</em> The number of subjects which contain each class.
+    </div>
+    <div class="col-sm">
+      <em>Right:</em> The number of annotated voxels per class.
+    </div>
+  </div>
+</div>
 
 **Previous Work**
 

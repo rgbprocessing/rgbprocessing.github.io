@@ -71,7 +71,7 @@ We tested implementing several weighting maps on our loss function calculation t
 
 <div class="container">
   <div class="row">
-    <div class="col-sm-6">
+    <div class="col-sm-5">
       {% include figure.liquid loading="eager" path="assets/img/gaussianmask.gif" class="img-fluid rounded z-depth-0" %}
       <div class="caption text-center mt-1"><strong>A.</strong> Gaussian Mask</div>
     </div>
@@ -81,7 +81,7 @@ We tested implementing several weighting maps on our loss function calculation t
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-6">
+    <div class="col-sm-5">
       {% include figure.liquid loading="eager" path="assets/img/inversedist.png" class="img-fluid rounded z-depth-0" %}
       <div class="caption text-center mt-1"><strong>C.</strong> Inverse Distance Mask</div>
     </div>

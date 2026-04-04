@@ -71,49 +71,7 @@ We tested implementing several weighting maps on our loss function calculation t
 
 <div class="container">
   <div class="row">
-    <div class="col-sm-4">
-      {% include figure.liquid loading="eager" path="assets/img/gaussianmask.gif" title="Best model testing results" class="img-fluid rounded z-depth-0" %}
-    </div>
-    <div class="col-sm-8">
-      {% include figure.liquid loading="eager" path="assets/img/gaussiantest.png" title="Best model testing results" class="img-fluid rounded z-depth-0" %}
-    </div>
-  </div>
-</div>
-<div class="caption">
-    <div class="row">
-    <div class="col-sm-4">
-      Gaussian Mask
-    </div>
-    <div class="col-sm-8">
-      Gaussian Mask Results
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-      {% include figure.liquid loading="eager" path="assets/img/inversedist.png" title="Best model testing results" class="img-fluid rounded z-depth-0" %}
-    </div>
-    <div class="col-sm-8">
-      {% include figure.liquid loading="eager" path="assets/img/inversetest.png" title="Best model testing results" class="img-fluid rounded z-depth-0" %}
-    </div>
-  </div>
-</div>
-<div class="caption">
-    <div class="row">
-    <div class="col-sm-4">
-      Inverse Distance Mask
-    </div>
-    <div class="col-sm-8">
-      Inverse Distance Mask Results
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-6">
       {% include figure.liquid loading="eager" path="assets/img/gaussianmask.gif" class="img-fluid rounded z-depth-0" %}
       <div class="caption text-center mt-1"><strong>A.</strong> Gaussian Mask</div>
     </div>
@@ -123,7 +81,7 @@ We tested implementing several weighting maps on our loss function calculation t
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-6">
       {% include figure.liquid loading="eager" path="assets/img/inversedist.png" class="img-fluid rounded z-depth-0" %}
       <div class="caption text-center mt-1"><strong>C.</strong> Inverse Distance Mask</div>
     </div>
@@ -132,10 +90,6 @@ We tested implementing several weighting maps on our loss function calculation t
       <div class="caption text-center mt-1"><strong>D.</strong> Inverse Distance Mask Results</div>
     </div>
   </div>
-</div>
-
-<div class="caption mt-3">
-  <strong>Figure 3:</strong> Weighted loss mapping ablation results. Neither mask outperformed the uniform baseline.
 </div>
 
 <div class="caption mt-2">

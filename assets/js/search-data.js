@@ -28,9 +28,9 @@ ninja.data = [{
           description: "Group project for SICSS Norrköping 2025",
           section: "Projects",handler: () => {
               window.location.href = "/projects/10_project.html";
-            },},{id: "projects-image-manipulation-detection-noise",
-          title: 'Image manipulation detection (noise)',
-          description: "another project with an image 🎉",
+            },},{id: "projects-noise-artifacts-in-image-manipulations",
+          title: 'Noise Artifacts in Image Manipulations',
+          description: "visualizing manipulation artifacts through noise residuals",
           section: "Projects",handler: () => {
               window.location.href = "/projects/11_project.html";
             },},{id: "projects-blend-mode-compendium",

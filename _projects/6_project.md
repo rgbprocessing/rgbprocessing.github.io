@@ -69,21 +69,42 @@ We implemented class-aware patch sampling across the entire dataset. An index of
 
 <div class="container">
   <div class="row">
-    <div class="col-sm">
-      {% include figure.liquid loading="eager" path="assets/img/bestmodel.png" title="Best model testing results" class="img-fluid rounded z-depth-0" %}
+    <div class="col-sm-4">
+      {% include figure.liquid loading="eager" path="assets/img/gaussianmask.gif" title="Best model testing results" class="img-fluid rounded z-depth-0" %}
     </div>
-    <div class="col-sm">
-      {% include figure.liquid loading="eager" path="assets/img/bestmodel.png" title="Best model testing results" class="img-fluid rounded z-depth-0" %}
+    <div class="col-sm-8">
+      {% include figure.liquid loading="eager" path="assets/img/gaussiantest.png" title="Best model testing results" class="img-fluid rounded z-depth-0" %}
     </div>
   </div>
 </div>
 <div class="caption">
     <div class="row">
-    <div class="col-sm">
-      yo
+    <div class="col-sm-4">
+      Gaussian Mask
     </div>
-    <div class="col-sm">
-      hi
+    <div class="col-sm-8">
+      Gaussian Mask Results
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      {% include figure.liquid loading="eager" path="assets/img/inversedist.png" title="Best model testing results" class="img-fluid rounded z-depth-0" %}
+    </div>
+    <div class="col-sm-8">
+      {% include figure.liquid loading="eager" path="assets/img/inversetest.png" title="Best model testing results" class="img-fluid rounded z-depth-0" %}
+    </div>
+  </div>
+</div>
+<div class="caption">
+    <div class="row">
+    <div class="col-sm-4">
+      Gaussian Mask
+    </div>
+    <div class="col-sm-8">
+      Gaussian Mask Results
     </div>
   </div>
 </div>

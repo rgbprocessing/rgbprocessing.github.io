@@ -143,6 +143,15 @@ We incorporated several methods of data augmentation including rotating and flip
 
 L2 regularization improved DICE across most of the classes by mitigating overfitting, but yielded no gains for lacunar infarcts.
 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/l2 reg.png" title="Best model testing results" class="img-fluid rounded z-depth-0" %}
+    </div>
+</div>
+<div class="caption">
+  <strong>Figure 2:</strong> Best model testing results using full patch DICE score, the center 9 voxel DICE score, and center voxel DICE score.
+</div>
+
 <em>Additional Models</em>
 
 We also trained a hierarchical model, a double U-Net model, and tested combination loss functions, but preliminary results did not show any improvement and testing has not been completed yet.

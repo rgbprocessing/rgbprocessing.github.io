@@ -72,7 +72,7 @@ Photoshop's Face-Aware Liquify tool enables precise adjustments to facial featur
     <div class="caption text-center mt-1"><strong>C.</strong> Forehead Adjustment</div>
   </div>
   <div class="col-sm-3 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/forehead_noise.png" class="img-fluid rounded z-depth-0" %}
+    {% include figure.liquid loading="eager" path="assets/img/forehead noise.png" class="img-fluid rounded z-depth-0" %}
     <div class="caption text-center mt-1"><strong>D.</strong> Forehead Noise</div>
   </div>
 </div>
@@ -82,15 +82,15 @@ Photoshop's Face-Aware Liquify tool enables precise adjustments to facial featur
     <div class="caption text-center mt-1"><strong>E.</strong> Jawline Adjustment</div>
   </div>
   <div class="col-sm-3 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/jawline_noise.png" class="img-fluid rounded z-depth-0" %}
+    {% include figure.liquid loading="eager" path="assets/img/jawline noise.png" class="img-fluid rounded z-depth-0" %}
     <div class="caption text-center mt-1"><strong>F.</strong> Jawline Noise</div>
   </div>
   <div class="col-sm-3 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/facewidth.png" class="img-fluid rounded z-depth-0" %}
+    {% include figure.liquid loading="eager" path="assets/img/face width.png" class="img-fluid rounded z-depth-0" %}
     <div class="caption text-center mt-1"><strong>G.</strong> Face Width Adjustment</div>
   </div>
   <div class="col-sm-3 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/facewidth_noise.png" class="img-fluid rounded z-depth-0" %}
+    {% include figure.liquid loading="eager" path="assets/img/face width noise.png" class="img-fluid rounded z-depth-0" %}
     <div class="caption text-center mt-1"><strong>H.</strong> Face Width Noise</div>
   </div>
 </div>

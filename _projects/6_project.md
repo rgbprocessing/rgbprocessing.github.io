@@ -51,4 +51,3 @@ To overcome the limitations of subject-level sampling identified in prior iterat
 **Training Objective**
 
 The baseline loss function was weighted cross-entropy, with class weights inversely proportional to voxel frequencies. This formulation directly targets the imbalance challenge by penalizing errors on minority classes more heavily, providing a foundation for subsequent ablations on alternative objectives and architectural modifications.
-

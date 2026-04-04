@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Image manipulation detection (noise)
-description: another project with an image 🎉
+title: Noise Artifacts in Image Manipulations
+description: visualizing manipulation artifacts through noise residuals
 img: assets/img/6.jpg
 importance: 6
 category: research
 ---
 
-Noise Analysis for Manipulated Media Detection
+**Noise Analysis for Manipulated Media Detection**
 
 Image manipulations—even subtle ones—leave detectable fingerprints in the noise characteristics of digital media. Noise arises naturally from sensor limitations (photon shot noise, read noise), low-light conditions requiring gain amplification, and post-processing operations that alter local statistical properties. Critically, common Photoshop manipulations like blurring, liquify, and splicing disrupt these patterns differently than camera-native noise, creating exploitable inconsistencies for forensic analysis.
 
@@ -54,7 +54,7 @@ This project visualizes noise residuals (original minus median-filtered) across 
   <strong>Figure 1:</strong> Noise residuals reveal manipulation artifacts. Each pair shows manipulated image and corresponding noise (original minus median-filtered). Blur removes noise patterns (C-D); liquify creates patterned distortions (E-F); splicing shows noise pattern discontinuities (G-H).
 </div>
 
-Face-Aware Liquify Analysis
+**Face-Aware Liquify Analysis**
 
 Photoshop's Face-Aware Liquify tool enables precise adjustments to facial features (forehead, jawline, face width, chin height) while preserving overall facial structure. However, these semantically-guided warps introduce characteristic noise distortions that differ markedly from camera-native patterns. Even subtle corrections create shearing and stretching artifacts visible in noise residuals.
 
@@ -112,7 +112,8 @@ Photoshop's Face-Aware Liquify tool enables precise adjustments to facial featur
     <div class="caption text-center mt-1"><strong>L.</strong> All Adjustments Noise</div>
   </div>
 </div>
-
 <div class="caption mt-3">
-  <strong>Figure 2:</strong> Face-Aware Liquify noise signatures. Each pair shows manipulated face and corresponding noise residual (original minus median-filtered). Forehead/jawline adjustments create localized stretching artifacts (C-F); cumulative adjustments produce complex warping patterns (I-L).
+  <strong>Figure 2:</strong> Face-Aware Liquify noise signatures. Each pair shows manipulated face and corresponding noise residual.
 </div>
+
+

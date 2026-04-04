@@ -7,74 +7,49 @@ importance: 6
 category: research
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Noise Analysis for Manipulated Media Detection
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Image manipulations—even subtle ones—leave detectable fingerprints in the noise characteristics of digital media. Noise arises naturally from sensor limitations (photon shot noise, read noise), low-light conditions requiring gain amplification, and post-processing operations that alter local statistical properties. Critically, common Photoshop manipulations like blurring, liquify, and splicing disrupt these patterns differently than camera-native noise, creating exploitable inconsistencies for forensic analysis.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+This project visualizes noise residuals (original minus median-filtered) across manipulation types, revealing artifact signatures that persist even in seemingly innocuous edits. These patterns form the basis for training manipulation detectors in the deepfake era.
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+  <div class="col-sm-3 mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/originalorange2.png" class="img-fluid rounded z-depth-0" %}
+    <div class="caption text-center mt-1"><strong>A.</strong> Original</div>
+  </div>
+  <div class="col-sm-3 mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/download - 2023-09-06T114930.345.png" class="img-fluid rounded z-depth-0" %}
+    <div class="caption text-center mt-1"><strong>B.</strong> Noise Residual</div>
+  </div>
+  <div class="col-sm-3 mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/originalorangeblurred2.png" class="img-fluid rounded z-depth-0" %}
+    <div class="caption text-center mt-1"><strong>C.</strong> Blur</div>
+  </div>
+  <div class="col-sm-3 mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/originalblur2noise.png" class="img-fluid rounded z-depth-0" %}
+    <div class="caption text-center mt-1"><strong>D.</strong> Blur Noise</div>
+  </div>
 </div>
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  <div class="col-sm-3 mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/originalorangeliquify.png" class="img-fluid rounded z-depth-0" %}
+    <div class="caption text-center mt-1"><strong>E.</strong> Liquify</div>
   </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  <div class="col-sm-3 mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/orangeliquefy.png" class="img-fluid rounded z-depth-0" %}
+    <div class="caption text-center mt-1"><strong>F.</strong> Liquify Noise</div>
+  </div>
+  <div class="col-sm-3 mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/orangecopypaste.png" class="img-fluid rounded z-depth-0" %}
+    <div class="caption text-center mt-1"><strong>G.</strong> Splicing</div>
+  </div>
+  <div class="col-sm-3 mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/download - 2023-09-06T115714.921.png" class="img-fluid rounded z-depth-0" %}
+    <div class="caption text-center mt-1"><strong>H.</strong> Splicing Noise</div>
   </div>
 </div>
-```
 
-{% endraw %}
+<div class="caption mt-3">
+  <strong>Figure 1:</strong> Noise residuals reveal manipulation artifacts. Each pair shows manipulated image and corresponding noise (original minus median-filtered). Blur smooths noise patterns (C-D); liquify creates shearing distortions (E-F); splicing shows boundary discontinuities (G-H).
+</div>

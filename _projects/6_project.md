@@ -64,8 +64,3 @@ The optimal configuration achieved a center-voxel DICE of 0.28 on lacunar infarc
 </div>
 
 **Additional Work**
-
-
-
-
-

@@ -123,17 +123,17 @@ Deepfakes produce photorealistic results but may preserve detectable noise incon
 <div class="row">
   <div class="col-sm-6 mt-3 mt-md-0">
     <div class="embed-responsive embed-responsive-16by9">
-      <video class="img-fluid rounded z-depth-0 embed-responsive-item" controls preload="metadata">
-        <source src="https://drive.google.com/file/d/1GG0LG_JsDLiXi5YwoCXfKIYtsvqBFoVB/view?usp=sharing" type="video/mp4">
-      </video>
+      <iframe class="embed-responsive-item rounded z-depth-0" 
+              src="https://drive.google.com/file/d/1GG0LG_JsDLiXi5YwoCXfKIYtsvqBFoVB/preview" 
+              allowfullscreen loading="lazy"></iframe>
     </div>
     <div class="caption text-center mt-1"><strong>A.</strong> Deepfake Face Replacement</div>
   </div>
   <div class="col-sm-6 mt-3 mt-md-0">
     <div class="embed-responsive embed-responsive-16by9">
-      <video class="img-fluid rounded z-depth-0 embed-responsive-item" controls preload="metadata">
-        <source src="https://drive.google.com/file/d/1hRRY8n41dGDR7ltfL9UP-70d6VH5_RkC/view?usp=sharing" type="video/mp4">
-      </video>
+      <iframe class="embed-responsive-item rounded z-depth-0" 
+              src="https://drive.google.com/file/d/1hRRY8n41dGDR7ltfL9UP-70d6VH5_RkC/preview" 
+              allowfullscreen loading="lazy"></iframe>
     </div>
     <div class="caption text-center mt-1"><strong>B.</strong> FaceShifter Face Swap</div>
   </div>

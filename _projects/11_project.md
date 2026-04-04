@@ -142,3 +142,12 @@ Deepfakes produce photorealistic results but may preserve detectable noise incon
 <div class="caption mt-3">
   <strong>Figure 3:</strong> Deepfake video examples showing face replacement (A) and FaceShifter swap (B).
 </div>
+
+<div class="references">
+  <h5>References</h5>
+  <ol>
+    <li>Li, L., Bao, J., Yang, H., Chen, D., & Wen, F. (2020). FaceShifter: Towards high fidelity and occlusion aware face swapping. <em>arXiv preprint arXiv:1912.13457</em>. <a href="https://arxiv.org/abs/1912.13457">arxiv.org/abs/1912.13457</a></li>
+    
+    <li>Wang, et al. (2019). Detecting photoshopped faces by scripting photoshop. In <em>Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)</em>. <a href="https://openaccess.thecvf.com/content_ICCV_2019/papers/Wang_Detecting_Photoshopped_Faces_by_Scripting_Photoshop_ICCV_2019_paper.pdf">openaccess.thecvf.com</a></li>
+  </ol>
+</div>

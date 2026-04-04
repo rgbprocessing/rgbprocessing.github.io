@@ -129,7 +129,7 @@ L2 regularization improved DICE across most of the classes by mitigating overfit
     </div>
 </div>
 <div class="caption">
-  <strong>Figure 2:</strong> Best model testing results using full patch DICE score, the center 9 voxel DICE score, and center voxel DICE score.
+  <strong>Figure 2:</strong> L2 regularization ablation results showing center-voxel DICE across all classes.
 </div>
 
 <em>Additional Models</em>

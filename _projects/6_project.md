@@ -9,7 +9,7 @@ category: research
 
 **Abstract**
 
-This project investigates strategies for addressing severe class imbalance in medical image segmentation, focusing on ischemic stroke lesions in MRI data. The task is challenging due to the extremely limited representation of small lesion regions relative to background tissue. We evaluate multiple architectural and training design choices aimed at improving minority class performance. The best-performing configuration achieves a DICE score of 0.28 on the smallest lesion class, using a reduced prediction field of view strategy. This is a modest score but represents meaningful gains under highly imbalanced conditions. We also performed additional experiments exploring alternative design parameters, highlighting the sensitivity of segmentation performance to imbalance mitigation strategies.
+This project investigates strategies for addressing severe class imbalance in medical image segmentation, focusing on ischemic stroke lesions in MRI data. The task is challenging due to the extremely limited representation of small lesion regions relative to background tissue. We evaluate multiple architectural and training design choices aimed at improving minority class performance. The best-performing configuration achieves a center voxel DICE score of 0.28 on the smallest lesion class, using a reduced prediction field of view strategy. This is a modest score but represents meaningful gains under highly imbalanced conditions. We also performed an ablation study of  alternative design parameters, highlighting the complexity of this extremely imbalanced segmentation case.
 
 **Dataset**
 
@@ -48,19 +48,23 @@ We implemented class-aware patch sampling across the entire dataset. An index of
 
 **Results**
 
-The optimal configuration achieved a center-voxel DICE of 0.28 on lacunar infarcts, the smallest class, demonstrating that class-balanced voxel-level sampling enables meaningful detection of rare structures despite extreme imbalance. Full-patch DICE remained severely skewed across classes, underscoring the center-voxel metric's value in revealing progress that standard evaluation obscures. While whole-volume inference remains computationally prohibitive for routine use, this establishes a realistic upper bound for minority class performance under these challenging conditions.
+<b>Figure 2</b> shows the results for the model which achieved the highest performance in the lacunar infarcts class. The full patch segmentation shows the worst performance overall and shows the class size imbalance the most. The center voxel DICE Score shows an improvement for every class except the background class. Though segmenting an MRI volume one voxel at a time is too computationally expensive for most use cases, we use this metric to gauge model to model improvements as well as what the best possible segmentation performance on this extremely imbalanced class could be since the center voxel has the most surrounding information and should give the strongest prediction. Notably, the PV WMH and WMH classes achieve comparable results with the largest classes in this metric demonstrating the extent to which balanced class learning was achieved but also the extreme difficulty learning the LI class. The center 9 voxel DICE score shows a nominal difference from the center voxel DICE score in the largest classes (besides for the background class) due to an increased ratio of center versus boundary voxels as well as improved performance from having more training data.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/brainstats.png" title="Dataset statistics" class="img-fluid rounded z-depth-0" %}
+        {% include figure.liquid loading="eager" path="assets/img/bestmodel.png" title="Best model testing results" class="img-fluid rounded z-depth-0" %}
     </div>
 </div>
 <div class="caption">
-  <strong>Figure 1:</strong> Dataset class breakdown summary
-  <br>
-  <em>Left:</em> The number of subjects which contain each class.
-  <br>
-  <em>Right:</em> The number of annotated voxels per class.
+  <strong>Figure 2:</strong> Best model testing results using full patch DICE score, the center 9 voxel DICE score, and center voxel DICE score.
 </div>
 
 **Additional Work**
+
+<em>Weighted Loss Mapping</em>
+
+We tested implementing several weighting maps on our loss function calculation to weight the center voxel loss higher than the rest of patch and improve the center voxel segmentation performance. However none of our weighted masks showed a significant improvement over our baseline mask of ones.
+
+
+
+

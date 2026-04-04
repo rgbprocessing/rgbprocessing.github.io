@@ -22,6 +22,15 @@ These compounded sources of imbalance - across voxels, classes, and subjects - m
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/brainstats.png" title="Dataset statistics" class="img-fluid rounded z-depth-0" %}
+        <div class="caption text-center mt-1">
+            <div class="col-sm">
+              <b>A.</b> Number of subjects containing each class
+            </div>
+            <div class="col-sm">
+              <b>B.</b> Number of annotated voxels per class
+            </div>
+            <strong>A.</strong> Gaussian Noise Augmentation</div>
+        </div>
     </div>
 </div>
 <div class="caption">
@@ -105,26 +114,6 @@ Batch normalization eliminated training instabilities and class dropout observed
 We incorporated several methods of data augmentation including rotating and flipping the patches during training and adding gaussian noise. While increased noise improved performance on larger classes, periventricular white matter hyperintensities (PVWMH) and white matter hyperintensities (WMH) showed degraded performance. Fully random rotations produced poor results, likely due to interpolation artifacts in 3D segmentation labels and imaging.
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/noiseaug.png" title="Dataset statistics" class="img-fluid rounded z-depth-0" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/rotationaug.png" title="Dataset statistics" class="img-fluid rounded z-depth-0" %}
-    </div>
-</div>
-<div class="caption">
-  <strong>Figure 1:</strong> Dataset class breakdown showing different kinds of class imbalance
-  <div class="row mt-1">
-    <div class="col-sm">
-      <em>Left:</em> Number of subjects containing each class
-    </div>
-    <div class="col-sm">
-      <em>Right:</em> Number of annotated voxels per class
-    </div>
-  </div>
-</div>
-
-<div class="row">
   <div class="col-sm mt-3 mt-md-0">
     {% include figure.liquid loading="eager" path="assets/img/noiseaug.png" class="img-fluid rounded z-depth-0" %}
     <div class="caption text-center mt-1"><strong>A.</strong> Gaussian Noise Augmentation</div>
@@ -136,7 +125,7 @@ We incorporated several methods of data augmentation including rotating and flip
 </div>
 
 <div class="caption mt-3">
-  <strong>Figure X:</strong> Data augmentation ablation results. Noise benefits larger classes but harms PVWMH/WMH; random rotations fail due to label interpolation issues.
+  <strong>Figure 4:</strong> Data augmentation ablation results. Noise benefits larger classes but harms PVWMH/WMH; random rotations fail due to label interpolation issues.
 </div>
 
 <em>L2 Regularization</em>
@@ -158,6 +147,15 @@ We also trained a hierarchical model, a double U-Net model, and tested combinati
 
 <em>Additional analysis</em>
 lesions size - large amount of lesions of size one suggesting messy segmentation. segmentations were performed by different people but only one segmentation per scan - previous iterations where weighted sampling was done per subject got messed up when subjects only had a couple voxels of a class (likely error) but the final method of indexing every location of every voxel fixed this. we did previously look into eliminating some unsurrounded voxels but ultimately decided to leave the dataset as is as it would requires essentailly redoing the whole thing so instead we treat it as real world data with errors.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/lesionsize.png" title="Best model testing results" class="img-fluid rounded z-depth-0" %}
+    </div>
+</div>
+<div class="caption">
+  <strong>Figure 2:</strong> Best model testing results using full patch DICE score, the center 9 voxel DICE score, and center voxel DICE score.
+</div>
 
 **Conclusion**
 

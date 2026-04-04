@@ -2,7 +2,7 @@
 layout: page
 title: Highly Imbalanced Brain Lesion Segmentation
 description: 3D CNN and Ablation Study
-img:
+img: assets/img/brain.png
 importance: 1
 category: research
 ---
@@ -18,3 +18,18 @@ The dataset consists of 79 subjects with chronic left-hemispheric stroke lesions
 A defining characteristic of this dataset is its extreme and multi-level class imbalance. At the voxel level, the smallest class, lacunar infarcts, accounts for only 0.16% of all annotated voxels. At the subject level, this class appears in just 29 of the 79 brains, introducing additional imbalance for training strategies that sample across subjects. Furthermore, lacunar infarcts are typically small, localized structures, making segmentation performance highly sensitive to boundary errors. This challenge is amplified by the inherent sparsity of lesion voxels in 3D medical imaging, where the overwhelming majority of voxels correspond to background tissue.
 
 These compounded sources of imbalance - across voxels, classes, and subjects - make the dataset a particularly demanding testbed for evaluating segmentation methods under clinically realistic conditions.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/First Move First Tree Traversal.svg" title="Tree traversal comparison" class="img-fluid rounded z-depth-0" %}
+    </div>
+</div>
+<div class="caption">
+  <strong>Figure 1:</strong> Tree traversal order comparison across three algorithms. 
+  <br>
+  <em>Left:</em> Depth-first search visits leaf nodes ABD→ABE (B's siblings sequentially).
+  <br>
+  <em>Middle:</em> Breadth-first search explores layer-by-layer.
+  <br>
+  <em>Right:</em> First-move first prioritizes first-level siblings (ABD→ACF).
+</div>

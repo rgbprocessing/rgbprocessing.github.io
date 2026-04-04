@@ -27,7 +27,7 @@ This project visualizes noise residuals (original minus median-filtered) across 
     <div class="caption text-center mt-1"><strong>C.</strong> Blur</div>
   </div>
   <div class="col-sm-3 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/originalblur2noise.png" class="img-fluid rounded z-depth-0" %}
+    {% include figure.liquid loading="eager" path="assets/img/orangeblur2noise.png" class="img-fluid rounded z-depth-0" %}
     <div class="caption text-center mt-1"><strong>D.</strong> Blur Noise</div>
   </div>
 </div>

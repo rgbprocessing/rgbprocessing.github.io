@@ -134,10 +134,13 @@ L2 regularization improved DICE across most of the classes by mitigating overfit
 
 <em>Additional Models</em>
 
-We also trained a hierarchical model, a double U-Net model, and tested combination loss functions, but preliminary results did not show any improvement and testing has not been completed yet.
+We also trained a hierarchical model, a double U-Net model, and tested combination loss functions, but preliminary results did not show any improvement.
 
 <em>Additional analysis</em>
-lesions size - large amount of lesions of size one suggesting messy segmentation. segmentations were performed by different people but only one segmentation per scan - previous iterations where weighted sampling was done per subject got messed up when subjects only had a couple voxels of a class (likely error) but the final method of indexing every location of every voxel fixed this. we did previously look into eliminating some unsurrounded voxels but ultimately decided to leave the dataset as is as it would requires essentailly redoing the whole thing so instead we treat it as real world data with errors.
+
+<b>Figure 6</b> shows a substantial number of one-voxel lesions across several classes. Because segmentations were produced by different annotators these tiny lesions may reflect both true biological variation and annotation inconsistency. Earlier versions of the sampling pipeline, which operated at the subject level, were particularly vulnerable to cases where a subject contained only a few voxels of a given class. The final voxel-indexed sampling method resolved this issue by sampling across all annotated voxel locations rather than across subjects.
+
+We also considered filtering out isolated or seemingly unsupported voxels, but ultimately retained the dataset in its original form after changing the sampling method. Given the scale of the annotation effort required, we treated the dataset as a realistic clinical setting with imperfect labels rather than reconstructing the entire annotation set. This choice makes the problem more challenging, but it also better reflects realistic conditions.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -145,9 +148,11 @@ lesions size - large amount of lesions of size one suggesting messy segmentation
     </div>
 </div>
 <div class="caption">
-  <strong>Figure 6:</strong> Best model testing results using full patch DICE score, the center 9 voxel DICE score, and center voxel DICE score.
+  <strong>Figure 6:</strong> Lesion size distribution by class, showing a substantial number of one-voxel lesions.
 </div>
 
 **Conclusion**
 
-Overall we were able to achieve a significant improvement in segmentation DICE score in the minority class (.28) compared to previous work. We mitigated the class imbalance by using per class sampling and center voxel DICE score metric. However the implementations of this model are extremely limited since segmenting a voxel at a time is computationally expensive. For future work I would either pre-train on a larger dataset or investigate the boundary segmentation of small classes to try to improve the performance even further or better analyze where the models are failing.
+This work achieved a center-voxel DICE score of 0.28 on lacunar infarcts, a meaningful improvement over previous work where whole-patch DICE was too unstable to enable systematic model or pipeline iteration for this smallest class. Class-aware voxel sampling and the center-voxel DICE metric successfully isolated core segmentation capability despite extreme multi-level imbalance.
+
+However, voxel-wise evaluation remains computationally prohibitive for whole-volume inference. Future directions include pre-training on larger stroke datasets, targeted boundary loss functions for small lesions, and failure mode analysis to identify remaining bottlenecks in minority class performance.

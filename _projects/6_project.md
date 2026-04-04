@@ -65,6 +65,10 @@ We implemented class-aware patch sampling across the entire dataset. An index of
 
 **Additional Work**
 
+<em>Weighted Loss Mapping</em>
+
+We tested implementing several weighting maps on our loss function calculation to weight the center voxel loss higher than the rest of patch and improve the center voxel segmentation performance. However none of our weighted masks showed a significant improvement over our baseline mask of ones.
+
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
@@ -99,14 +103,37 @@ We implemented class-aware patch sampling across the entire dataset. An index of
 <div class="caption">
     <div class="row">
     <div class="col-sm-4">
-      Gaussian Mask
+      Inverse Distance Mask
     </div>
     <div class="col-sm-8">
-      Gaussian Mask Results
+      Inverse Distance Mask Results
     </div>
   </div>
 </div>
 
-<em>Weighted Loss Mapping</em>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      {% include figure.liquid loading="eager" path="assets/img/gaussianmask.gif" 
+           title="**A.** Gaussian Mask" class="img-fluid rounded z-depth-0" %}
+    </div>
+    <div class="col-sm-8">
+      {% include figure.liquid loading="eager" path="assets/img/gaussiantest.png" 
+           title="**B.** Gaussian Mask Results" class="img-fluid rounded z-depth-0" %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      {% include figure.liquid loading="eager" path="assets/img/inversedist.png" 
+           title="**C.** Inverse Distance Mask" class="img-fluid rounded z-depth-0" %}
+    </div>
+    <div class="col-sm-8">
+      {% include figure.liquid loading="eager" path="assets/img/inversetest.png" 
+           title="**D.** Inverse Distance Mask Results" class="img-fluid rounded z-depth-0" %}
+    </div>
+  </div>
+</div>
 
-We tested implementing several weighting maps on our loss function calculation to weight the center voxel loss higher than the rest of patch and improve the center voxel segmentation performance. However none of our weighted masks showed a significant improvement over our baseline mask of ones.
+<div class="caption mt-2">
+  <strong>Figure 3:</strong> Weighted loss mapping ablation results. Panels A-B show the Gaussian mask and corresponding test performance; C-D show the inverse distance mask and results. Neither outperformed the uniform baseline.
+</div>

@@ -70,7 +70,7 @@ ninja.data = [{
               window.location.href = "/projects/5_project.html";
             },},{id: "projects-highly-imbalanced-brain-lesion-segmentation",
           title: 'Highly Imbalanced Brain Lesion Segmentation',
-          description: "a project with no image",
+          description: "3D CNN and Ablation Study",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project.html";
             },},{id: "projects-identity-detection-from-facial-movements",

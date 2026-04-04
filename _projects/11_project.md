@@ -2,7 +2,7 @@
 layout: page
 title: Noise Artifacts in Image Manipulations
 description: visualizing manipulation artifacts through noise residuals
-img: assets/img/6.jpg
+img: assets/img/noisethumbnail.png
 importance: 6
 category: research
 ---

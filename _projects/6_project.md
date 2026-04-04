@@ -61,6 +61,27 @@ We implemented class-aware patch sampling across the entire dataset. An index of
 
 **Additional Work**
 
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      {% include figure.liquid loading="eager" path="assets/img/bestmodel.png" title="Best model testing results" class="img-fluid rounded z-depth-0" %}
+    </div>
+    <div class="col-sm">
+      {% include figure.liquid loading="eager" path="assets/img/bestmodel.png" title="Best model testing results" class="img-fluid rounded z-depth-0" %}
+    </div>
+  </div>
+</div>
+<div class="caption">
+    <div class="row">
+    <div class="col-sm">
+      yo
+    </div>
+    <div class="col-sm">
+      hi
+    </div>
+  </div>
+</div>
+
 <em>Weighted Loss Mapping</em>
 
 We tested implementing several weighting maps on our loss function calculation to weight the center voxel loss higher than the rest of patch and improve the center voxel segmentation performance. However none of our weighted masks showed a significant improvement over our baseline mask of ones.

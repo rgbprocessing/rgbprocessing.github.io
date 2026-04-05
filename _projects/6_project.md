@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Highly Imbalanced Brain Lesion Segmentation
-description: 3D U-Net and Ablation Study
+title: Small Brain Lesion Segmentation
+description: Center voxel DICE & ablation Study
 img: assets/img/brain.png
 importance: 1
 category: research

@@ -99,4 +99,3 @@ Given the unequal distribution of the six tissue classes across brain volumes, t
 The stratification of data into folds, depicted in Figure 1(c) and Figure 1(d), maintains this imbalance as much as possible across training and validation folds and test set. Each fold contains a representative distribution of voxel counts and subject numbers per class, allowing for robust cross-validation while preserving the inherent dataset characteristics.
 
 To achieve the desired ratio of classes and maintain the same number of subjects in each fold, we iteratively swapped subjects between folds while minimizing a loss function based on the relative error between the mean voxel sums per subject for each class and fold of the overall dataset and the current fold designations. The loss function was defined as for where V is the count of all voxels in class c and fold f, and for subjects S in fold f:
-

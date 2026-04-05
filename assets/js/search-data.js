@@ -73,8 +73,8 @@ ninja.data = [{
           description: "dual-branch video CNN",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project.html";
-            },},{id: "projects-small-brain-lesion-segmentation",
-          title: 'Small Brain Lesion Segmentation',
+            },},{id: "projects-small-lesion-segmentation",
+          title: 'Small Lesion Segmentation',
           description: "Center voxel DICE &amp; ablation study",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project.html";

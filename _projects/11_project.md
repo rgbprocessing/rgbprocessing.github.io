@@ -150,16 +150,16 @@ While noise artifacts may show signs of image manipulation, many processes like 
 <div class="row">
   <div class="col-sm-6 mt-3 mt-md-0">
     {% include figure.liquid loading="eager" path="assets/img/DE6DC95D-303C-4D38-9069-ACEEDA7A9853.jpg" class="img-fluid rounded z-depth-0" %}
-    <div class="caption text-center mt-1"><strong>A.</strong> Original (Pre-Unwarp)</div>
+    <div class="caption text-center mt-1"><strong>A.</strong> Original</div>
   </div>
   <div class="col-sm-6 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="download (34).png" class="img-fluid rounded z-depth-0" %}
-    <div class="caption text-center mt-1"><strong>B.</strong> Noise Residual (Lens Unwarping Artifacts)</div>
+    {% include figure.liquid loading="eager" path="assets/img/download (34).png" class="img-fluid rounded z-depth-0" %}
+    <div class="caption text-center mt-1"><strong>B.</strong> Noise Residual</div>
   </div>
 </div>
 
 <div class="caption mt-3">
-  <strong>Figure 5:</strong> Automatic lens unwarping creates synthetic noise patterns indistinguishable from malicious geometric manipulation.
+  <strong>Figure 5:</strong> Automatic lens unwarping creates noise residual patterns.
 </div>
 
 In this day and age the definition of an 'authentic' photo has become increasingly blurred across the entire digital image pipeline. Photos can be taken with automatic bokeh, lens unwarping, and other effects. Manual editing is readily available including both traditional photo editing as well as new filters and generative features. How images are stored, shared, and displayed also affects their quality. Display platforms have additional editing and composite tools and filters. Generative editing enables object removal and face swaps, and fully generative images are easily made with available tools. There are many limitations to when noise residuals can say something about an image, but it is an interesting piece of the puzzzle of understanding the many layers of digital imagery.

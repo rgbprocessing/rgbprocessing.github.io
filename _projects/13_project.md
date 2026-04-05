@@ -4,7 +4,7 @@ title: noise extraction from video
 description: another project with an image 🎉
 img: assets/img/6.jpg
 importance: 2
-category: tools
+category: tools2
 ---
 
 Every project has a beautiful feature showcase page.

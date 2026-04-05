@@ -125,4 +125,4 @@ To achieve the desired ratio of classes and maintain the same number of subjects
   </div>
 </div>
 
-This approach resulted in a stratified dataset that maintained consistent class proportions across all folds and the same number of subjects. 
+This approach resulted in a stratified dataset that maintained consistent class proportions across all folds and the same number of subjects.

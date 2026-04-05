@@ -73,9 +73,9 @@ ninja.data = [{
           description: "dual-branch video CNN",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project.html";
-            },},{id: "projects-highly-imbalanced-brain-lesion-segmentation",
-          title: 'Highly Imbalanced Brain Lesion Segmentation',
-          description: "3D U-Net and Ablation Study",
+            },},{id: "projects-small-brain-lesion-segmentation",
+          title: 'Small Brain Lesion Segmentation',
+          description: "Center voxel DICE &amp; ablation Study",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project.html";
             },},{id: "projects-identity-detection-from-facial-movements",

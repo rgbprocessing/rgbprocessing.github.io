@@ -43,9 +43,9 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/13_project.html";
-            },},{id: "projects-ensemble-learning-for-improved-multi-class-brain-segmentation-in-highly-imbalanced-datasets",
-          title: 'Ensemble Learning for Improved Multi-Class Brain Segmentation in Highly Imbalanced Datasets',
-          description: "",
+            },},{id: "projects-multi-class-brain-segmentation",
+          title: 'Multi-Class Brain Segmentation',
+          description: "Ensemble learning for highly imbalanced dataset",
           section: "Projects",handler: () => {
               window.location.href = "/projects/14_project.html";
             },},{id: "projects-neurips-ariel-data-challenge-2025",

@@ -143,6 +143,14 @@ Deepfakes produce photorealistic results but may preserve detectable noise incon
   <strong>Figure 3:</strong> Deepfake video examples showing face replacement (A) and FaceShifter swap (B).
 </div>
 
+**Limitations**
+
+While noise artifacts may show signs of image manipulation, many processes like resizing, compression, filtering, and denoising obscure full-resolution signatures. Automatic computational photography, especially lens and face unwarping, produces similar noise residuals to malicious edits. Manual photo adjustments leave comparable signatures, as shown with Photoshop's Liquify tool where even extremely mild face edits create major detectable artifacts at full resolution.
+
+
+
+In this day and age the definition of an 'authentic' photo has become increasingly blurred across the entire digital image pipeline. Photos can be taken with automatic bokeh, lens unwarping, and other effects. Manual editing is readily available including both traditional photo editing as well as new filters and generative features. How images are stored, shared, and displayed also affects their quality. Display platforms have additional editing and composite tools and filters. Generative editing enables object removal and face swaps, and fully generative images are easily made with available tools. There are many limitations to when noise residuals can say something about an image, but it is an interesting piece of the puzzzle of understanding the many layers of digital imagery.
+
 <div class="references">
   <h5>References</h5>
   <ol>

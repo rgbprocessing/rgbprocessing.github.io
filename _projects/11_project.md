@@ -159,7 +159,7 @@ While noise artifacts may show signs of image manipulation, many processes like 
 </div>
 
 <div class="caption mt-3">
-  <strong>Figure 5:</strong> Automatic lens unwarping creates noise residual patterns.
+  <strong>Figure 4:</strong> Automatic lens unwarping creates noise residual patterns.
 </div>
 
 In this day and age the definition of an 'authentic' photo has become increasingly blurred across the entire digital image pipeline. Photos can be taken with automatic bokeh, lens unwarping, and other effects. Manual editing is readily available including both traditional photo editing as well as new filters and generative features. How images are stored, shared, and displayed also affects their quality. Display platforms have additional editing and composite tools and filters. Generative editing enables object removal and face swaps, and fully generative images are easily made with available tools. There are many limitations to when noise residuals can say something about an image, but it is an interesting piece of the puzzzle of understanding the many layers of digital imagery.

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Small Brain Lesion Segmentation
-description: Center voxel DICE & ablation Study
+description: Center voxel DICE & ablation study
 img: assets/img/brain.png
 importance: 1
 category: research

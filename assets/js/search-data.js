@@ -43,9 +43,9 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/13_project.html";
-            },},{id: "projects-noise-extraction-from-video",
-          title: 'noise extraction from video',
-          description: "another project with an image 🎉",
+            },},{id: "projects-ensemble-learning-for-improved-multi-class-brain-segmentation-in-highly-imbalanced-datasets",
+          title: 'Ensemble Learning for Improved Multi-Class Brain Segmentation in Highly Imbalanced Datasets',
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/14_project.html";
             },},{id: "projects-neurips-ariel-data-challenge-2025",

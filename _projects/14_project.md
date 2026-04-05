@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Ensemble Learning for Improved Multi-Class Brain Segmentation in Highly Imbalanced Datasets
-description:
+title: Multi-Class Brain Segmentation
+description: Ensemble learning for highly imbalanced dataset
 img: assets/img/brain.png
 importance: 1
 category: research

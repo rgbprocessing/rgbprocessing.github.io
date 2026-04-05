@@ -13,7 +13,7 @@ This project investigates strategies for addressing severe class imbalance in me
 
 **Dataset**
 
-The dataset consists of 79 subjects with chronic left-hemispheric stroke lesions, each imaged using two MRI modalities: FLAIR and T1-weighted scans. Expert annotations identify six foreground pathological classes in addition to the brain background (region of interest): encephalomalacia, ventricles, gliosis, periventricular white matter hyperintensities (PV WMh), white matter hyperintensities (WMH), and lacunar infarcts (LI).
+The dataset consists of 79 subjects with chronic left-hemispheric stroke lesions, each imaged using two MRI modalities: FLAIR and T1-weighted scans. Expert annotations identify six foreground pathological classes in addition to the brain background (region of interest): encephalomalacia, ventricles, gliosis, periventricular white matter hyperintensities (PV WMH), white matter hyperintensities (WMH), and lacunar infarcts (LI).
 
 A defining characteristic of this dataset is its extreme and multi-level class imbalance. At the voxel level, the smallest class, lacunar infarcts, accounts for only 0.16% of all annotated voxels. At the subject level, this class appears in just 29 of the 79 brains, introducing additional imbalance for training strategies that sample across subjects. Furthermore, lacunar infarcts are typically small, localized structures, making segmentation performance highly sensitive to boundary errors. This challenge is amplified by the inherent sparsity of lesion voxels in 3D medical imaging, where the overwhelming majority of voxels correspond to background tissue.
 

@@ -99,3 +99,30 @@ Given the unequal distribution of the six tissue classes across brain volumes, t
 The stratification of data into folds, depicted in Figure 1(c) and Figure 1(d), maintains this imbalance as much as possible across training and validation folds and test set. Each fold contains a representative distribution of voxel counts and subject numbers per class, allowing for robust cross-validation while preserving the inherent dataset characteristics.
 
 To achieve the desired ratio of classes and maintain the same number of subjects in each fold, we iteratively swapped subjects between folds while minimizing a loss function based on the relative error between the mean voxel sums per subject for each class and fold of the overall dataset and the current fold designations. The loss function was defined as for where V is the count of all voxels in class c and fold f, and for subjects S in fold f:
+
+<div class="mt-4">
+  <h6 class="mb-3">Center-Voxel Sampling Equations</h6>
+  
+  <div class="row">
+    <div class="col-md-4">
+      <div class="bg-light p-3 rounded border">
+        $$V_{c,f} = V_{c,f} \cdot S_f \tag{1}$$
+        <small class="text-muted d-block mt-1">Class-specific voxel sampling</small>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="bg-light p-3 rounded border">
+        $$V_{c,all} = \sum_f \frac{V_{c,f}}{S_f} \tag{2}$$
+        <small class="text-muted d-block mt-1">Global balanced representation</small>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="bg-light p-3 rounded border">
+        $$\text{Error} = \frac{f_c V_{c,f} - V_{c,all}}{V_{c,all}} \tag{3}$$
+        <small class="text-muted d-block mt-1">Sampling balance metric</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+This approach resulted in a stratified dataset that maintained consistent class proportions across all folds and the same number of subjects. 

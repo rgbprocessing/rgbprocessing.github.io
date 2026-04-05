@@ -1,80 +1,30 @@
 ---
 layout: page
-title: noise extraction from video
-description: another project with an image 🎉
-img: assets/img/6.jpg
-importance: 2
-category: tools2
+title: Ensemble Learning for Improved Multi-Class Brain Segmentation in Highly Imbalanced Datasets
+description:
+img: assets/img/brain.png
+importance: 1
+category: research
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+**Abstract**
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Multi-class segmentation of medical images is challenged by various sometimes extreme dataset imbalances and dataset size restrictions due to the costs of acquiring and annotating data. This study presents an ensemble approach to address extreme class imbalance in a detailed brain lesion dataset.  By combining models optimized for majority classes and rare minority classes, we maintain the strengths of each and achieve overall improved segmentation results.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+**Background**
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+Medical image segmentation inherently is an imbalanced problem, with a majority background of blank space and non-segmented tissue, and foreground classes that come in all shapes, sizes, and prevalences. These imbalances are exacerbated even more in 3D medical imaging such as MRIs by adding another dimension going from area to volume imbalances. Furthermore, by the nature of the kinds of problems addressed by medical image segmentation, many classes of interest represent certain anatomical structures or pathologies which only exist in minority cases of diseases and which may present in a variety of ways, locations, shapes, sizes, and numbers. This variety of imbalances poses substantial difficulties in developing accurate and robust segmentation models for detailed annotations.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+Conventional approaches to addressing class imbalance include sampling techniques, weighted loss functions, and extensive data augmentation. However, medical datasets often only represent a limited number of subjects and some of these methods may lead to overall suboptimal performance. Employing techniques like oversampling or a combination of over- and under-sampling to balance class representation under these conditions may cause the minority class to rapidly overfit. This creates a dilemma in the training process: to perform early stopping to maximize the performance on the minority class while undertraining other classes, or prioritize the performance of all classes resulting in a model that is completely overfit to or has otherwise failed to effectively and robustly learn the minority class. This occurs because the more prevalent classes dominate the loss landscape, leading to steeper descent and easier learning compared to the rare class. While data augmentation can help prevent overfitting and maximize the learning of especially minority classes in a limited dataset, data augmentation is complicated by the size and realistic limits of the dataset. For example, augmentation by rotation is limited for full brain scans if the model is set up for a registered brain orientation, and other transforms risk bringing the dataset outside the realm of realistic data. Generating new samples for minority classes on whole brain scans with a limited dataset size is arguably just as complicated of a problem or more so than the multi-class segmentation task itself. 
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+This results in a fundamental challenge of learning all classes optimally by both addressing the inherent imbalances but also mitigating suboptimal conditions such as overfitting or catastrophic learning.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+An alternative approach to this delicate balancing act is to train binary classifiers for each class separately. While this method may seem to circumvent some of the issues due to the class imbalance, it fails to capitalize on the rich inter-class information and feature developments that arise from multi-class learning.
 
-{% raw %}
+To address these challenges, we propose a novel approach which involves training multiple models with different focuses: a generalist model optimized for overall performance across the majority of classes and a specialist model focused primarily on the performance of rare and minority classes.
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+By combining these models, we aim to capture both the robust features with inter-class information from the generalist model along with its overall good performance across classes, and the detail oriented features focused on boosting the rare minority class segmentation of the specialist model. This strategy allowed us to improve overall performance and near-match or improve the best segmentation performance for every class from individual models.
 
-{% endraw %}
+**Data**
+
+

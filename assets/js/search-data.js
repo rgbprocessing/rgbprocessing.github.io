@@ -30,7 +30,7 @@ ninja.data = [{
               window.location.href = "/projects/10_project.html";
             },},{id: "projects-noise-artifacts-in-image-manipulations",
           title: 'Noise Artifacts in Image Manipulations',
-          description: "visualizing manipulation artifacts through noise residuals",
+          description: "Visualizing manipulation artifacts through noise residuals",
           section: "Projects",handler: () => {
               window.location.href = "/projects/11_project.html";
             },},{id: "projects-blend-mode-compendium",

@@ -75,7 +75,7 @@ ninja.data = [{
               window.location.href = "/projects/5_project.html";
             },},{id: "projects-small-brain-lesion-segmentation",
           title: 'Small Brain Lesion Segmentation',
-          description: "Center voxel DICE &amp; ablation Study",
+          description: "Center voxel DICE &amp; ablation study",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project.html";
             },},{id: "projects-identity-detection-from-facial-movements",

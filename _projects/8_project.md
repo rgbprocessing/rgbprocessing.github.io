@@ -32,7 +32,7 @@ The algorithm was developed for Beleaguered Castle, a solitaire game where early
 
 **Results**
 
-We evaluated both algorithms on 10,000 randomly generated game deals, applying identical time limits of 1000 seconds. Overall, DFS slightly outperformed FMF by 55,905 unique states searched across 6,168 paired solvable deals. <b>Table 1</b> summarizes solve performance, showing comparable solve rates (63.5% DFS, 63.2% FMF) with 179 exclusive DFS solves and 148 exclusive FMF solves. Notably the unsolveable games include both searches that timed out as well as searches that were verifiably unwinnable.
+We evaluated both algorithms on 10,000 randomly generated game deals, applying identical time limits of 1000 seconds. Overall, DFS slightly outperformed FMF by 55,905 unique states searched across 6,168 paired solvable deals. <strong>Table 1</strong> summarizes solve performance, showing comparable solve rates (63.5% DFS, 63.2% FMF) with 179 exclusive DFS solves and 148 exclusive FMF solves. Notably the unsolveable games include both searches that timed out as well as searches that were verifiably unwinnable.
 
 <div style="display: flex; justify-content: center; margin: 0 auto;">
 <table class="results-table">
@@ -73,7 +73,7 @@ We evaluated both algorithms on 10,000 randomly generated game deals, applying i
   <strong>Figure 2:</strong> Comparison of unique states searched in DFS versus FMF
 </div>
 
-<b>Figure 3</b> shows the complementarity in hardest cases. FMF solved DFS's 10% most challenging deals (upper decile by unique states searched) on average with 11.09M fewer unique states (28.0M vs 17.0M, p<0.001), while DFS solved FMF's 10% hardest deals with 9.40M fewer unique states (27.9M vs 18.5M, p<0.001).
+<strong>Figure 3</strong> shows the complementarity in hardest cases. FMF solved DFS's 10% most challenging deals (upper decile by unique states searched) on average with 11.09M fewer unique states (28.0M vs 17.0M, p<0.001), while DFS solved FMF's 10% hardest deals with 9.40M fewer unique states (27.9M vs 18.5M, p<0.001).
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -88,7 +88,7 @@ We evaluated both algorithms on 10,000 randomly generated game deals, applying i
   <em>Right:</em> Difference in unique states searched versus population deciles of FMF unique states searched.
 </div>
 
-<b>Figure 4</b> shows FMF's advantage growing with difficulty binned by mean unique states searched ((DFS+FMF)/2) across equally-spaced bins. These findings should be interpreted cautiously due to timeout-excluded high-difficulty deals and the limitations of mean unique states searched as a measure of true deal difficulty. A more objective metric, such as shortest optimal path length or win probability, would require infeasible exhaustive search of all game trees or additional derivation and testing.
+<strong>Figure 4</strong> shows FMF's advantage growing with difficulty binned by mean unique states searched ((DFS+FMF)/2) across equally-spaced bins. These findings should be interpreted cautiously due to timeout-excluded high-difficulty deals and the limitations of mean unique states searched as a measure of true deal difficulty. A more objective metric, such as shortest optimal path length or win probability, would require infeasible exhaustive search of all game trees or additional derivation and testing.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">

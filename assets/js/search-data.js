@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "projects-meme-detection-and-social-network-analysis",
           title: 'Meme Detection and Social Network Analysis',
-          description: "Group project for SICSS Norrköping 2025",
+          description: "Research project for SICSS Norrköping 2025",
           section: "Projects",handler: () => {
               window.location.href = "/projects/10_project.html";
             },},{id: "projects-image-manipulation-noise-artifacts",

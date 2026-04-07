@@ -11,7 +11,7 @@ category: competitions
 
 [Detect AI vs. Human-Generated Images 2025 Women in AI (WAI) Kaggle Challenge](https://www.kaggle.com/competitions/detect-ai-vs-human-generated-images/overview)
 
-The goal of this project is to classify authentic images versus AI-generated images. The dataset consists of 79,950 total training images consisting of authentic images sourced from Shuttershock paired with equivalent images produced by generative models and a test set of 19,986 images. The main challenge of this dataset was handling domain shift from new unseen image generation models. See the [Kaggle competition page](https://www.kaggle.com/competitions/detect-ai-vs-human-generated-images/overview) for dataset access and more details.
+The goal of this project is to classify authentic images versus AI-generated images. The dataset consists of 79,950 total training images consisting of authentic images sourced from Shutterstock paired with equivalent images produced by generative models and a test set of 19,986 images. The main challenge of this dataset was handling domain shift from new unseen image generation models. See the [Kaggle competition page](https://www.kaggle.com/competitions/detect-ai-vs-human-generated-images/overview) for dataset access and more details.
 
 **Solution Overview**
 

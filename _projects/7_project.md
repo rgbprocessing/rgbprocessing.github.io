@@ -81,8 +81,8 @@ This work was inspired by [Protecting President Zelenskyy Against Deepfakes](htt
 
 **Conclusions**
 
-Predictions exhibit improved accuracy for longer clips, though isolated misclassification peaks persist. These results demonstrate the model's capacity to learn identity-specific patterns from facial movement vectors alone, albeit with further validation required to establish classification robustness.
+Predictions exhibit improved accuracy for longer clips, though isolated misclassification peaks persist. These results demonstrate the model's capacity to learn class-specific patterns from facial movement vectors alone. However additional validation is required to determine whether identity specific features were truly learned or if there were other features of the two different data sources that distinguished them.
 
 **Future Work**
 
-Future extensions will incorporate full-body movement vectors alongside enhanced preprocessing to isolate confounding factors such as head rotation and body motion, thereby strengthening feature correlations. Additional datasets will address observed pose biases, where target videos predominantly featured seated frontal views while non-target videos encompassed diverse poses and positions. Model improvements will also target multi-identity learning from minimal per-identity data, mitigating the current requirement for extensive identity-specific training sets.
+Future extensions will incorporate full-body movement vectors alongside enhanced preprocessing to isolate confounding factors such as head rotation and body motion, thereby strengthening feature correlations. Additional datasets will address observed pose biases, where target videos predominantly featured seated frontal views while non-target videos encompassed diverse poses and positions. Model improvements will also target multi-identity learning from minimal per-identity data, mitigating the current requirement for extensive identity-specific training sets. Future work would also consider partial video splicing like that present in the [AV-Deepfake1M dataset](https://github.com/ControlNet/AV-Deepfake1M).

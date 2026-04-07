@@ -38,7 +38,7 @@ These compounded sources of imbalance - across voxels, classes, and subjects - m
 
 **Previous Work**
 
-This project has evolved through a series of experiments exploring how to segment extremely imbalanced stroke lesions in MRI. Initial work evaluated established architectures, including nnU-Net and DeepMedic, used range of hierarchical class groupings, class sampling ratios, and loss functions, including sensitivity-weighted loss to prioritize finding lesions over perfect segmentation. These experiments established a baseline and revealed the limits of standard imbalance-mitigation strategies for this problem.
+This project has evolved through a series of experiments exploring how to segment extremely imbalanced stroke lesions in MRI. Initial work evaluated established architectures, including nnU-Net and DeepMedic, and used range of hierarchical class groupings, class sampling ratios, and loss functions, including sensitivity-weighted loss to prioritize finding lesions over perfect segmentation. These experiments established a baseline and revealed the limits of standard imbalance-mitigation strategies for this problem.
 
 One major limitation of the earlier pipeline was its subject-level sampling scheme. Because sampling was performed per brain, rare classes that were absent from many subjects remained underrepresented during training even when class balancing was applied. As a result, the most challenging lesion classes continued to be learned poorly, particularly those with very small volume and presence. However this adds an additional problem of balancing all of the classes equally during training to maximize learning without overfitting.
 
@@ -46,13 +46,13 @@ This work builds upon these previous trials with a careful analysis of imbalance
 
 **Solution**
 
-We used a 3D U-Net as the core segmentation model, processing 33×33×33 voxel patches extracted from the multi-modal MRI volumes. This patch-based approach allows us to train many classes at once capturing local lesion context critical for small structures like lacunar infarcts, though it does limit global information that would be useful for some brain region specific classes like PV WMD which when found borders the ventricles.
+We used a 3D U-Net as the core segmentation model, processing 33×33×33 voxel patches extracted from the multi-modal MRI volumes. This patch-based approach allows us to train many classes at once capturing local lesion context critical for small structures like lacunar infarcts, though it does limit global information that would be useful for some brain region specific classes like PV WMH which when found borders the ventricles.
 
-We implemented class-aware patch sampling across the entire dataset. An index of class representation was first constructed for each subject, enabling random selection of individual voxel-centered patches (33×33×33) directly from the global distribution of each class. Weighted sampling was applied to prioritize minority classes, oversampling rare structures like lacunar infarcts while undersampling dominant classes such as background tissue, ensuring balanced training representation despite extreme voxel-level imbalance.
+We implemented class-aware patch sampling across the entire dataset. An index of class representation was constructed, enabling random selection of individual voxel-centered patches (33×33×33) directly from the global distribution of each class. Weighted sampling was applied to prioritize minority classes, oversampling rare structures like lacunar infarcts while undersampling dominant classes such as background tissue.
 
 **Results**
 
-<b>Figure 2</b> shows the results for the model which achieved the highest performance in the lacunar infarcts class. The full patch segmentation shows the worst performance overall and shows the class size imbalance the most. The center voxel DICE Score shows an improvement for every class except the background class. Though segmenting an MRI volume one voxel at a time is too computationally expensive for most use cases, we use this metric to gauge model to model improvements as well as what the best possible segmentation performance on this extremely imbalanced class could be since the center voxel has the most surrounding information and should give the strongest prediction. Notably, the PV WMH and WMH classes achieve comparable results with the largest classes in this metric demonstrating the extent to which balanced class learning was achieved but also the extreme difficulty learning the LI class. The center 9 voxel DICE score shows a nominal difference from the center voxel DICE score in the largest classes (besides for the background class) due to an increased ratio of center versus boundary voxels as well as improved performance from having more training data.
+<b>Figure 2</b> shows the results for the model which achieved the highest performance in the lacunar infarcts class. The full patch segmentation shows the worst performance overall and shows the class size imbalance the most. The center voxel DICE Score shows an improvement for every class except the background class. Though segmenting an MRI volume one voxel at a time is too computationally expensive for most use cases, we use this metric to gauge model to model improvements as well as what the best possible segmentation performance on this extremely imbalanced class could be since the center voxel has the most surrounding information and should give the strongest prediction. Notably, the PV WMH and WMH classes achieve comparable results with the largest classes in this metric demonstrating the extent to which balanced class learning was achieved but also the extreme difficulty learning the LI class. The center 9 voxel DICE score shows a nominal difference from the center voxel DICE score in the largest classes (besides for the background class) likely due to an increased ratio of center versus boundary voxels as well as improved performance from having more training data.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -98,11 +98,11 @@ We tested implementing several weighting maps on our loss function calculation t
 
 <em>Batch Normalization</em>
 
-Batch normalization eliminated training instabilities and class dropout observed in early hyperparameter-sensitive runs. While this established reliable convergence across all classes, it did not improve minority class DICE, confirming that dataset imbalance, not training dynamics, remained the primary segmentation bottleneck.
+Batch normalization eliminated training instabilities and class dropout observed in early hyperparameter-sensitive runs. While this established reliable convergence across all classes, it did not improve minority class DICE.
 
 <em>Dataset Augmentation</em>
 
-We incorporated several methods of data augmentation including rotating and flipping the patches during training and adding gaussian noise. While increased noise improved performance on larger classes, periventricular white matter hyperintensities (PVWMH) and white matter hyperintensities (WMH) showed degraded performance. Fully random rotations produced poor results, likely due to interpolation artifacts in 3D segmentation labels and imaging.
+We incorporated several methods of data augmentation including rotating and flipping the patches during training and adding gaussian noise. While increased noise improved performance on larger classes, PV WMH and WMH showed degraded performance. Fully random rotations produced poor results, likely due to interpolation artifacts in 3D segmentation labels and imaging.
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
@@ -116,7 +116,7 @@ We incorporated several methods of data augmentation including rotating and flip
 </div>
 
 <div class="caption mt-3">
-  <strong>Figure 4:</strong> Data augmentation ablation results. Noise benefits larger classes but harms PVWMH/WMH; random rotations fail due to label interpolation issues.
+  <strong>Figure 4:</strong> Data augmentation ablation results. Noise benefits larger classes but harms PVWMH/WMH; random rotations fail due to interpolation issues.
 </div>
 
 <em>L2 Regularization</em>
@@ -138,9 +138,9 @@ We also trained a hierarchical model, a double U-Net model, and tested combinati
 
 <em>Additional analysis</em>
 
-<b>Figure 6</b> shows a substantial number of one-voxel lesions across several classes. Because segmentations were produced by different annotators these tiny lesions may reflect both true biological variation and annotation inconsistency. Earlier versions of the sampling pipeline, which operated at the subject level, were particularly vulnerable to cases where a subject contained only a few voxels of a given class. The final voxel-indexed sampling method resolved this issue by sampling across all annotated voxel locations rather than across subjects.
+<b>Figure 6</b> shows a substantial number of one-voxel lesions across several classes. Because segmentations were produced by different annotators these tiny lesions may reflect both true biological variation and annotation inconsistency or error. Earlier versions of the sampling pipeline, which operated at the subject level, were particularly vulnerable to cases where a subject contained only a few voxels of a given class. The final voxel-indexed sampling method resolved this issue by sampling across all annotated voxel locations rather than across subjects.
 
-We also considered filtering out isolated or seemingly unsupported voxels, but ultimately retained the dataset in its original form after changing the sampling method. Given the scale of the annotation effort required, we treated the dataset as a realistic clinical setting with imperfect labels rather than reconstructing the entire annotation set. This choice makes the problem more challenging, but it also better reflects realistic conditions.
+We also considered filtering out isolated or seemingly unsupported voxels, but ultimately retained the dataset in its original form after changing the sampling method. Given the scale of the annotation effort required, we treated the dataset as a realistic clinical setting with imperfect labels rather than reconstructing the entire annotation set. This choice makes the problem more challenging, but it also reflects real conditions.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -148,11 +148,11 @@ We also considered filtering out isolated or seemingly unsupported voxels, but u
     </div>
 </div>
 <div class="caption">
-  <strong>Figure 6:</strong> Lesion size distribution by class, showing a substantial number of one-voxel lesions.
+  <strong>Figure 6:</strong> Lesion size distribution by class, showing a substantial number of one-voxel annotations.
 </div>
 
 **Conclusion**
 
 This work achieved a center-voxel DICE score of 0.28 on lacunar infarcts, a meaningful improvement over previous work where whole-patch DICE was too unstable to enable systematic model or pipeline iteration for this smallest class. Class-aware voxel sampling and the center-voxel DICE metric successfully isolated core segmentation capability despite extreme multi-level imbalance.
 
-However, voxel-wise evaluation remains computationally prohibitive for whole-volume inference. Future directions include pre-training on larger stroke datasets, targeted boundary loss functions for small lesions, and failure mode analysis to identify remaining bottlenecks in minority class performance.
+However, voxel-wise evaluation remains computationally prohibitive for whole-volume inference. Future directions include pre-training on larger stroke datasets, targeted boundary loss functions for small lesions, and failure mode analysis to identify remaining bottlenecks in minority class performance. [Additional work](https://rgbprocessing.github.io/assets/pdf/draft_stroke_multiclass_ensemble.pdf) was done ensembling patch-based and full-volume models to maximize the performance across all classes not just the smallest class.

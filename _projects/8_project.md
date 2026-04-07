@@ -101,6 +101,6 @@ We evaluated both algorithms on 10,000 randomly generated game deals, applying i
 
 **Conclusions**
 
-FMF and DFS demonstrate complementary strengths that suggest hybrid strategies will outperform either method alone. Parallel execution terminating when the first algorithm solves would leverage their distinct failure modes to maximize solve rate and minimize states searched. Future work could derive heuristic-free hybrid methods combining early-move prioritization with depth-first exploration.
+FMF and DFS demonstrate complementary strengths that suggest hybrid strategies will outperform either method alone. Future work could derive heuristic-free hybrid methods combining early-move prioritization with limited depth-first exploration to mitigate their distinct failure modes. Heuristic methods could also be explored on this problem for benefits and failure mode analysis.
 
 More robust evaluation is needed to distinguish computationally difficult solvable deals from unwinnable positions. Incorporating deal difficulty metrics independent of search performance such as structural solvability tests or lightweight win-probability estimators would enable more precise difficulty measurement and stronger algorithm comparisons.

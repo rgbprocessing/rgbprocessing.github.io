@@ -9,9 +9,9 @@ category: research
 
 **Noise Analysis for Manipulated Media Detection**
 
-Image manipulations—even subtle ones—leave detectable fingerprints in the noise characteristics of digital media. Noise arises naturally from sensor limitations (photon shot noise, read noise), low-light conditions requiring gain amplification, and post-processing operations that alter local statistical properties. Critically, common Photoshop manipulations like blurring, liquify, and splicing disrupt these patterns differently than camera-native noise, creating exploitable inconsistencies for forensic analysis.
+Image manipulations, even subtle ones, can leave detectable artifacts in the image's noise residuals. Noise in a digital image arises naturally from the camera sensor, imaging conditions, and post-processing operations. Common image manipulations like splicing and warping disrupt these noise patterns, creating visible artifacts.
 
-This project visualizes noise residuals (original minus median-filtered) across manipulation types, revealing artifact signatures that persist even in seemingly innocuous edits. These patterns form the basis for training manipulation detectors in the deepfake era.
+This project visualizes noise residuals across different digital image manipulation types, revealing artifacts that persist even in minor edits. To extract the noise we subtract a median filtered image from the original image. This residual captures noise and some high frequency details such as outlines.
 
 <div class="row">
   <div class="col-sm-3 mt-3 mt-md-0">

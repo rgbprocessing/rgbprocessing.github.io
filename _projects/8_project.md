@@ -88,7 +88,7 @@ We evaluated both algorithms on 10,000 randomly generated game deals, applying i
   <em>Right:</em> Difference in unique states searched versus population deciles of FMF unique states searched.
 </div>
 
-<b>Figure 4</b> shows FMF's advantage growing with difficulty binned by mean unique states searched ((DFS+FMF)/2) across equally-spaced bins. These findings should be interpreted cautiously due to timeout-excluded high-difficulty deals and the limitations of mean unique states searched as a measure of true deal difficulty. A more objective metric, such as shortest optimal path length or win probability, would require infeasible exhaustive search of all game trees or another derived metric.
+<b>Figure 4</b> shows FMF's advantage growing with difficulty binned by mean unique states searched ((DFS+FMF)/2) across equally-spaced bins. These findings should be interpreted cautiously due to timeout-excluded high-difficulty deals and the limitations of mean unique states searched as a measure of true deal difficulty. A more objective metric, such as shortest optimal path length or win probability, would require infeasible exhaustive search of all game trees or additional derivation and testing.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">

@@ -53,7 +53,7 @@ The dataset also contains conversion parameters for restoring the original data 
 
 First we load and calibrate the signals. We mask hot and dead pixels, apply non-linearity correction, apply flat field correction, subtract the dark current background, and perform correlated double sampling.
 
-Then we use time binning to synchronize the FGS1 and AIRS-CH0 data as well as eliminate the alternating high/low flux levels due to the observing mode of instruments. We inpaint the masked regions using biharmonic interpolation across time channels, and then we sum across the spatial axes to produce wavelength x time light curves. See <strong>Figure 3</strong> and <strong>Figure 4</strong> for data examples.
+Then we use time binning to synchronize the FGS1 and AIRS-CH0 data as well as eliminate the alternating high/low flux levels due to the instrument observing mode. We inpaint the masked regions using biharmonic interpolation across time channels, and then we sum across the spatial axes to produce wavelength x time light curves. See <strong>Figure 3</strong> and <strong>Figure 4</strong> for data examples.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">

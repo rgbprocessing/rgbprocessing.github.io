@@ -39,7 +39,7 @@ This work was inspired by [Protecting President Zelenskyy Against Deepfakes](htt
   <strong>Figure 2:</strong> Model for 1 second input
 </div>
 
-<b>Figure 2</b> shows the model for 1 second inputs. Input frames are smoothed and re-interpolated to 26 fps. The initial convolution layer processes 100 spatial features exhaustively (each convolved with all others), retaining the three spatial dimensions while collapsing time without padding. The output yields a single identity classification per second. Longer clips are handled via overlapping per-second predictions.
+<b>Figure 2</b> shows the model for 1 second inputs. Input frames are smoothed and re-interpolated to 26 fps. The initial convolution layer processes 100 spatial features exhaustively (each convolved with all others), retaining the three spatial dimensions while collapsing time without padding. The output yields a single identity classification per second. Longer clips are handled via overlapping per-second predictions. The 3 second and 5 second models yield a classification per 3 seconds and per 5 seconds respectively.
 
 **Testing Results**
 

@@ -28,8 +28,8 @@ ninja.data = [{
           description: "Group project for SICSS Norrköping 2025",
           section: "Projects",handler: () => {
               window.location.href = "/projects/10_project.html";
-            },},{id: "projects-noise-artifacts-in-image-manipulations",
-          title: 'Noise Artifacts in Image Manipulations',
+            },},{id: "projects-image-manipulation-noise-artifacts",
+          title: 'Image Manipulation Noise Artifacts',
           description: "Visualizing manipulation artifacts through noise residuals",
           section: "Projects",handler: () => {
               window.location.href = "/projects/11_project.html";

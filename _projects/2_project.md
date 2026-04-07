@@ -26,7 +26,7 @@ The goal of this competition is to identify particle centers of 5 different clas
 
 **Model**
 
-The model (see <b>Figure 2</b>) consists of a multi-head 3D U-Net trained on two different tasks. This allows for feature sharing while learning the related tasks and incorporating the radii data into the training process. The first head predicts the multi-class rough segmentation mask using the radii and center positions from the training data. The second head predicts the inverse distance of the center positions resulting in a per-class heatmap. The model is trained on overlapping 3D patches using a 3D Gaussian prioritising predictions made more central in the patch. The center positions are iteratively extracted using the maxima of the heatmap and non-maximum suppression (NMS) based off of the radii of the most strongly predicted centers (see <b>Figure 3</b>).
+The model (see <strong>Figure 2</strong>) consists of a multi-head 3D U-Net trained on two different tasks. This allows for feature sharing while learning the related tasks and incorporating the radii data into the training process. The first head predicts the multi-class rough segmentation mask using the radii and center positions from the training data. The second head predicts the inverse distance of the center positions resulting in a per-class heatmap. The model is trained on overlapping 3D patches using a 3D Gaussian prioritising predictions made more central in the patch. The center positions are iteratively extracted using the maxima of the heatmap and non-maximum suppression (NMS) based off of the radii of the most strongly predicted centers (see <strong>Figure 3</strong>).
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0 d-flex justify-content-center">

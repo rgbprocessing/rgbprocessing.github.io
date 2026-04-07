@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Meme Detection and Social Network Analysis
-description: Group project for SICSS Norrköping 2025
+description: Research project for SICSS Norrköping 2025
 img:
 importance: 2
 category: presentations

@@ -118,7 +118,7 @@ Photoshop's Face-Aware Liquify tool enables precise adjustments to facial featur
 
 **AI-Generated Media Analysis**
 
-Deepfakes produce photorealistic results but may preserve detectable noise inconsistencies across frames. These artifacts are sometimes visible when analyzing frame-wise noise residuals from manipulated video sequences.
+Classic video deepfakes involve splicing a generated face or head over a real video. Even though the videos undergo compression and additional editing, noise artifacts across frames may still be visiable.
 
 <div class="row">
   <div class="col-sm-6 mt-3 mt-md-0">

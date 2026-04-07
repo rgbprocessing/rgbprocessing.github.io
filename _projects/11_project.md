@@ -145,7 +145,7 @@ Classic video deepfakes involve splicing a generated face or head over a real vi
 
 **Limitations**
 
-While noise artifacts may show signs of image manipulation, many processes like resizing, compression, filtering, and denoising obscure full-resolution signatures. Automatic computational photography, especially lens and face unwarping (see <b>Figure 4</b>), produces similar noise residuals to manual edits. Also subtle manual photo adjustments may leave obvious signatures such as in the face-aware liquify tool examples in <b>Figure 2</b>.
+While noise artifacts may show signs of image manipulation, many processes like resizing, compression, filtering, and denoising obscure full-resolution signatures. Automatic computational photography, especially lens and face unwarping (see <strong>Figure 4</strong>), produces similar noise residuals to manual edits. Also subtle manual photo adjustments may leave obvious signatures such as in the face-aware liquify tool examples in <strong>Figure 2</strong>.
 
 <div class="row">
   <div class="col-sm-6 mt-3 mt-md-0">

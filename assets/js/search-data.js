@@ -70,7 +70,7 @@ ninja.data = [{
               window.location.href = "/projects/4_project.html";
             },},{id: "projects-1m-deepfakes-detection-challenge",
           title: '1M-Deepfakes Detection Challenge',
-          description: "dual-branch video CNN",
+          description: "Dual-branch video CNN",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project.html";
             },},{id: "projects-small-lesion-segmentation",

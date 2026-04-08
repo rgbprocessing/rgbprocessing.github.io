@@ -9,7 +9,6 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Evanston, IL</p>
     <p><a href="mailto:ded@u.northwestern.edu">ded@u.northwestern.edu</a></p>
     <p><a href="https://www.linkedin.com/in/deanna-dimonte/">LinkedIn</a> | <a href="https://github.com/rgbprocessing">Github</a> | <a href="https://www.kaggle.com/ddimonte">Kaggle</a></p>
 

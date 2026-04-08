@@ -90,7 +90,7 @@ ninja.data = [{
               window.location.href = "/projects/8_project.html";
             },},{id: "projects-unwinnable-game-detection",
           title: 'Unwinnable game detection',
-          description: "another project with an image 🎉",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project.html";
             },},{

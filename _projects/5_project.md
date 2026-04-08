@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 1M-Deepfakes Detection Challenge
-description: dual-branch video CNN
+description: Dual-branch video CNN
 img: assets/img/aus.drawio.svg
 importance: 4
 category: competitions
@@ -13,7 +13,7 @@ The [2024 1M-Deepfakes Detection Challenge](https://deepfakes1m.github.io/2024/a
 
 **Solution Overview**
 
-The model developed for this challenge, shown in <b>Figure 1</b>, consists of dual visual and audio branches processing 4-second video clips. A sliding window is used for temporal localization and aggregation across windows provides video-level deepfake classification.
+The model developed for this challenge, shown in <strong>Figure 1</strong>, consists of dual visual and audio branches processing 4-second video clips. A sliding window is used for temporal localization and aggregation across windows provides video-level deepfake classification.
 
 The visual branch processes RGB frames alongside two derived features: noise residuals from median-filtered image subtraction, and color-boosted channels via gray value removal from RGB triplets, yielding 9 input channels. The audio branch uses 2D spectrograms from the 4-second clip.
 

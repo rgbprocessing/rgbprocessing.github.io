@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: image processing, multimodal learning, computational imaging, AI ethics
+subtitle: <a href="https://rgbprocessing.github.io/projects/">image processing</a>, <a href="https://rgbprocessing.github.io/projects/">multimodal learning</a>, <a href="https://rgbprocessing.github.io/projects/">computational imaging</a>, <a href="https://rgbprocessing.github.io/projects/">AI ethics</a>
 
 profile:
   align: right

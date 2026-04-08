@@ -26,6 +26,16 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I study how images are made, altered, and understood in a world shaped by AI. My work brings together computer vision, adaptive learning, and digital media forensics with an interest in building technology that is both powerful and responsible.
+I study how digital images are made and used, what information we can extract from imaging data, and how the world is shaped by digital imagery. I’m drawn to investigate the extent to which the world is represented or misrepresented inside an image and how this relationship changes with the ebbs and flows of technology.
 
-I’m especially drawn to questions of authenticity, 3D and video understanding, and how visual systems capture material properties like texture, reflection, and color. I’m also interested in the broader impact of generative AI, from bias and governance to the ways new visual technologies can support people, not just process data.
+My work utilizes traditional image processing, computer vision, computational photography, and deep learning methods to process a wide variety of data. I focus on solving complex multi-modal problems and learning meaningful scientific and societal insights in my research.
+
+My goal is to develop responsible technology that builds and improves the world. I’m also interested in the broader impact of technology, from mitigating bias, exploring the future of AI governance, and investigating the ways in which technology affects people’s lives.
+
+## Selected Research Focus Areas
+
+- Deepfake, manipulated, and generated image detection  
+- Medical image analysis and processing  
+- Astronomical image processing  
+- Search tree traversal algorithms  
+- 3D video processing and reconstruction

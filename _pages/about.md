@@ -34,8 +34,8 @@ My goal is to develop responsible technology that builds and improves the world.
 
 ## Selected Research Focus Areas
 
-- Deepfake, manipulated, and generated image detection  
-- Medical image analysis and processing  
-- Astronomical image processing  
-- Search tree traversal algorithms  
+- Deepfake, manipulated, and generated image detection
+- Medical image analysis and processing
+- Astronomical image processing
+- Search tree traversal algorithms
 - 3D video processing and reconstruction

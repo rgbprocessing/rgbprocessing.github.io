@@ -40,7 +40,7 @@ ninja.data = [{
               window.location.href = "/projects/12_project.html";
             },},{id: "projects-noise-extraction-from-video",
           title: 'noise extraction from video',
-          description: "another project with an image 🎉",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/13_project.html";
             },},{id: "projects-multi-class-brain-segmentation",

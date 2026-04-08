@@ -38,4 +38,4 @@ My goal is to develop responsible technology that builds and improves the world.
 - Medical image analysis and processing
 - Astronomical image processing
 - Search tree traversal algorithms
-- 3D video processing and reconstruction
+- 3D video processing and construction

@@ -11,8 +11,7 @@ profile:
   more_info: >
     <p>Evanston, IL</p>
     <p><a href="mailto:ded@u.northwestern.edu">ded@u.northwestern.edu</a></p>
-    <p><a href="https://www.linkedin.com/in/deanna-dimonte/">LinkedIn</a> | <a href="https://github.com/rgbprocessing">Github</a> | <a href="https://www.kaggle.com/ddimonte">Kaggle</a>
-</p>
+    <p><a href="https://www.linkedin.com/in/deanna-dimonte/">LinkedIn</a> | <a href="https://github.com/rgbprocessing">Github</a> | <a href="https://www.kaggle.com/ddimonte">Kaggle</a></p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page

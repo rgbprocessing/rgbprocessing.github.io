@@ -46,9 +46,11 @@ We used Hable tone mapping to convert the HDR video from BT.2020 into BT.709 bef
   </div>
 </div>
 <div class="caption">
-  <strong>Figure 1:</strong> GIF conversion after Hable tone mapping
+  <strong>Figure 2:</strong> GIF conversion after Hable tone mapping
 </div>
 
-**Additional Work**
+The colors appear much more vibrant in the tone-mapped result than in the default generation. For these clips, Hable tone mapping was chosen for visually aligning most closely with the original HDR video. It preserved the observed saturation and brightness without overexposing details as much. Notably, we only used the default parameters for each algorithm.
+
+We show a comparison between the default GIF output and the tone-mapped GIF outputs in Figure 3.
 
 **Takeaways and Future Work**

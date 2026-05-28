@@ -19,7 +19,7 @@ To achieve the desired result we first tone-mapped the video from HDR to SDR, th
 
 **Problem**
 
-Default GIF conversion for HDR videos results in dull-looking GIFs that don't visually match the HDR videos.
+Default GIF conversion for HDR videos results in dull-looking GIFs that do not visually match the HDR videos.
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
@@ -36,6 +36,18 @@ Default GIF conversion for HDR videos results in dull-looking GIFs that don't vi
 **Solution**
 
 We used Hable tone mapping to convert the HDR video from BT.2020 into BT.709 before generating the GIF palette. The resulting GIFs match the visual appearance of the original HDR videos much more closely.
+
+<div class="row">
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/hable1.gif" class="img-fluid rounded z-depth-0" %}
+  </div>
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/hable2.gif" class="img-fluid rounded z-depth-0" %}
+  </div>
+</div>
+<div class="caption">
+  <strong>Figure 1:</strong> GIF conversion after Hable tone mapping
+</div>
 
 **Additional Work**
 

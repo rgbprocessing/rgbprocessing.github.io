@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Identity Detection from Facial Movements
-description: Customized CNN for motion vector classification
-img: assets/img/idd_nospace.png
-importance: 2
-category: research
+title: HDR Video to GIF
+description: GIF conversion using tone-mapping
+img: assets/img/comparison2.png
+importance: 3
+category: tools
 ---
 
 **Overview**

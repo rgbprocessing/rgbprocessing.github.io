@@ -48,8 +48,8 @@ ninja.data = [{
           description: "Ensemble learning for highly imbalanced dataset",
           section: "Projects",handler: () => {
               window.location.href = "/projects/14_project.html";
-            },},{id: "projects-hdr-video-to-gif",
-          title: 'HDR Video to GIF',
+            },},{id: "projects-hdr-video-to-gif-conversion",
+          title: 'HDR Video to GIF Conversion',
           description: "GIF conversion using tone-mapping",
           section: "Projects",handler: () => {
               window.location.href = "/projects/15_project.html";

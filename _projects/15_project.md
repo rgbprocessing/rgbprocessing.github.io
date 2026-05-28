@@ -3,7 +3,7 @@ layout: page
 title: HDR Video to GIF Conversion
 description: GIF conversion using tone-mapping
 img: assets/img/comparison2.png
-importance: 3
+importance: 1
 category: tools
 ---
 

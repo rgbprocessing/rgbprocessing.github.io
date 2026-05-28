@@ -17,25 +17,18 @@ To achieve the desired result we first tone-mapped the video from HDR to SDR, th
 
 [Jupyter Notebook](https://github.com/rgbprocessing/HDR-Video-to-GIF/blob/main/HDR_Video_to_GIF.ipynb)
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/prof_picmediapipe.png" title="Mediapipe facial keypoint extraction" class="img-fluid rounded z-depth-0" %}
-    </div>
-</div>
-<div class="caption">
-  <strong>Figure 1:</strong> Mediapipe facial keypoint extraction
-</div>
-
 **Problem**
+
+Default GIF conversion for HDR videos results in dull-looking GIFs that don't visually match the HDR videos.
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
     {% include figure.liquid loading="eager" path="assets/img/default1.gif" class="img-fluid rounded z-depth-0" %}
-    <div class="caption text-center mt-1"><strong>A.</strong> Gaussian Noise Augmentation</div>
+    <div class="caption text-center mt-1"><strong>A.</strong> Default GIF conversion on HDR video</div>
   </div>
   <div class="col-sm mt-3 mt-md-0">
     {% include figure.liquid loading="eager" path="assets/img/default2.gif" class="img-fluid rounded z-depth-0" %}
-    <div class="caption text-center mt-1"><strong>B.</strong> Random Rotation Augmentation</div>
+    <div class="caption text-center mt-1"><strong>B.</strong> Default GIF conversion on HDR video</div>
   </div>
 </div>
 

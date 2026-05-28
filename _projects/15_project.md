@@ -35,4 +35,8 @@ Default GIF conversion for HDR videos results in dull-looking GIFs that don't vi
 
 **Solution**
 
+We used Hable tone mapping to convert the HDR video from BT.2020 into BT.709 before generating the GIF palette. The resulting GIFs match the visual appearance of the original HDR videos much more closely.
+
+**Additional Work**
+
 **Takeaways and Future Work**

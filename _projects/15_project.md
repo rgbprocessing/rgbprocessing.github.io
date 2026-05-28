@@ -9,12 +9,9 @@ category: tools
 
 **Overview**
 
-
-
 **Dataset**
 
 Target-class video data consisted of approximately 6 hours of curated celebrity interview footage. A comparable volume of non-target data was sourced from the [AVSpeech dataset](https://looking-to-listen.github.io/avspeech/) to provide a diverse set of background identities.
-
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">

@@ -26,6 +26,8 @@ To achieve the desired result we first tone-mapped the video from HDR to SDR, th
   <strong>Figure 1:</strong> Mediapipe facial keypoint extraction
 </div>
 
+**Problem**
+
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
     {% include figure.liquid loading="eager" path="assets/img/default1.gif" class="img-fluid rounded z-depth-0" %}
@@ -36,3 +38,7 @@ To achieve the desired result we first tone-mapped the video from HDR to SDR, th
     <div class="caption text-center mt-1"><strong>B.</strong> Random Rotation Augmentation</div>
   </div>
 </div>
+
+**Solution**
+
+**Takeaways and Future Work**

@@ -48,6 +48,11 @@ ninja.data = [{
           description: "Ensemble learning for highly imbalanced dataset",
           section: "Projects",handler: () => {
               window.location.href = "/projects/14_project.html";
+            },},{id: "projects-identity-detection-from-facial-movements",
+          title: 'Identity Detection from Facial Movements',
+          description: "Customized CNN for motion vector classification",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/15_project.html";
             },},{id: "projects-neurips-ariel-data-challenge-2025",
           title: 'NeurIPS - Ariel Data Challenge 2025',
           description: "33rd place solution: CNN ensemble with augmentation",

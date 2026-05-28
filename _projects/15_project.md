@@ -1,7 +1,7 @@
 ---
 layout: page
 title: HDR Video to GIF Conversion
-description: GIF conversion using tone-mapping
+description: GIF conversion using Hable tone-mapping
 img: assets/img/comparison2.png
 importance: 1
 category: tools
@@ -35,7 +35,7 @@ Default GIF conversion for HDR videos results in dull-looking GIFs that do not v
 
 **Solution**
 
-We used Hable tone mapping to convert the HDR video from BT.2020 into BT.709 before generating the GIF palette. The resulting GIFs match the visual appearance of the original HDR videos much more closely.
+We used Hable tone-mapping to convert the HDR video from BT.2020 into BT.709 before generating the GIF palette. The resulting GIFs match the visual appearance of the original HDR videos much more closely.
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
@@ -46,10 +46,10 @@ We used Hable tone mapping to convert the HDR video from BT.2020 into BT.709 bef
   </div>
 </div>
 <div class="caption">
-  <strong>Figure 2:</strong> GIF conversion after Hable tone mapping
+  <strong>Figure 2:</strong> GIF conversion after Hable tone-mapping
 </div>
 
-The colors appear much more vibrant in the tone-mapped result than in the default generation. For these clips, Hable tone mapping was chosen for visually aligning most closely with the original HDR video. It preserved the observed saturation and brightness without overexposing details as much. Notably, we only used the default parameters for each algorithm.
+The colors appear much more vibrant in the tone-mapped result than in the default generation. For these clips, Hable tone-mapping was chosen for visually aligning most closely with the original HDR video. It preserved the observed saturation and brightness without overexposing details as much. Notably, we only used the default parameters for each algorithm.
 
 We show a comparison between the default GIF output and the tone-mapped GIF outputs in Figures 3-5.
 
@@ -81,3 +81,5 @@ We show a comparison between the default GIF output and the tone-mapped GIF outp
 </div>
 
 **Takeaways and Future Work**
+
+The primary takeaway from this project is that, to preserve the visual appearance of an HDR video in a GIF, the video should first be tone-mapped into an SDR-friendly color space. This produced GIFs that more closely matched the appearance of the original HDR videos. All of the code is available on [Colab](https://colab.research.google.com/github/rgbprocessing/HDR-Video-to-GIF/blob/main/HDR_Video_to_GIF.ipynb)/[Github](https://github.com/rgbprocessing/HDR-Video-to-GIF/blob/main/HDR_Video_to_GIF.ipynb) including a codeblock that converts all videos in a folder into GIFs with tone-mapping applied. Future work would incorporate this feature into a user-friendly webtool to create GIFs from video with increased functionality for processing HDR videos.

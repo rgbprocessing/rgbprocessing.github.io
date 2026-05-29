@@ -50,7 +50,7 @@ ninja.data = [{
               window.location.href = "/projects/14_project.html";
             },},{id: "projects-hdr-video-to-gif-conversion",
           title: 'HDR Video to GIF Conversion',
-          description: "GIF conversion using tone-mapping",
+          description: "GIF conversion using Hable tone-mapping",
           section: "Projects",handler: () => {
               window.location.href = "/projects/15_project.html";
             },},{id: "projects-neurips-ariel-data-challenge-2025",

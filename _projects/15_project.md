@@ -73,7 +73,7 @@ We show a comparison between the default GIF output and the tone-mapped GIF outp
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/tone3" title="Final GIF conversion comparison" class="img-fluid rounded z-depth-0" %}
+        {% include figure.liquid loading="eager" path="assets/img/tone3.png" title="Final GIF conversion comparison" class="img-fluid rounded z-depth-0" %}
     </div>
 </div>
 <div class="caption">

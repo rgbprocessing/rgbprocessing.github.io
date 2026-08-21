@@ -26,6 +26,11 @@
 - title: Leadership Experience
   type: time_table
   contents:
+    - title: AI Studio Coach
+      institution: Break Through Tech
+      year: 2026
+      description:
+        - Mentored undergraduate student groups and coordinated with industry partners to build industry focused machine learning projects.
     - title: SICSS-IAS Participant
       institution: Institute for Analytical Sociology, Norrköping, Sweden
       year: 2025

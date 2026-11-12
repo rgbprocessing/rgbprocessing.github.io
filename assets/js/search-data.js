@@ -58,6 +58,11 @@ ninja.data = [{
           description: "33rd place solution: CNN ensemble with augmentation",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project.html";
+            },},{id: "projects-chinese-english-subtitle-agent",
+          title: 'Chinese-English Subtitle Agent',
+          description: "LangGraph agent for reconciling OCR and ASR transcripts",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/20_project.html";
             },},{id: "projects-cryoet-object-identification",
           title: 'CryoET Object Identification',
           description: "Multi-head 3D U-Net with per-class center heatmaps and NMS",

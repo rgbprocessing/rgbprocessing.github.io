@@ -41,7 +41,7 @@ Two VLMs were tested, [Gemma 3 12B](https://ollama.com/library/gemma3) and [Qwen
     </div>
 </div>
 <div class="caption">
-  <strong>Figure 1:</strong> One AI-generated image under each condition. Base image: AI-generated sample (generator: GENERATOR) from the <a href="https://huggingface.co/datasets/TheKernel01/AIGC-Detection-Benchmark">AIGC Detection Benchmark</a> (Apache-2.0), derived from <a href="https://github.com/Ekko-zn/AIGCDetectBenchmark">AIGCDetectBenchmark</a>. Captions were added for this study.
+  <strong>Figure 1:</strong> One AI-generated image under each condition. Base image: AI-generated sample (Stable Diffusion 1.4) from the <a href="https://huggingface.co/datasets/TheKernel01/AIGC-Detection-Benchmark">AIGC Detection Benchmark</a> (Apache-2.0), derived from <a href="https://github.com/Ekko-zn/AIGCDetectBenchmark">AIGCDetectBenchmark</a>. Captions were added for this study.
 </div>
 
 **Results**

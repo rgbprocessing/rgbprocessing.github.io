@@ -98,13 +98,11 @@ Two VLMs were tested, [Gemma 3 12B](https://ollama.com/library/gemma3) and [Qwen
   <strong>Figure 3:</strong> Real photos correctly identified as real, by condition
 </div>
 
-Without injection, both models were weak detectors, labelling most AI-generated images as real. The neutral label had little effect, indicating that the presence of text alone does not change the verdict. The instruct condition controlled the verdict in every case, for both models, both prompts, and both directions, reducing correct identifications to zero. A short "Made with AI" caption, with no instruction, was nearly as effective on real photos: correct identifications fell from 7–8 of 10 to 0–2 of 10. Captions and camera metadata arguing that AI-generated images were real had little additional effect, as the models already labelled most of those images as real.
-
-The defended prompt did not prevent the attack, but it changed how the models explained themselves. Under the baseline prompt, Gemma cited the injected note in 9 of 10 explanations for AI-generated images; under the defended prompt it cited it in none, while still following it. The warning suppressed evidence of the injection rather than its effect.
+Without injection, both models were weak detectors, labelling most AI-generated images as real. The neutral label had little effect, indicating that the presence of text alone does not change the verdict. The instruct condition controlled the verdict in every case reducing correct identifications to zero. A short "Made with AI" caption with no instruction also caused most of the real images to be labeled as AI. The defended prompt did not prevent the attack.
 
 **Conclusions**
 
-On this sample, a single line of text was sufficient to fully control the authenticity verdicts of both VLMs, and a prompt-level warning did not mitigate it. A plain label was enough to make both models reject genuine photographs, which suggests a route for discrediting authentic images. General-purpose VLMs should not be used as the sole judge of image authenticity, and explanations produced under a defended prompt should not be taken as evidence that injected text was ignored. These results are preliminary, given the sample size of ten images per class.
+On this sample, a single line of text was sufficient to fully control the authenticity verdicts of both VLMs, and a prompt-level warning did not mitigate it. A plain label was enough to make both models reject genuine photographs. These results are preliminary, given the sample size of ten images per class.
 
 **Future Work**
 

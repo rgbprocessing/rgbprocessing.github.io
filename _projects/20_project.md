@@ -2,9 +2,8 @@
 layout: page
 title: Chinese-English Subtitle Agent
 description: LangGraph agent for reconciling OCR and ASR transcripts
-img: assets/img/subtitle_agent.png
-importance: 3
-category: research
+importance: 1
+category: tools
 ---
 
 **Overview**

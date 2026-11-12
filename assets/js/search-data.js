@@ -53,6 +53,11 @@ ninja.data = [{
           description: "using Hable tone-mapping",
           section: "Projects",handler: () => {
               window.location.href = "/projects/15_project.html";
+            },},{id: "projects-text-in-image-injection-against-vlm-image-forensics",
+          title: 'Text-in-Image Injection Against VLM Image Forensics',
+          description: "Red teaming vision-language models used as AI-image detectors",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/16_project.html";
             },},{id: "projects-neurips-ariel-data-challenge-2025",
           title: 'NeurIPS - Ariel Data Challenge 2025',
           description: "33rd place solution: CNN ensemble with augmentation",

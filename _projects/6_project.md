@@ -72,7 +72,7 @@ We tested implementing several weighting maps on our loss function calculation t
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
-      {% include figure.liquid loading="eager" path="assets/img/gaussianmask.gif" class="img-fluid rounded z-depth-0" %}
+      <img src="{{ '/assets/img/gaussianmask.gif' | relative_url }}" alt="Gaussian weighting mask" loading="eager" class="img-fluid rounded z-depth-0">
       <div class="caption text-center mt-1"><strong>A.</strong> Gaussian Mask</div>
     </div>
     <div class="col-sm-8">

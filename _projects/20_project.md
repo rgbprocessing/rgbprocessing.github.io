@@ -9,7 +9,7 @@ category: research
 
 **Overview**
 
-This project builds an agent that produces Chinese and English subtitles for Chinese television by reconciling multiple imperfect machine transcripts. Subtitle OCR, full-frame OCR, and two speech recognition models ([FunASR](https://github.com/modelscope/FunASR), [Whisper](https://github.com/openai/whisper)) are run over each episode. No single source is reliable on its own.
+This project builds an agent that produces Chinese and English subtitles for Chinese television by reconciling multiple imperfect machine transcripts. Subtitle OCR, full-frame OCR, and two speech recognition models ([FunASR](https://github.com/modelscope/FunASR), [Whisper](https://github.com/openai/whisper)) are run over each episode. No single source is reliable on its own. The system is not intended to replace expert human translators. It targets older hard-subbed media that has never been officially translated, where a rough translation is otherwise unavailable.
 
 **Approach**
 

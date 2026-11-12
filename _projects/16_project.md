@@ -3,7 +3,7 @@ layout: page
 title: Text-in-Image Injection Against VLM Image Forensics
 description: Red teaming vision-language models used as AI-image detectors
 img: assets/img/vlm_injection_examples.png
-importance: 4
+importance: 11
 category: research
 ---
 

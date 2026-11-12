@@ -23,10 +23,10 @@ Default GIF conversion for HDR videos results in dull-looking GIFs that do not v
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/default1.gif" class="img-fluid rounded z-depth-0" %}
+    <img src="{{ '/assets/img/default1.gif' | relative_url }}" alt="Default GIF conversion, clip 1" loading="eager" class="img-fluid rounded z-depth-0">
   </div>
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/default2.gif" class="img-fluid rounded z-depth-0" %}
+    <img src="{{ '/assets/img/default2.gif' | relative_url }}" alt="Default GIF conversion, clip 2" loading="eager" class="img-fluid rounded z-depth-0">
   </div>
 </div>
 <div class="caption">
@@ -39,10 +39,10 @@ We used Hable tone-mapping to convert the HDR video from BT.2020 into BT.709 bef
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/hable1.gif" class="img-fluid rounded z-depth-0" %}
+    <img src="{{ '/assets/img/hable1.gif' | relative_url }}" alt="Hable tone-mapped GIF, clip 1" loading="eager" class="img-fluid rounded z-depth-0">
   </div>
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/hable2.gif" class="img-fluid rounded z-depth-0" %}
+    <img src="{{ '/assets/img/hable2.gif' | relative_url }}" alt="Hable tone-mapped GIF, clip 2" loading="eager" class="img-fluid rounded z-depth-0">
   </div>
 </div>
 <div class="caption">

@@ -9,7 +9,7 @@ category: research
 
 **Overview**
 
-General-purpose vision-language models (VLMs) are increasingly asked whether an image is real or AI-generated. Unlike pixel-based detectors, VLMs read text, which makes any text inside an image a potential prompt-injection surface. This study measures whether a single line of text added to an image can control a VLM's authenticity verdict. All testing was performed on open models running locally.
+Unlike pixel-based detectors, VLMs read text, which makes any text inside an image a potential prompt-injection surface. This study measures whether a single line of text added to an image can control a VLM's authenticity verdict. All testing was performed on open models running locally.
 
 **Method**
 

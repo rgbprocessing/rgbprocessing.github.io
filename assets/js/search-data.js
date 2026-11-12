@@ -53,8 +53,8 @@ ninja.data = [{
           description: "using Hable tone-mapping",
           section: "Projects",handler: () => {
               window.location.href = "/projects/15_project.html";
-            },},{id: "projects-text-in-image-injection-against-vlm-image-forensics",
-          title: 'Text-in-Image Injection Against VLM Image Forensics',
+            },},{id: "projects-vlm-text-in-image-injection",
+          title: 'VLM Text-in-Image Injection',
           description: "Red teaming vision-language models used as AI-image detectors",
           section: "Projects",handler: () => {
               window.location.href = "/projects/16_project.html";

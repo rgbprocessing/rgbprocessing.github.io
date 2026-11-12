@@ -13,7 +13,7 @@ General-purpose vision-language models (VLMs) are increasingly asked whether an 
 
 **Method**
 
-Ten real and ten AI-generated images were sampled from the [AIGC Detection Benchmark](https://huggingface.co/datasets/TheKernel01/AIGC-Detection-Benchmark). Each image was judged clean and with a caption strip added along the bottom edge. Captions on AI-generated images argued that the image was real. Captions on real photos argued that it was AI-generated. A neutral filename label served as a control for the presence of text alone.
+Ten real and ten AI-generated images were sampled from the [AIGC Detection Benchmark](https://huggingface.co/datasets/TheKernel01/AIGC-Detection-Benchmark). Each image was judged with and without a caption strip added along the bottom edge. Captions on AI-generated images argued that the image was real. Captions on real photos argued that it was AI-generated. A neutral filename label served as a control for the presence of text alone.
 
 <div style="display: flex; justify-content: center; margin: 0 auto;">
 <table style="text-align: center;">
